@@ -33,6 +33,8 @@
 		} else {
 			window.ga('create', google_id);
 		}
+		window.ga('require', 'displayfeatures');
+		window.ga('require', 'linkid', 'linkid.js');
 		window.ga('send', 'pageview');
 
 		// Automatically hijack exit links
