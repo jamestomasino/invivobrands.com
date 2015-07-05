@@ -1,0 +1,36 @@
+/* =============================================================================
+
+Table of Contents
+
+	1.0 Basic Page Styles (Line ~20)
+
+
+Page Structure
+
+	1. Body
+		2. Background / .bg
+		3. Wrapper / .wrapper
+			3.1. Data Binding Example / .data_bind_example
+			3.2. Exit Link Example / .exit_link_example
+			3.3. Dynamic Tag Example / .dynamic_tag_example
+
+========================================================================== */
+
+/* =============================================================================
+   1.0 Basic Page Styles
+   ========================================================================== */
+.bg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+.wrapper {
+	display: block;
+	position: relative;
+	z-index: 1;
+}

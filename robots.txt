@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /images
+Disallow: /tmp
+Disallow: /temp
+Disallow: /logs
+Disallow: /private
+
+Sitemap: https://boilerplate.tomasino.org/sitemap.xml
+
