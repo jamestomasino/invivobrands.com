@@ -1,7 +1,12 @@
-# TEAM
-	James Tomasino - @mr_ino
+/* TEAM */
 
-# SITE
-	Language: English
-	Technology: HTML5, CSS3, JavaScript
-	IDE: vim
+Developer: James Tomasino
+Twitter: @mr_ino
+Location: Pennsylvania, USA
+
+/* SITE */
+
+Last update: YYYY/MM/DD
+Language: English
+Standards: HTML5, CSS3, VanillaJS
+IDE: vim

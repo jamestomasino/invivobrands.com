@@ -5,5 +5,5 @@ Disallow: /temp
 Disallow: /logs
 Disallow: /private
 
-Sitemap: https://boilerplate.tomasino.org/sitemap.xml
+Sitemap: http://invivobrands.com/sitemap.xml
 
