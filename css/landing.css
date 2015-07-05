@@ -19,18 +19,74 @@ Page Structure
 /* =============================================================================
    1.0 Basic Page Styles
    ========================================================================== */
-.bg {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	max-width: 100%;
+
+
+#navigation {
 	width: 100%;
-	z-index: 0;
+	max-width: 735px;
+	margin: 0 auto;
+	background: rgba(70,70,70,1);
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
 }
 
-.wrapper {
-	display: block;
-	position: relative;
-	z-index: 1;
+#navigation h1 {
+	color: rgba(255,255,255,1);
+	width: 100px;
+	line-height: 20px;
+	margin: 4px 0 0 5px;
+	font-size: 24px;
+
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background: url(../images/logo.png);
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 75px;
+}
+
+#navigation .menu {
+	position: absolute;
+	right: 8px;
+	top: 0;
+	color: rgba(120,120,120,1);
+	font-size: 32px;
+}
+
+#navigation ol {
+	display: none;
+}
+
+#header {
+
+}
+
+#gettoknowus {
+
+}
+
+#whatwedo {
+
+}
+
+#howwedoit {
+
+}
+
+#testimonials {
+
+}
+
+#letsconnect {
+
+}
+
+#footer {
+
 }

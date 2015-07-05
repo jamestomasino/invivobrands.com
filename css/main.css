@@ -108,50 +108,38 @@ body,input,textarea,select,button {
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: 'liga', 'kern';
 }
-a {
-    color: #08c;
-}
-a:visited,a:link,a:active {
-    text-decoration: none;
-}
-h1 {
-    font-size: 64px;
-    line-height: 1.0625;
-    font-weight: 200;
-}
-h2 {
-    font-size: 52px;
-    line-height: 1.0865;
-    font-weight: 200;
-}
-@media only screen and (max-width: 1068px) {
-    h1 {
-        font-size: 52px;
-        line-height: 1.0769;
-        font-weight: 200;
-    };
-    h2 {
-        font-size: 42px;
-        line-height: 1.1429;
-        font-weight: 200;
-    };
-}
-@media only screen and (max-width: 735px) and (max-device-width: 768px) {
-    h1 {
-        font-size: 36px;
-        line-height: 1.1111;
-        font-weight: 200;
-    };
-    h2 {
-        font-size: 29px;
-        line-height: 1.1;
-        font-weight: 200;
-    };
-}
 
 /* =============================================================================
    2.0 Content
    ========================================================================== */
+
+body, #wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+}
+
+div {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+a {
+	color: #08c;
+}
+
+a:visited,a:link,a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 
 /* =============================================================================
    3.0 Internet Explorer Fixes
