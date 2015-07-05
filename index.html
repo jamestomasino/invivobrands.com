@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -8,7 +8,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title>Sample Project</title>
+    <title itemprop='name'>INVIVO BRANDS</title>
+    <link rel="canonical" href="http://invivobrands.com/" itemprop="url">
 
     <script>
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
@@ -22,6 +23,45 @@
   <body>
 
 
+    <div id="navigation">
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/arts">
+              <span itemprop="name">Arts</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        ›
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/arts/books">
+            <span itemprop="name">Books</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        ›
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/arts/books/poetry">
+            <span itemprop="name">Poetry</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/literature">
+              <span itemprop="name">Literature</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        ›
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/literature/poetry">
+            <span itemprop="name">Poetry</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    <div>
 
 
     <div id="header">
@@ -195,7 +235,16 @@
 
     </div>
 
-
+    <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "url" : "http://invivobrands.com",
+      "contactPoint" : [
+        { "@type" : "ContactPoint",
+          "telephone" : "+1-401-555-1212",
+          "contactType" : "Sales"
+        } ] }
+    </script>
 
 
     <script src="js/lib/NS.js"></script>
