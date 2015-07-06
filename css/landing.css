@@ -168,18 +168,59 @@ Page Structure
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
-		margin-top: 18px;
+		padding-top: 18px;
 		color: rgba(255,73,0,1);
 	}
 
 	#gettoknowus .gettoknowus_intro .copy {
-		margin-top: 18px;
-
+		padding: 18px 0;
+		border-bottom: 1px dashed rgba(255,73,0,1);
 	}
 
 	#gettoknowus .gettoknowus_outro {
-
+		max-width: 735px;
+		margin: 0 auto;
 	}
+
+		#gettoknowus .gettoknowus_outro .pullquote {
+			float: left;
+			font-size: 40px;
+			line-height: 40px;
+			max-width: 365px;
+			text-transform: uppercase;
+			margin: 18px 18px 18px 0;
+		}
+
+			#gettoknowus .gettoknowus_outro .pullquote .question {
+				color: rgba(70,70,70,1);
+			}
+
+			#gettoknowus .gettoknowus_outro .pullquote .response {
+				color: rgba(0,200,220,1);
+			}
+
+		#gettoknowus .gettoknowus_outro .copy {
+			float: left;
+			margin-top: 18px;
+			max-width: 325px;
+			color: rgba(70,70,70,1);
+			font-size: 15px;
+			line-height: 18px;
+		}
+
+		#gettoknowus .gettoknowus_outro .button {
+			margin-top: 18px;
+		}
+
+			#gettoknowus .gettoknowus_outro .button a {
+				color: rgba(255,255,255,1);
+				background: rgba(255,73,0,1);
+				font-size: 16;
+				line-height: 18px;
+				padding: 5px;
+				box-sizing: border-box;
+			}
+
 
 #whatwedo {
 	padding-top: 55px;

@@ -165,3 +165,9 @@ a:hover {
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
+
+.clearfix {
+	clear: both;
+	overflow: auto;
+	zoom: 1;
+}
