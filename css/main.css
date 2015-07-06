@@ -168,6 +168,10 @@ a:hover {
 
 .clearfix {
 	clear: both;
-	overflow: auto;
+	display: block;
+	overflow: none;
 	zoom: 1;
+	height: 0;
+	width: 0;
+
 }

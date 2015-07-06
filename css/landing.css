@@ -81,13 +81,15 @@ Page Structure
 	}
 
 		#header .intro p {
-			display: inline-block;
+			float: left;
+			top: 0;
 			max-width: 352px;
 			padding-right: 10px;
 		}
 
 		#header .intro .arrow-container {
 			float: right;
+			top: 0;
 			margin: 10px 20px;
 			width: 50px;
 			height: 60px;
