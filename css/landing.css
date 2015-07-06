@@ -82,6 +82,7 @@ Page Structure
 		#header .intro p {
 			display: inline-block;
 			max-width: 352px;
+			padding-right: 10px;
 		}
 
 		#header .intro .arrow-container {
@@ -103,6 +104,39 @@ Page Structure
 				-o-backface-visibility: hidden;
 				backface-visibility: hidden;
 			}
+
+				#header .arrow-container .line.line1 {
+					width: 56px;
+					 top: 28px;
+					 left: -3px;
+					 -webkit-transform: rotate(90deg);
+					 -moz-transform: rotate(90deg);
+					 -ms-transform: rotate(90deg);
+					 -o-transform: rotate(90deg);
+					 transform: rotate(90deg);
+				}
+
+				#header .arrow-container .line.line2 {
+					width: 35px;
+					top: 43px;
+					left: -5px;
+					-webkit-transform: rotate(0.785398rad);
+					-moz-transform: rotate(0.785398rad);
+					-ms-transform: rotate(0.785398rad);
+					-o-transform: rotate(0.785398rad);
+					transform: rotate(0.785398rad);
+				}
+
+				#header .arrow-container .line.line3 {
+					width: 35px;
+					top: 43px;
+					left: 20px;
+					-webkit-transform: rotate(-0.785398rad);
+					-moz-transform: rotate(-0.785398rad);
+					-ms-transform: rotate(-0.785398rad);
+					-o-transform: rotate(-0.785398rad);
+					transform: rotate(-0.785398rad);
+				}
 
 	#header .button {
 		right: 0;
@@ -217,7 +251,7 @@ Page Structure
 			#gettoknowus .gettoknowus_outro .button a {
 				color: rgba(255,255,255,1);
 				background: rgba(255,73,0,1);
-				font-size: 16;
+				font-size: 16px;
 				line-height: 18px;
 				padding: 5px;
 				box-sizing: border-box;
@@ -226,8 +260,35 @@ Page Structure
 
 #whatwedo {
 	padding-top: 55px;
-
+	background: rgba(50,50,50,1);
+	color: rgba(255,255,255,1);
+	font-size: 16px;
+	line-height: 18px;
 }
+	#whatwedo .wrapper {
+		max-width: 735px;
+		margin: 0 auto;
+	}
+
+	#whatwedo .whatwedo_intro {
+		max-width: 330px;
+		float: left;
+		padding: 0 10px;
+	}
+
+	#whatwedo .whatwedo_intro .pullquote {
+		font-size: 40px;
+		line-height: 40px;
+		text-transform: uppercase;
+		color: rgba(255,73,0,1);
+		margin: 18px 18px 18px 0;
+	}
+
+	#whatwedo .whatwedo_content {
+		max-width: 380px;
+		float: left;
+		padding: 0 10px;
+	}
 
 #howwedoit {
 	padding-top: 55px;
