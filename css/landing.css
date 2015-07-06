@@ -40,6 +40,7 @@ Page Structure
 		background: url(../images/logo.png);
 		background-size: 83px 32px;
 		background-repeat: no-repeat;
+		-ms-behavior: url(../polyfill/backgroundsize.min.htc);
 	}
 
 	#navigation .menu {
@@ -374,6 +375,7 @@ Page Structure
 			background: url(../images/logo.png);
 			background-size: 83px 32px;
 			background-repeat: no-repeat;
+			-ms-behavior: url(../polyfill/backgroundsize.min.htc);
 		}
 
 		#footer .wrapper .contact {
