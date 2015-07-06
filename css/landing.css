@@ -20,7 +20,7 @@ Page Structure
 	width: 100%;
 	max-width: 735px;
 	margin: 0 auto;
-	background: rgba(70,70,70,1);
+	background: #464646;
 	height: 50px;
 	overflow: hidden;
 	position: fixed;
@@ -46,7 +46,7 @@ Page Structure
 		position: absolute;
 		right: 8px;
 		top: 0;
-		color: rgba(120,120,120,1);
+		color: #787878;
 		font-size: 32px;
 		cursor: pointer;
 		font-weight: bold;
@@ -59,7 +59,7 @@ Page Structure
 #header {
 	margin-top: 0;
 	width: 100%;
-	background: rgba(50,50,50,1);
+	background: #323232;
 	z-index: 1;
 }
 
@@ -75,8 +75,8 @@ Page Structure
 		width: 100%;
 		max-width: 562px;
 		padding: 60px 0 10px 10px;
-		background: rgba(70,70,70,1);
-		color: rgba(255,255,255,1);
+		background: #464646;
+		color: #FFF;
 	}
 
 		#header .intro p {
@@ -96,7 +96,7 @@ Page Structure
 				position: absolute;
 				border-width: 1px 0px 0px 0px;
 				border-style: dashed;
-				border-color: rgba(0,200,220,1);
+				border-color: #00c8dc;
 				transform: translateZ(1px);
 				-webkit-backface-visibility: hidden;
 				-moz-backface-visibility: hidden;
@@ -146,8 +146,8 @@ Page Structure
 
 		#header .button a {
 			float: right;
-			color: rgba(255,255,255,1);
-			background: rgba(0,200,220,1);
+			color: #FFF;
+			background: #00c8dc;
 			font-size: 16;
 			line-height: 18px;
 			width: 90px;
@@ -160,7 +160,7 @@ Page Structure
 		height: 310px;
 		width: 100%;
 		overflow: hidden;
-		color: rgba(255,73,0,1);
+		color: #ff4900;
 		font-size: 100px;
 		line-height: 110px;
 		white-space: nowrap;
@@ -192,7 +192,7 @@ Page Structure
 		max-width: 735px;
 		margin: 0 auto;
 		padding: 0 10px;
-		color: rgba(70,70,70,1);
+		color: #464646;
 		font-size: 15px;
 		line-height: 18px;
 	}
@@ -204,12 +204,12 @@ Page Structure
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
 		padding-top: 18px;
-		color: rgba(255,73,0,1);
+		color: #ff4900;
 	}
 
 	#gettoknowus .gettoknowus_intro .copy {
 		padding: 18px 0;
-		border-bottom: 1px dashed rgba(255,73,0,1);
+		border-bottom: 1px dashed #ff4900;
 	}
 
 	#gettoknowus .gettoknowus_outro {
@@ -228,18 +228,18 @@ Page Structure
 		}
 
 			#gettoknowus .gettoknowus_outro .pullquote .question {
-				color: rgba(70,70,70,1);
+				color: #464646;
 			}
 
 			#gettoknowus .gettoknowus_outro .pullquote .response {
-				color: rgba(0,200,220,1);
+				color: #00c8dc;
 			}
 
 		#gettoknowus .gettoknowus_outro .copy {
 			float: left;
 			margin-top: 18px;
 			max-width: 325px;
-			color: rgba(70,70,70,1);
+			color: #464646;
 			font-size: 15px;
 			line-height: 18px;
 		}
@@ -249,8 +249,8 @@ Page Structure
 		}
 
 			#gettoknowus .gettoknowus_outro .button a {
-				color: rgba(255,255,255,1);
-				background: rgba(255,73,0,1);
+				color: #FFF;
+				background: #ff4900;
 				font-size: 16px;
 				line-height: 18px;
 				padding: 5px;
@@ -259,8 +259,8 @@ Page Structure
 
 #whatwedo {
 	padding-top: 55px;
-	background: rgba(50,50,50,1);
-	color: rgba(255,255,255,1);
+	background: #323232;
+	color: #FFF;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -284,7 +284,7 @@ Page Structure
 		font-size: 40px;
 		line-height: 40px;
 		text-transform: uppercase;
-		color: rgba(255,73,0,1);
+		color: #ff4900;
 		margin: 18px 18px 18px 0;
 	}
 
@@ -318,8 +318,8 @@ Page Structure
 
 #letsconnect {
 	padding-top: 55px;
-	background: rgba(50,50,50,1);
-	color: rgba(255,255,255,1);
+	background: #323232;
+	color: #FFF;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -336,8 +336,8 @@ Page Structure
 	}
 
 	#letsconnect .letsconnect_action {
-		background: rgba(255,73,0,1);
-		color: rgba(255,255,255,1);
+		background: #ff4900;
+		color: #FFF;
 		height: 400px;
 	}
 		#letsconnect .letsconnect_action .letsconnect_action_content {
@@ -349,8 +349,8 @@ Page Structure
 #footer {
 	padding-top: 55px;
 	width: 100%;
-	background: rgba(50,50,50,1);
-	color: rgba(255,255,255,1);
+	background: #323232;
+	color: #FFF;
 	z-index: 1;
 	font-size: 10px;
 	line-height: 12px;
