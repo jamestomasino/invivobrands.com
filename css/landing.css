@@ -157,6 +157,7 @@ Page Structure
 	#gettoknowus .gettoknowus_intro {
 		max-width: 735px;
 		margin: 0 auto;
+		padding: 0 10px;
 		color: rgba(70,70,70,1);
 		font-size: 15px;
 		line-height: 18px;
@@ -180,6 +181,7 @@ Page Structure
 	#gettoknowus .gettoknowus_outro {
 		max-width: 735px;
 		margin: 0 auto;
+		padding: 0 10px;
 	}
 
 		#gettoknowus .gettoknowus_outro .pullquote {
