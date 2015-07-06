@@ -147,22 +147,57 @@ Page Structure
 		}
 
 #gettoknowus {
-
+	padding-top: 55px;
 }
 
+	#gettoknowus h1 {
+		display: none;
+	}
+
+	#gettoknowus .gettoknowus_intro {
+		max-width: 735px;
+		margin: 0 auto;
+		color: rgba(70,70,70,1);
+		font-size: 15px;
+		line-height: 18px;
+	}
+	
+	#gettoknowus .gettoknowus_intro .pullquote {
+		text-transform: uppercase;
+		max-width: 350px;
+	}
+
+	#gettoknowus .gettoknowus_intro .pullquote .highlight {
+		margin-top: 18px;
+		color: rgba(255,73,0,1);
+	}
+
+	#gettoknowus .gettoknowus_intro .copy {
+		margin-top: 18px;
+
+	}
+
+	#gettoknowus .gettoknowus_outro {
+
+	}
+
 #whatwedo {
+	padding-top: 55px;
 
 }
 
 #howwedoit {
+	padding-top: 55px;
 
 }
 
 #testimonials {
+	padding-top: 55px;
 
 }
 
 #letsconnect {
+	padding-top: 55px;
 
 }
 
