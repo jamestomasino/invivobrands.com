@@ -113,13 +113,14 @@ body,input,textarea,select,button {
    2.0 Content
    ========================================================================== */
 
-body, #wrapper {
+body {
 	position: relative;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	left: 0;
 	right: 0;
+	overflow-x:hidden;
 }
 
 div {
