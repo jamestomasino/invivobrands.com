@@ -16,11 +16,13 @@ function landing() {
 	var Draw                = NS.use('lib.Draw');
 
 	var header = DOM.find('#header');
-	var headerArrow = DOM.find(".arrow-container", header)[0];
 
-	var line1 = Draw.line(0,32,25,50);
-	var line2 = Draw.line(50,32,25,50);
-	var line3 = Draw.line(25,0,25,50);
+
+	// Create arrow lines for header
+	var headerArrow = DOM.find(".arrow-container", header)[0];
+	var line1 = Draw.line(0,30,25,54);
+	var line2 = Draw.line(50,30,25,54);
+	var line3 = Draw.line(25,0,25,54);
 	headerArrow.appendChild(line1);
 	headerArrow.appendChild(line2);
 	headerArrow.appendChild(line3);
