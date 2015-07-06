@@ -1,4 +1,5 @@
 AddCharset utf-8 .html
+AddType text/x-component .htc
 
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
