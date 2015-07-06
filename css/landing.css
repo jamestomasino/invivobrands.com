@@ -26,7 +26,7 @@ Page Structure
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 50;
 }
 
 	#navigation h1 {
@@ -60,48 +60,90 @@ Page Structure
 	margin-top: 0;
 	width: 100%;
 	background: rgba(50,50,50,1);
+	z-index: 1;
 }
 
 	#header .wrapper {
 		max-width: 735px;
-		margin: 0 auto;
+		margin: -300px auto 0 auto;
+		height: 300px;
+		z-index: 1;
 	}
 
 	#header .intro {
 		box-sizing: border-box;
 		width: 100%;
 		max-width: 562px;
-		padding: 60px 200px 10px 10px;
+		padding: 60px 0 10px 10px;
 		background: rgba(70,70,70,1);
 		color: rgba(255,255,255,1);
-
 	}
 
+		#header .intro p {
+			display: inline-block;
+			max-width: 352px;
+		}
+
+		#header .intro .arrow-container {
+			float: right;
+			margin: 10px 20px;
+			width: 50px;
+			height: 60px;
+		}
+
+			#header .arrow-container .line {
+				position: absolute;
+				border-width: 1px 0px 0px 0px;
+				border-style: dashed;
+				border-color: rgba(0,200,220,1);
+				transform: translateZ(1px);
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				-o-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+
 	#header .button {
-		float: right;
-		background: rgba(0,200,220,1);
-		width: 80px;
 		right: 0;
+		width: 100%;
+		max-width: 562px;
 	}
 
 		#header .button a {
+			float: right;
 			color: rgba(255,255,255,1);
+			background: rgba(0,200,220,1);
+			font-size: 16;
+			line-height: 18px;
+			width: 90px;
+			padding: 5px;
+			box-sizing: border-box;
 		}
 
 	#header .bgtextfill {
-
+		display: block;
+		height: 310px;
+		width: 100%;
+		overflow: hidden;
+		color: rgba(255,73,0,1);
+		font-size: 100px;
+		line-height: 110px;
+		white-space: nowrap;
+		text-transform: uppercase;
+		z-index: 0;
 	}
 
-		#header .bgtextfill.bgtextfill1 {
-
+		#header .bgtextfill1 {
+			text-indent: -500px;
 		}
 
-		#header .bgtextfill.bgtextfill2 {
-
+		#header .bgtextfill2 {
+			text-indent: -1490px;
 		}
 
-		#header .bgtextfill.bgtextfill3 {
-
+		#header .bgtextfill3 {
+			text-indent: -400px;
 		}
 
 #gettoknowus {
