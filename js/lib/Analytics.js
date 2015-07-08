@@ -38,10 +38,7 @@
 		window.ga('send', 'pageview');
 
 		// Automatically hijack exit links
-		if (window.addEventListener)
-			document.body.addEventListener("click",this.onBodyClick,false);
-		else
-			document.body.attachEvent("onclick",this.onBodyClick);
+		document.body.addEventListener("click",this.onBodyClick,false);
 	};
 
 	var p = Analytics.prototype;
