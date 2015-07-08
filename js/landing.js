@@ -1,23 +1,18 @@
 // Set the global path to javascript files for NS
 NS.baseURL = 'js/';
 
-// Page level callback
 function landing() {
 
-	/**********************************************************************/
-	/************************** Google Analytics **************************/
-	/**********************************************************************/
-
+	// Local vars for Lib access
 	var Analytics           = NS.use('lib.Analytics');
-	var analytics           = new Analytics ( "UA-64803192-1" );
-
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
 
-	var header = DOM.find('#header');
-
+	// Set up Google Analytics
+	var analytics           = new Analytics ( "UA-64803192-1" );
 
 	// Create arrow lines for header
+	var header = DOM.find('#header');
 	var headerArrow = DOM.find(".arrow-container", header)[0];
 	var line1 = Draw.line(0,30,25,54);
 	var line2 = Draw.line(50,30,25,54);
@@ -25,10 +20,26 @@ function landing() {
 	headerArrow.appendChild(line1);
 	headerArrow.appendChild(line2);
 	headerArrow.appendChild(line3);
+
+	// Accordion support for What We Do
+	var whatWeDoContent = DOM.find(".whatwedo-content")[0];
+	var headers = DOM.find('h3', whatWeDoContent);
+	var i = headers.length; while (i--) {
+		headers[i].addEventListener("click", function (e) {
+			var list = DOM.find('ul', e.target.parentElement)[0];
+			DOM.toggleClass(list, "active");
+			DOM.toggleClass(e.target, "active");
+		}, false);
+	}
 }
 
-// List all page dependencies
+// Define standard libraries for use, calculate polyfills and load page
 var libs = [ 'lib.DOM', 'lib.Draw', 'lib.Analytics' ];
+var polyfills = [];
 
-// Load all page dependencies and initiate page setup via callback
-NS.load ( libs, landing, this);
+if (!document.addEventListener) {
+	polyfills.push("polyfill.addEventListener");
+}
+
+NS.load ( libs.concat(polyfills), landing, this);
+

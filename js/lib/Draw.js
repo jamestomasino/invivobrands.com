@@ -20,7 +20,7 @@
 
 
 	Draw.line = function (x1, y1, x2, y2)	{
-		var isIE = navigator.userAgent.indexOf("MSIE") > -1;
+		var isIE = (!document.addEventListener);
 		if (x2 < x1) {
 			var temp = x1; x1 = x2; x2 = temp;
 			temp = y1; y1 = y2; y2 = temp;
@@ -39,7 +39,7 @@
 			var angle = Math.atan((y2-y1)/(x2-x1));
 			line.style.top = y1 + 0.5*length*Math.sin(angle) + "px";
 			line.style.left = x1 - 0.5*length*(1 - Math.cos(angle)) + "px";
-			line.style.MozTransform = line.style.WebkitTransform = line.style.OTransform= "rotate(" + angle + "rad)";
+			line.style.msTransform = line.style.MozTransform = line.style.WebkitTransform = line.style.OTransform= "rotate(" + angle + "rad)";
 		}
 		return line;
 	};

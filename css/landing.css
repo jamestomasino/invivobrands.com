@@ -259,10 +259,66 @@ Page Structure
 	}
 
 	#whatwedo .whatwedo_content {
+		height: 386px;
 		max-width: 380px;
 		float: left;
 		padding: 0 10px;
+		-webkit-column-count:2;
+		-moz-column-count:2;
+		column-count:2;
+		-webkit-column-gap:20px;
+		-moz-column-gap:20px;
+		column-gap:20px;
+		-webkit-column-fill: auto;
+		-moz-column-fill: auto;
+		column-fill: auto;
 	}
+
+	/* TODO: Get multicolumn support <IE10
+	 **/
+
+		#whatwedo .whatwedo_content h3 {
+			text-transform: uppercase;
+			font-size: 15px;
+			line-height: 15px;
+			display: block;
+			cursor: pointer;
+			width: 163px;
+			height: 55px;
+			background-color: #464646;
+			color: #787878;
+			box-sizing: border-box;
+			padding: 5px 7px;
+			margin-bottom: 10px;
+		}
+
+			#whatwedo .whatwedo_content h3.active {
+				color: #ffffff;
+				background-color: #ff4900;
+			}
+
+		#whatwedo .whatwedo_content ul {
+			margin: 0 0 10px 0;
+			max-height: 0;
+			will-change: transform;
+			transition-property: transform
+			-webkit-transition: max-height 0.25s ease-out;
+			transition: max-height 0.25s ease-out;
+			transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+			overflow: hidden;
+		}
+
+			#whatwedo .whatwedo_content ul.active {
+				max-height: 550px;
+			}
+
+		#whatwedo .whatwedo_content li {
+			display: block;
+			font-size: 15px;
+			width: 163px;
+			box-sizing: border-box;
+			padding: 5px 5px 3px 5px;
+		}
 
 #howwedoit {
 	padding-top: 55px;
