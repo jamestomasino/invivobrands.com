@@ -1,4 +1,4 @@
-// Set the global path to javascript files for NS
+/*global NS*/
 NS.baseURL = 'js/';
 
 function landing() {
@@ -7,6 +7,7 @@ function landing() {
 	var Analytics           = NS.use('lib.Analytics');
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
+	var WhatWeDo            = NS.use('components.WhatWeDo');
 
 	// Set up Google Analytics
 	var analytics           = new Analytics ( "UA-64803192-1" );
@@ -21,20 +22,13 @@ function landing() {
 	headerArrow.appendChild(line2);
 	headerArrow.appendChild(line3);
 
-	// Accordion support for What We Do
-	var whatWeDoContent = DOM.find(".whatwedo-content")[0];
-	var headers = DOM.find('h3', whatWeDoContent);
-	var i = headers.length; while (i--) {
-		headers[i].addEventListener("click", function (e) {
-			var list = DOM.find('ul', e.target.parentElement)[0];
-			DOM.toggleClass(list, "active");
-			DOM.toggleClass(e.target, "active");
-		}, false);
-	}
+	// WhatWeDo Component
+	var whatwedo = new WhatWeDo(".whatwedo_content");
+
 }
 
 // Define standard libraries for use, calculate polyfills and load page
-var libs = [ 'lib.DOM', 'lib.Draw', 'lib.Analytics' ];
+var libs = [ 'lib.DOM', 'lib.Draw', 'lib.Analytics', 'components.WhatWeDo' ];
 var polyfills = [];
 
 if (!document.addEventListener) {
