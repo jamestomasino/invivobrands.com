@@ -27,6 +27,8 @@ Page Structure
 	left: 0;
 	right: 0;
 	z-index: 50;
+	border-right: 2px solid #333333;
+	border-left: 2px solid #333333;
 }
 
 	#navigation h1 {
@@ -53,9 +55,65 @@ Page Structure
 		font-weight: bold;
 	}
 
-	#navigation ol {
-		display: none;
+#menu {
+	position: fixed;
+	width: 100%;
+	max-width: 735px;
+	margin: 0 auto;
+	display: block;
+	top: 50px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+	#menu ol {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #464646;
+		color: #ffffff;
+		box-sizing: border-box;
+		padding: 10px 5px;
+		border-right: 2px solid #333333;
+		border-left: 2px solid #333333;
+		border-bottom: 2px solid #333333;
+		width: 150px;
+		max-height: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		will-change: transform;
+		transition-property: transform, opacity;
+		-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+		transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+		transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+		overflow: hidden;
 	}
+
+		#menu ol.active {
+			max-height: 195px;
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+
+		#menu ol li {
+			display: block;
+			border-bottom: 1px dashed #787878;
+			padding: 5px;
+		}
+
+		#menu ol a {
+			color: #787878;
+			will-change: transform;
+			transition-property: color;
+			-webkit-transition: color 0.15s ease-out;
+			transition: color 0.15s ease-out;
+		}
+
+			#menu ol a:hover {
+				color: #ffffff;
+				text-decoration: none;
+			}
 
 #header {
 	margin-top: 0;
@@ -78,6 +136,9 @@ Page Structure
 		padding: 50px 0 10px 10px;
 		background: #464646;
 		color: #FFF;
+		border-right: 2px solid #333333;
+		border-left: 2px solid #333333;
+		border-bottom: 2px solid #333333;
 	}
 
 		#header .intro p {
@@ -109,7 +170,7 @@ Page Structure
 			}
 
 	#header .button {
-		right: 0;
+		top: -2px;
 		width: 100%;
 		max-width: 562px;
 	}
@@ -123,6 +184,9 @@ Page Structure
 			width: 90px;
 			padding: 5px;
 			box-sizing: border-box;
+			border-right: 2px solid #333333;
+			border-left: 2px solid #333333;
+			border-bottom: 2px solid #333333;
 		}
 
 	#header .bgtextfill {
