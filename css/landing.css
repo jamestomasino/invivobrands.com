@@ -147,7 +147,7 @@ Page Structure
 			padding-right: 10px;
 		}
 
-		#header .intro .arrow-container {
+		#header .intro .arrow_container {
 			float: right;
 			top: 0;
 			margin: 10px 20px;
@@ -155,7 +155,7 @@ Page Structure
 			height: 60px;
 		}
 
-			#header .arrow-container .line {
+			#header .arrow_container .line {
 				position: absolute;
 				border-width: 1px 0px 0px 0px;
 				border-style: dashed;
@@ -596,6 +596,26 @@ Page Structure
 		#letsconnect .letsconnect_question dt.active .phrase {
 			color: #ffffff;
 		}
+
+
+		#letsconnect .letsconnect_question dt.active .arrow_container {
+			position: absolute;
+			bottom: 70px;
+			left: 55px;
+		}
+
+			#letsconnect .letsconnect_question dt.active .arrow_container .line {
+				position: absolute;
+				border-width: 1px 0px 0px 0px;
+				border-style: dashed;
+				border-color: #ffffff;
+				transform: translateZ(1px);
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				-o-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
 
 	#letsconnect .letsconnect_question dd {
 		position: absolute;

@@ -4,6 +4,7 @@
 	function classWrapper() {
 
 		var DOM = NS.use('lib.DOM');
+		var Draw = NS.use('lib.Draw');
 		var items = [];
 
 		function activeToggle(evt) {
@@ -39,6 +40,18 @@
 				items.push(headers[i].parentElement);
 				headers[i].addEventListener("click", activeToggle, false);
 				headers[i].addEventListener("touchend", activeToggle, false);
+
+				var headerArrow = DOM.find(".arrow_container", headers[i])[0];
+				if (headerArrow) {
+					var line1 = Draw.line(0,30,25,54);
+					var line2 = Draw.line(50,30,25,54);
+					var line3 = Draw.line(25,0,25,54);
+					headerArrow.appendChild(line1);
+					headerArrow.appendChild(line2);
+					headerArrow.appendChild(line3);
+				} else {
+					console.log ('Warning: .arrow_container not found.');
+				}
 			}
 		}
 
@@ -47,6 +60,6 @@
 
 	}
 
-	NS.load ( ['lib.DOM' ], classWrapper, this );
+	NS.load ( ['lib.DOM', 'lib.Draw' ], classWrapper, this );
 
 })(window.NS);

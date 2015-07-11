@@ -17,7 +17,7 @@ function landing() {
 
 	// Create arrow lines for header
 	var header = DOM.find('#header');
-	var headerArrow = DOM.find(".arrow-container", header)[0];
+	var headerArrow = DOM.find(".arrow_container", header)[0];
 	var line1 = Draw.line(0,30,25,54);
 	var line2 = Draw.line(50,30,25,54);
 	var line3 = Draw.line(25,0,25,54);
