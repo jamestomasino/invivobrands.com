@@ -82,7 +82,6 @@ Page Structure
 		max-height: 0;
 		opacity: 0;
 		filter: alpha(opacity=0);
-		will-change: transform;
 		transition-property: transform, opacity;
 		-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
 		transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
@@ -104,7 +103,6 @@ Page Structure
 
 		#menu ol a {
 			color: #787878;
-			will-change: transform;
 			transition-property: color;
 			-webkit-transition: color 0.15s ease-out;
 			transition: color 0.15s ease-out;
@@ -179,7 +177,7 @@ Page Structure
 			float: right;
 			color: #FFF;
 			background: #00c8dc;
-			font-size: 16;
+			font-size: 16px;
 			line-height: 18px;
 			width: 90px;
 			padding: 5px;
@@ -365,7 +363,6 @@ Page Structure
 		#whatwedo .whatwedo_content ul {
 			margin: 0 0 10px 0;
 			max-height: 0;
-			will-change: transform;
 			transition-property: transform
 			-webkit-transition: max-height 0.25s ease-out;
 			transition: max-height 0.25s ease-out;
@@ -424,11 +421,12 @@ Page Structure
 			display: block;
 			opacity: 0;
 			filter: alpha(opacity=0);
-			will-change: transform;
-			transition-property: transform, opacity;
+			-webkit-transition-property: -webkit-transform, opacity;
+					transition-property: transform, opacity;
 			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+					transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			-webkit-transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+					transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
 		}
 
 			#howwedoit .howwedoit_content dt .phrase.active {
@@ -443,11 +441,12 @@ Page Structure
 			display: block;
 			opacity: 0;
 			filter: alpha(opacity=0);
-			will-change: transform;
-			transition-property: transform, opacity;
+			-webkit-transition-property: -webkit-transform, opacity;
+					transition-property: transform, opacity;
 			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+					transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			-webkit-transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+			        transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
 			width: 100%;
 			max-width: 735px;
 			margin: 0 auto;
