@@ -79,7 +79,7 @@ Page Structure
 		border-right: 2px solid #333333;
 		border-left: 2px solid #333333;
 		border-bottom: 2px solid #333333;
-		width: 150px;
+		width: 174px;
 		max-height: 0;
 		opacity: 0;
 		filter: alpha(opacity=0);
@@ -103,14 +103,17 @@ Page Structure
 		}
 
 		#menu ol a {
-			color: #787878;
+			color: #ffffff;
 			transition-property: color;
 			-webkit-transition: color 0.15s ease-out;
 			transition: color 0.15s ease-out;
+			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			font-weight: 900;
+			text-transform: uppercase;
 		}
 
 			#menu ol a:hover {
-				color: #ffffff;
+				color: #00C8DC;
 				text-decoration: none;
 			}
 
@@ -200,6 +203,7 @@ Page Structure
 		text-transform: uppercase;
 		z-index: 0;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+		font-weight: 900;
 	}
 
 		#header .bgtextfill1 {
@@ -235,6 +239,7 @@ Page Structure
 		text-transform: uppercase;
 		max-width: 350px;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+		font-weight: 900;
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
@@ -261,6 +266,7 @@ Page Structure
 			text-transform: uppercase;
 			margin: 18px 18px 18px 0;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			font-weight: 900;
 		}
 
 			#gettoknowus .gettoknowus_outro .pullquote .question {
@@ -325,6 +331,7 @@ Page Structure
 		color: #ff4900;
 		margin: 18px 18px 18px 0;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+		font-weight: 900;
 	}
 
 	#whatwedo .whatwedo_content {
@@ -360,6 +367,7 @@ Page Structure
 			padding: 5px 7px;
 			margin-bottom: 10px;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			font-weight: 900;
 		}
 
 			#whatwedo .whatwedo_content h3.active {
@@ -405,6 +413,7 @@ Page Structure
 			text-transform: uppercase;
 			padding-bottom: 18px;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			font-weight: 900;
 		}
 
 
