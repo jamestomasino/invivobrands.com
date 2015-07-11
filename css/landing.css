@@ -412,7 +412,7 @@
 			font-weight: 900;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
-			#howwedoit .howwedoit_content dt .term.active {
+			#howwedoit .howwedoit_content .active dt .term {
 				color: #00c8dc;
 			}
 
@@ -429,7 +429,7 @@
 					transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
 		}
 
-			#howwedoit .howwedoit_content dt .phrase.active {
+			#howwedoit .howwedoit_content dt .active .phrase {
 				opacity: 1;
 				filter: alpha(opacity=100);
 			}
@@ -462,7 +462,7 @@
 			box-sizing: border-box;
 		}
 
-		#howwedoit .howwedoit_content dd.active {
+		#howwedoit .howwedoit_content .active dd {
 			opacity: 1;
 			filter: alpha(opacity=100);
 		}

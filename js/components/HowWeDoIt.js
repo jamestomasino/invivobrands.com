@@ -18,20 +18,14 @@
 			var i = items.length; while (i--) {
 				var item = items[i];
 				var header = DOM.find('dt', item)[0];
-				var term = DOM.find('.term', item)[0];
-				var phrase = DOM.find('.phrase', item)[0];
-				var content = DOM.find('dd', item)[0];
+				var par = header.parentElement;
 
 				if (header === evt.currentTarget) {
-					if (!DOM.hasClass(term, 'active')) {
-						DOM.addClass(term, 'active');
-						DOM.addClass(phrase, 'active');
-						DOM.addClass(content, 'active');
+					if (!DOM.hasClass(par, 'active')) {
+						DOM.addClass(par, 'active');
 					}
 				} else {
-					DOM.removeClass(term, 'active');
-					DOM.removeClass(phrase, 'active');
-					DOM.removeClass(content, 'active');
+					DOM.removeClass(par, 'active');
 				}
 			}
 		}

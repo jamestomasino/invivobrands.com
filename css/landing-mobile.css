@@ -10,7 +10,7 @@
 				display: inline;
 				padding-left: 0;
 			}
-				#howwedoit .howwedoit_content dt .term.active {
+				#howwedoit .howwedoit_content dt .active .term {
 					color: #000000;
 				}
 
