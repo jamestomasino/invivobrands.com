@@ -569,6 +569,8 @@ Page Structure
 		width: 170px;
 		height: 372px;
 		vertical-align: top;
+		padding-top: 5px;
+		box-sizing: border-box;
 	}
 
 	#letsconnect .letsconnect_question dt .term {
@@ -587,8 +589,8 @@ Page Structure
 
 	#letsconnect .letsconnect_question dt.active {
 		background-color: #ff4900;
-		box-sizing: border-box;
 		border: 5px solid #ff4900;
+		padding-top: 0;
 	}
 
 		#letsconnect .letsconnect_question dt.active .phrase {
