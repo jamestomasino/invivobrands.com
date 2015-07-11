@@ -280,6 +280,7 @@ Page Structure
 
 		#gettoknowus .gettoknowus_outro .button {
 			margin-top: 18px;
+			margin-bottom: 25px;
 		}
 
 			#gettoknowus .gettoknowus_outro .button a {
@@ -386,7 +387,7 @@ Page Structure
 
 #howwedoit {
 	padding-top: 55px;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 18px;
 }
 
@@ -401,6 +402,7 @@ Page Structure
 			padding-bottom: 18px;
 		}
 
+
 		#howwedoit .howwedoit_content dt {
 			position: relative;
 			display: inline-block;
@@ -410,18 +412,24 @@ Page Structure
 
 		#howwedoit .howwedoit_content dt .term {
 			padding-left: 10px;
-			font-size: 14px;
 			font-weight: bold;
 		}
 
 		#howwedoit .howwedoit_content dt .phrase {
 			padding-left: 10px;
 			display: block;
-			font-size: 14px;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			will-change: transform;
+			transition-property: transform, opacity;
+			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
 		}
 
 			#howwedoit .howwedoit_content dt .phrase.active {
-				display: block;
+				opacity: 1;
+				filter: alpha(opacity=100);
 			}
 
 		#howwedoit .howwedoit_content dd {
@@ -441,7 +449,7 @@ Page Structure
 			z-index: 1;
 			border-top: 1px solid #00c8dc;
 			border-bottom: 1px solid #00c8dc;
-			height: 100px;
+			height: 115px;
 			box-sizing: border-box;
 		}
 
@@ -456,7 +464,6 @@ Page Structure
 
 			#howwedoit .howwedoit_content dd p {
 				box-sizing: border-box;
-				font-size: 15px;
 				width: 100%;
 				padding: 12px 20px 0 185px;
 			}
@@ -468,8 +475,8 @@ Page Structure
 	}
 
 #testimonials {
+	display: none;
 	padding-top: 55px;
-
 }
 
 #letsconnect {

@@ -8,6 +8,7 @@ function landing() {
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
 	var WhatWeDo            = NS.use('components.WhatWeDo');
+	var HowWeDoIt           = NS.use('components.HowWeDoIt');
 	var Menu                = NS.use('components.Menu');
 
 	// Set up Google Analytics
@@ -26,6 +27,9 @@ function landing() {
 	// WhatWeDo Component
 	var whatwedo = new WhatWeDo(".whatwedo_content");
 
+	// WhatWeDo Component
+	var howwedoit = new HowWeDoIt(".howwedoit_content");
+
 	// Menu Component
 	var menu = new Menu("#navigation", "#menu");
 
@@ -33,7 +37,8 @@ function landing() {
 
 // Define standard libraries for use, calculate polyfills and load page
 var libs = [ 'lib.DOM', 'lib.Draw', 'lib.Analytics',
-	'components.WhatWeDo', 'components.Menu' ];
+	'components.WhatWeDo', 'components.Menu', 'components.HowWeDoIt'  ];
+
 var polyfills = [];
 
 if (!document.addEventListener) {
