@@ -257,7 +257,7 @@ Page Structure
 			float: left;
 			font-size: 40px;
 			line-height: 40px;
-			max-width: 365px;
+			max-width: 352px;
 			text-transform: uppercase;
 			margin: 18px 18px 18px 0;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
@@ -290,7 +290,7 @@ Page Structure
 				background: #ff4900;
 				font-size: 16px;
 				line-height: 18px;
-				padding: 5px;
+				padding: 5px 7px;
 				box-sizing: border-box;
 			}
 
@@ -307,7 +307,7 @@ Page Structure
 	}
 
 	#whatwedo .whatwedo_intro {
-		max-width: 330px;
+		max-width: 370px;
 		float: left;
 		padding: 0 10px;
 	}
@@ -329,7 +329,7 @@ Page Structure
 
 	#whatwedo .whatwedo_content {
 		height: 386px;
-		max-width: 380px;
+		max-width: 365px;
 		float: left;
 		padding: 0 10px;
 		-webkit-column-count:2;
@@ -378,7 +378,7 @@ Page Structure
 		}
 
 			#whatwedo .whatwedo_content ul.active {
-				max-height: 550px;
+				max-height: 750px;
 			}
 
 		#whatwedo .whatwedo_content li {
@@ -489,7 +489,7 @@ Page Structure
 			#howwedoit .howwedoit_content dd p {
 				box-sizing: border-box;
 				width: 100%;
-				padding: 12px 20px 0 185px;
+				padding: 12px 20px 0 100px;
 			}
 
 	#howwedoit .howwedoit_outro {
