@@ -199,6 +199,7 @@ Page Structure
 		white-space: nowrap;
 		text-transform: uppercase;
 		z-index: 0;
+		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
 		#header .bgtextfill1 {
@@ -233,6 +234,7 @@ Page Structure
 	#gettoknowus .gettoknowus_intro .pullquote {
 		text-transform: uppercase;
 		max-width: 350px;
+		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
@@ -258,6 +260,7 @@ Page Structure
 			max-width: 365px;
 			text-transform: uppercase;
 			margin: 18px 18px 18px 0;
+			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
 			#gettoknowus .gettoknowus_outro .pullquote .question {
@@ -312,6 +315,7 @@ Page Structure
 		#whatwedo .whatwedo_intro h1 {
 			text-transform: uppercase;
 			padding-bottom: 18px;
+			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
 	#whatwedo .whatwedo_intro .pullquote {
@@ -320,6 +324,7 @@ Page Structure
 		text-transform: uppercase;
 		color: #ff4900;
 		margin: 18px 18px 18px 0;
+		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
 	#whatwedo .whatwedo_content {
@@ -354,6 +359,7 @@ Page Structure
 			box-sizing: border-box;
 			padding: 5px 7px;
 			margin-bottom: 10px;
+			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
 			#whatwedo .whatwedo_content h3.active {
