@@ -418,7 +418,7 @@ Page Structure
 
 		#howwedoit .howwedoit_content dt .term {
 			padding-left: 10px;
-			font-weight: bold;
+			font-weight: 900;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 			#howwedoit .howwedoit_content dt .term.active {
@@ -483,6 +483,7 @@ Page Structure
 				font-size: 36px;
 				top: 20px;
 				left: 10px;
+				font-weight: 900;
 				font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 			}
 
@@ -563,6 +564,7 @@ Page Structure
 	#letsconnect .letsconnect_intro h1 {
 		text-transform: uppercase;
 		margin-bottom: 10px;
+		font-weight: 900;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
@@ -584,7 +586,6 @@ Page Structure
 	}
 
 	#letsconnect .letsconnect_question dt .term {
-		font-weight: bold;
 		display: block;
 		height: 40px;
 	}
@@ -595,6 +596,7 @@ Page Structure
 		line-height: 40px;
 		display: block;
 		color: #00c8dc;
+		font-weight: 900;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
@@ -663,6 +665,7 @@ Page Structure
 			line-height: 40px;
 			text-transform: uppercase;
 			margin-bottom: 20px;
+			font-weight: 900;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
