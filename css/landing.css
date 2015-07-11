@@ -518,6 +518,7 @@ Page Structure
 				filter: alpha(opacity=100);
 				margin: 0 auto 20px auto;
 				height: auto;
+				border-bottom: 0;
 
 			}
 
