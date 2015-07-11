@@ -591,7 +591,7 @@ Page Structure
 
 	#letsconnect .letsconnect_question dt .phrase {
 		text-transform: uppercase;
-		font-size: 40px;
+		font-size: 37px;
 		line-height: 40px;
 		display: block;
 		color: #00c8dc;
@@ -659,7 +659,6 @@ Page Structure
 		}
 
 		#letsconnect .letsconnect_question dd h2 {
-			width: 450px;
 			font-size: 40px;
 			line-height: 40px;
 			text-transform: uppercase;
@@ -667,13 +666,25 @@ Page Structure
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
-		#letsconnect .letsconnect_question dd p {
-			box-sizing: border-box;
-			width: 450px;
-		}
-
 		#letsconnect .letsconnect_questions dd p a {
 			color: #00c8dc;
+		}
+
+		#letsconnect .letsconnect_question dd.existing_client h2 {
+			width: 740px;
+		}
+		#letsconnect .letsconnect_question dd.future_client h2 {
+			width: 550px;
+		}
+		#letsconnect .letsconnect_question dd.existing_team h2 {
+			width: 740px;
+			font-size: 35px;
+			line-height: 35px;
+		}
+		#letsconnect .letsconnect_question dd.future_team h2 {
+			width: 740px;
+			font-size: 33px;
+			line-height: 33px;
 		}
 
 	#letsconnect .letsconnect_outro {
