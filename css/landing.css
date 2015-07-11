@@ -390,7 +390,7 @@ Page Structure
 	line-height: 18px;
 }
 
-	#howwedoit .howwedoit_intro, #howwedoit .howwedoit_outro, #howwedoit .howwedoit_content {
+	#howwedoit .howwedoit_intro, #howwedoit .howwedoit_content {
 		max-width: 735px;
 		margin: 0 auto;
 		padding: 0 10px 18px 10px;
@@ -400,6 +400,72 @@ Page Structure
 			text-transform: uppercase;
 			padding-bottom: 18px;
 		}
+
+		#howwedoit .howwedoit_content dt {
+			position: relative;
+			display: inline-block;
+			width: 170px;
+			height: 50px;
+		}
+
+		#howwedoit .howwedoit_content dt .term {
+			padding-left: 10px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#howwedoit .howwedoit_content dt .phrase {
+			padding-left: 10px;
+			display: block;
+			font-size: 14px;
+		}
+
+			#howwedoit .howwedoit_content dt .phrase.active {
+				display: block;
+			}
+
+		#howwedoit .howwedoit_content dd {
+			display: none;
+		}
+
+		#howwedoit .howwedoit_content dd.active {
+			display: block;
+			width: 100%;
+			max-width: 735px;
+			margin: 0 auto;
+			height: 50px;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			border-top: 1px solid #00c8dc;
+			border-bottom: 1px solid #00c8dc;
+			height: 100px;
+			box-sizing: border-box;
+		}
+
+			#howwedoit .howwedoit_content dd .pullquote {
+				position: absolute;
+				width: 170px;
+				color: #00c8dc;
+				font-size: 36px;
+				top: 20px;
+				left: 10px;
+			}
+
+			#howwedoit .howwedoit_content dd p {
+				box-sizing: border-box;
+				font-size: 15px;
+				width: 100%;
+				padding: 12px 20px 0 185px;
+			}
+
+	#howwedoit .howwedoit_outro {
+		max-width: 735px;
+		margin: 120px auto 0 auto;
+		padding: 0 10px 18px 10px;
+	}
 
 #testimonials {
 	padding-top: 55px;
