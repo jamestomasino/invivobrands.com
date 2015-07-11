@@ -18,18 +18,18 @@
 			var i = items.length; while (i--) {
 				var item = items[i];
 				var header = DOM.find('dt', item)[0];
+				var term = DOM.find('.term', item)[0];
 				var phrase = DOM.find('.phrase', item)[0];
 				var content = DOM.find('dd', item)[0];
 
 				if (header === evt.currentTarget) {
-					if (DOM.hasClass(phrase, 'active')) {
-						DOM.removeClass(phrase, 'active');
-						DOM.removeClass(content, 'active');
-					} else {
+					if (!DOM.hasClass(term, 'active')) {
+						DOM.addClass(term, 'active');
 						DOM.addClass(phrase, 'active');
 						DOM.addClass(content, 'active');
 					}
 				} else {
+					DOM.removeClass(term, 'active');
 					DOM.removeClass(phrase, 'active');
 					DOM.removeClass(content, 'active');
 				}
