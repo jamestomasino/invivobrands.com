@@ -19,16 +19,14 @@
 			var i = items.length; while (i--) {
 				var item = items[i];
 				var header = DOM.find('dt', item)[0];
-				var content = DOM.find('dd', item)[0];
+				var par = header.parentElement;
 
 				if (header === evt.currentTarget) {
-					if (!DOM.hasClass(header, 'active')) {
-						DOM.addClass(header, 'active');
-						DOM.addClass(content, 'active');
+					if (!DOM.hasClass(par, 'active')) {
+						DOM.addClass(par, 'active');
 					}
 				} else {
-					DOM.removeClass(header, 'active');
-					DOM.removeClass(content, 'active');
+					DOM.removeClass(par, 'active');
 				}
 			}
 		}

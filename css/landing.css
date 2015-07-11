@@ -547,24 +547,24 @@
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
 
-	#letsconnect .letsconnect_question dt.active {
+	#letsconnect .letsconnect_question .active dt {
 		background-color: #ff4900;
 		border: 5px solid #ff4900;
 		padding-top: 0;
 	}
 
-		#letsconnect .letsconnect_question dt.active .phrase {
+		#letsconnect .letsconnect_question .active dt .phrase {
 			color: #ffffff;
 		}
 
 
-		#letsconnect .letsconnect_question dt.active .arrow_container {
+		#letsconnect .letsconnect_question .active dt .arrow_container {
 			position: absolute;
 			bottom: 70px;
 			left: 55px;
 		}
 
-			#letsconnect .letsconnect_question dt.active .arrow_container .line {
+			#letsconnect .letsconnect_question .active dt .arrow_container .line {
 				position: absolute;
 				border-width: 1px 0px 0px 0px;
 				border-style: dashed;
@@ -601,7 +601,7 @@
 		box-sizing: border-box;
 	}
 
-		#letsconnect .letsconnect_question dd.active {
+		#letsconnect .letsconnect_question .active dd {
 			display: block;
 			opacity: 1;
 			filter: alpha(opacity=100);
