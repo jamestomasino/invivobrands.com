@@ -75,7 +75,7 @@
 						el[i].className = (el[i].className === "") ? classname : el[i].className + " " + classname;
 				}
 			} else {
-				if (el.className.indexOf(classname) === -1)
+				if (!el.className || (el.className && el.className.indexOf(classname) === -1))
 					el.className = (el.className === "") ? classname : el.className + " " + classname;
 			}
 		}
