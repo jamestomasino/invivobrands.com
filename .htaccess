@@ -3,6 +3,7 @@ AddType text/x-component .htc
 
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
+	Options -Indexes
     RewriteEngine On
 
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
