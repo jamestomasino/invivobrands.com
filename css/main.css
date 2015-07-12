@@ -167,5 +167,10 @@ a:hover {
 }
 
 /* =============================================================================
-   4.0 Internet Explorer Fixes
+   4.0 Browser Bug Fixes
    ========================================================================== */
+
+/* Chrome rendering issue on resize with mediaqueries */
+@-webkit-keyframes androidBugfix {from { padding: 0; } to { padding: 0; }}
+body { -webkit-animation: androidBugfix infinite 1s; }
+.renderfix { transform: translateZ(0); }

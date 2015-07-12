@@ -418,35 +418,18 @@
 
 		#howwedoit .howwedoit_content dt .phrase {
 			padding-left: 10px;
-			display: block;
-			opacity: 0;
-			filter: alpha(opacity=0);
-			-webkit-transition-property: -webkit-transform, opacity;
-					transition-property: transform, opacity;
-			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-					transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			-webkit-transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
-					transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+			display: none;
 		}
 
-			#howwedoit .howwedoit_content dt .active .phrase {
-				opacity: 1;
-				filter: alpha(opacity=100);
+			#howwedoit .howwedoit_content .active dt .phrase {
+				block;
 			}
 
 		/* TODO: Arrow in How We Do It content
 		**/
 
 		#howwedoit .howwedoit_content dd {
-			display: block;
-			opacity: 0;
-			filter: alpha(opacity=0);
-			-webkit-transition-property: -webkit-transform, opacity;
-					transition-property: transform, opacity;
-			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-					transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-			-webkit-transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
-					transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+			display: none;
 			width: 100%;
 			max-width: 735px;
 			margin: 0 auto;
@@ -463,8 +446,7 @@
 		}
 
 		#howwedoit .howwedoit_content .active dd {
-			opacity: 1;
-			filter: alpha(opacity=100);
+			display: block;
 		}
 
 			#howwedoit .howwedoit_content dd .pullquote {
@@ -580,14 +562,6 @@
 	#letsconnect .letsconnect_question dd {
 		position: absolute;
 		display: none;
-		opacity: 0;
-		filter: alpha(opacity=0);
-		-webkit-transition-property: -webkit-transform, opacity;
-				transition-property: transform, opacity;
-		-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-				transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
-		-webkit-transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
-				transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
 		width: 100%;
 		max-width: 735px;
 		margin: 0 auto;
@@ -603,8 +577,6 @@
 
 		#letsconnect .letsconnect_question .active dd {
 			display: block;
-			opacity: 1;
-			filter: alpha(opacity=100);
 		}
 
 		#letsconnect .letsconnect_question dd h2 {
