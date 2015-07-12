@@ -15,7 +15,6 @@
 			else {
 				window.event.returnValue = false;
 			}
-			console.log (evt.currentTarget);
 			var i = items.length; while (i--) {
 				var item = items[i];
 				var header = DOM.find('dt', item)[0];
