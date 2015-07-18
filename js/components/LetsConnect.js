@@ -58,37 +58,38 @@
 				// Special hack for webkit rendering issue
 				var resizeTimeout;
 
-				function fixActiveItem() {
-					var el = DOM.find('.active', DOM_EL)[0];
-					DOM.removeClass(el, 'active');
-					DOM.offsetHeight;
-					setTimeout(function () {
-						DOM.addClass(el, 'active');
-					}, 20);
-				}
-
-				function actualResizeHandler() {
-					var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-					if (isSmallScreen && w > 735) {
-						isSmallScreen = false;
-						fixActiveItem();
-					} else if (w < 735) {
-						isSmallScreen = true;
-					}
-				}
-
-				function resizeThrottler() {
-					if ( !resizeTimeout ) {
-						resizeTimeout = setTimeout(function() {
-							resizeTimeout = null;
-							actualResizeHandler();
-						}, 66);
-					}
-				}
 				// Special hack for webkit rendering issue
 				window.addEventListener("resize", resizeThrottler, false);
 				actualResizeHandler();
 				fixActiveItem();
+			}
+
+			function fixActiveItem() {
+				var el = DOM.find('.active', DOM_EL)[0];
+				DOM.removeClass(el, 'active');
+				DOM.offsetHeight;
+				setTimeout(function () {
+					DOM.addClass(el, 'active');
+				}, 20);
+			}
+
+			function actualResizeHandler() {
+				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+				if (isSmallScreen && w > 735) {
+					isSmallScreen = false;
+					fixActiveItem();
+				} else if (w < 735) {
+					isSmallScreen = true;
+				}
+			}
+
+			function resizeThrottler() {
+				if ( !resizeTimeout ) {
+					resizeTimeout = setTimeout(function() {
+						resizeTimeout = null;
+						actualResizeHandler();
+					}, 66);
+				}
 			}
 		}
 
