@@ -6,7 +6,7 @@ Location: Pennsylvania, USA
 
 /* SITE */
 
-Last update: YYYY/MM/DD
+Last update: 2015/07/12
 Language: English
 Standards: HTML5, CSS3, VanillaJS
 IDE: vim

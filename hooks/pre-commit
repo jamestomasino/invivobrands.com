@@ -9,4 +9,4 @@ TAB=$'\t'
 # File References
 README="$LOCAL_DIR/README.md"
 TODO="$LOCAL_DIR/TODO.md"
-SRC="$LOCAL_DIR/js/app"
+SRC="$LOCAL_DIR/js/ap"

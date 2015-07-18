@@ -644,7 +644,7 @@
 			background: url(../images/logo.png);
 			background-size: 83px 32px;
 			background-repeat: no-repeat;
-			-ms-behavior: url(../polyfill/backgroundsize.min.htc);
+			-ms-behavior: url(polyfill/backgroundsize.min.htc);
 		}
 
 		#footer .wrapper .contact {
