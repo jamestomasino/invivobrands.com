@@ -7,6 +7,7 @@ function landing() {
 	var Analytics           = NS.use('lib.Analytics');
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
+	var Animate             = NS.use('components.Animate');
 	var Header              = NS.use('components.Header');
 	var HowWeDoIt           = NS.use('components.HowWeDoIt');
 	var LetsConnect         = NS.use('components.LetsConnect');
@@ -28,6 +29,15 @@ function landing() {
 	// Menu Component
 	var menu = new Menu("#navigation", "#menu");
 
+	// Animate Component
+	// Triggers 'animate' class on each div when it comes into view
+	var animate = new Animate([
+		'#header',
+		'#gettoknowus',
+		'#whatwedo',
+		'#howwedoit',
+		'#testimonials',
+		'#letsconnect']);
 }
 
 // Define standard libraries for use, calculate polyfills and load page
@@ -35,6 +45,7 @@ var libs = [
 	'lib.DOM',
 	'lib.Draw',
 	'lib.Analytics',
+	'components.Animate',
 	'components.Header',
 	'components.Menu',
 	'components.HowWeDoIt',
