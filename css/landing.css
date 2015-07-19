@@ -23,7 +23,13 @@
 		color: #888;
 	}
 
+	#navigation a {
+		display: block;
+		width: 83px;
+	}
+
 	#navigation h1 {
+		display: block;
 		border: 0;
 		font: 0/0 a;
 		margin: 10px 0 0 10px;
@@ -39,7 +45,8 @@
 
 	#navigation .menu {
 		position: absolute;
-		right: 8px;
+		right: 0;
+		padding: 0 8px;
 		top: 0;
 		color: #787878;
 		font-size: 32px;
