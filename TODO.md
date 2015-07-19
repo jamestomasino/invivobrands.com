@@ -15,10 +15,10 @@
 [x] Top bar should auto-hide
 [x] Arrow missing in Firefox & Safari
 [x] Don't hide header when menu open
-[ ] Intro copy & Arrow and button cascade into place
+[x] Intro copy & Arrow and button cascade into place
 [ ] Text should animate
 [ ] Text should expand to fill the area of the screen at load time.
-[ ] Callout text should not appear till you've scrolled past header
+[x] Callout text should not appear till you've scrolled past header
 [ ] New design of callout
 
 ### What We Do ###

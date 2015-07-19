@@ -8,6 +8,7 @@
 		var Delegate = NS.use('lib.Delegate');
 
 		var navbar = null;
+		var tagline = null;
 
 		var menu = null;
 		var menuButton = null;
@@ -60,17 +61,21 @@
 					}
 
 				}
+
 				if (isAboveThreshold && y > topThreshold) {
 					DOM.addClass(backtotop, "active");
+					DOM.addClass(tagline, "active");
 					isAboveThreshold = false;
 				} else if (!isAboveThreshold && y < topThreshold) {
 					DOM.removeClass(backtotop, "active");
+					DOM.removeClass(tagline, "active");
 					isAboveThreshold = true;
 				}
 			}
 
 			// Identify navbar and add listeners
 			navbar = DOM.find(navbar_id);
+			tagline = DOM.find(".company_tagline", navbar)[0];
 			menuButton = DOM.find(".menu", navbar)[0];
 			menuButton.addEventListener("click", toggleMenu, false);
 			menuButton.addEventListener("touchend", toggleMenu, false);
