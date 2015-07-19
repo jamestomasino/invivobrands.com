@@ -48,7 +48,7 @@
 ### Footer ###
 
 [x] Darken copy, especially on logo
-[ ] Global "back to top" arrow thingy
+[x] Global "back to top" arrow thingy
 
 ### Font ###
 

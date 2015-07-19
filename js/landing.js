@@ -32,6 +32,7 @@ function landing() {
 	// Animate Component
 	// Triggers 'animate' class on each div when it comes into view
 	var animate = new Animate([
+		'#navigation',
 		'#header',
 		'#gettoknowus',
 		'#whatwedo',
