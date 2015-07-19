@@ -7,6 +7,9 @@
 		var Draw = NS.use('lib.Draw');
 		var DOM_EL = null;
 
+		var minHeight = 310;
+		var maxHeight = 865;
+
 		var Header = function ( dom_id ) {
 			DOM_EL = DOM.find(dom_id);
 			var headerArrow = DOM.find('.arrow_container', DOM_EL)[0];
@@ -16,6 +19,10 @@
 			headerArrow.appendChild(line1);
 			headerArrow.appendChild(line2);
 			headerArrow.appendChild(line3);
+
+			var bgtextfill = DOM.find('.bgtextfill', DOM_EL)[0];
+			var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+			bgtextfill.style.height = Math.min(Math.max(h,minHeight),maxHeight) + "px";
 		}
 
 		var namespace = new NS ( 'components' );

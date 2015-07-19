@@ -188,8 +188,12 @@
 }
 
 	#header .wrapper {
+		position: absolute;
 		max-width: 735px;
-		margin: -310px auto 0 auto;
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
 		height: 310px;
 		z-index: 1;
 	}
@@ -293,7 +297,7 @@
 
 	#header .bgtextfill {
 		display: block;
-		height: 310px;
+		height: 865px;
 		width: 100%;
 		overflow: hidden;
 		color: #ff1e00;
