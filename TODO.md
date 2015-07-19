@@ -6,11 +6,12 @@
 
 ### Overall Color ###
 
-[ ] 5 Orange options coming to demo for Fernando & V
+[x] 5 Orange options coming to demo for Fernando & V
 
 ### Top ###
 
-[ ] Top bar should auto-hide
+[ ] Remove borders
+[x] Top bar should auto-hide
 [x] Arrow missing in Firefox & Safari
 [ ] Intro copy & Arrow and button cascade into place
 [ ] Text should animate
