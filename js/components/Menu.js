@@ -5,6 +5,7 @@
 
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');
+		var Delegate = NS.use('lib.Delegate');
 
 		var navbar = null;
 
@@ -33,6 +34,11 @@
 				DOM.toggleClass(menuList, "active");
 			}
 
+			function menuItemClicked(evt) {
+				DOM.removeClass(menuButton, "active");
+				DOM.removeClass(menuList, "active");
+			}
+
 			function hasScrolled() {
 				var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 				if (Math.abs(lastScrollTop - y) <= delta) return;
@@ -55,6 +61,12 @@
 			// Identify menu
 			menu = DOM.find(menu_id);
 			menuList = DOM.find("ol", menu)[0];
+			var menuItems = DOM.find("a", menuList);
+
+			// Close menu on nav item click
+			var i = menuItems.length; while (i--) {
+				menuItems[i].addEventListener("click", Delegate(menuItemClicked, this), false);
+			}
 
 			// Handle scroll
 			window.addEventListener("scroll", Debounce(hasScrolled, 250, false), false);
@@ -65,6 +77,6 @@
 
 	}
 
-	NS.load ( ['lib.DOM', 'lib.Debounce' ], classWrapper, this );
+	NS.load ( ['lib.DOM', 'lib.Debounce', 'lib.Delegate'], classWrapper, this );
 
 })(window.NS);
