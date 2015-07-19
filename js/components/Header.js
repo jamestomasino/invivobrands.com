@@ -22,6 +22,7 @@
 
 			var bgtextfill = DOM.find('.bgtextfill', DOM_EL)[0];
 			var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+			h = h - 50;
 			bgtextfill.style.height = Math.min(Math.max(h,minHeight),maxHeight) + "px";
 		}
 
