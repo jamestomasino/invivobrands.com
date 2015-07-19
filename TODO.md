@@ -17,7 +17,7 @@
 [x] Don't hide header when menu open
 [x] Intro copy & Arrow and button cascade into place
 [ ] Text should animate
-[ ] Text should expand to fill the area of the screen at load time.
+[x] Text should expand to fill the area of the screen at load time.
 [x] Callout text should not appear till you've scrolled past header
 [ ] New design of callout
 
