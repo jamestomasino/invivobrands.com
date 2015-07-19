@@ -204,15 +204,19 @@
 		background: #464646;
 		color: #FFF;
 		z-index: 1;
-		-webkit-transition: top 0.2s ease-in-out;
-		   -moz-transition: top 0.2s ease-in-out;
-		    -ms-transition: top 0.2s ease-in-out;
-		     -o-transition: top 0.2s ease-in-out;
-		        transition: top 0.2s ease-in-out;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: top 0.2s ease-in, opacity 0.2s ease-in;
+		   -moz-transition: top 0.2s ease-in, opacity 0.2s ease-in;
+		    -ms-transition: top 0.2s ease-in, opacity 0.2s ease-in;
+		     -o-transition: top 0.2s ease-in, opacity 0.2s ease-in;
+		        transition: top 0.2s ease-in, opacity 0.2s ease-in;
 	}
 
 	#header.animate .intro {
 		top: 0;
+		opacity: 1;
+		filter: alpha(opacity=100);
 	}
 
 		#header .intro p {
@@ -260,8 +264,8 @@
 		width: 100%;
 		max-width: 562px;
 		z-index: 0;
-		opacity: 0;
 		top: -50px;
+		opacity: 0;
 		filter: alpha(opacity=0);
 		-webkit-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
 		   -moz-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
