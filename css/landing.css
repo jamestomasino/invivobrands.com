@@ -190,6 +190,7 @@
 
 	#header .wrapper {
 		position: absolute;
+		width: 100%;
 		max-width: 735px;
 		margin: 0 auto;
 		top: 0;
