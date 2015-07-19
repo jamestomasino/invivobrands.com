@@ -11,7 +11,8 @@
 				padding-left: 0;
 			}
 				#howwedoit .howwedoit_content .active dt .term {
-					color: #000000;
+					color: #333333;
+					background-color: #FFFFFF;
 				}
 
 			#howwedoit .howwedoit_content dt .phrase {
@@ -66,7 +67,8 @@
 
 		#letsconnect .letsconnect_question .active dt .phrase {
 			padding-left: 5px;
-			border-left: 10px solid #ff4900;
+			margin-right: 70px;
+			background-color: #ff4900;
 		}
 
 	#letsconnect .letsconnect_question dt .term {

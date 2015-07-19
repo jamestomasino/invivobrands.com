@@ -219,7 +219,7 @@
 
 	#gettoknowus .gettoknowus_intro .pullquote {
 		text-transform: uppercase;
-		max-width: 350px;
+		max-width: 420px;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
 	}
@@ -321,19 +321,7 @@
 		max-width: 365px;
 		float: left;
 		padding: 0 10px;
-		-webkit-column-count:2;
-		-moz-column-count:2;
-		column-count:2;
-		-webkit-column-gap:20px;
-		-moz-column-gap:20px;
-		column-gap:20px;
-		-webkit-column-fill: auto;
-		-moz-column-fill: auto;
-		column-fill: auto;
 	}
-
-	/* TODO: Get multicolumn support <IE10
-	**/
 
 		#whatwedo .whatwedo_content h3 {
 			text-transform: uppercase;
@@ -343,8 +331,8 @@
 			cursor: pointer;
 			width: 163px;
 			height: 55px;
-			background-color: #464646;
-			color: #787878;
+			color: #ffffff;
+			background-color: #ff4900;
 			box-sizing: border-box;
 			padding: 5px 7px;
 			margin-bottom: 10px;
@@ -352,24 +340,21 @@
 			font-weight: 900;
 		}
 
-			#whatwedo .whatwedo_content h3.active {
-				color: #ffffff;
-				background-color: #ff4900;
-			}
+		#whatwedo .whatwedo_content .digital_innovation {
+			float: left;
+			margin-right: 10px;
+		}
+
+		#whatwedo .whatwedo_content .brand_communication {
+			float: left;
+		}
 
 		#whatwedo .whatwedo_content ul {
 			margin: 0 0 10px 0;
-			max-height: 0;
-			transition-property: transform
-			-webkit-transition: max-height 0.25s ease-out;
-			transition: max-height 0.25s ease-out;
-			transition-timing-function: cubic-bezier(0.22,.88,.01,.99);
+			max-height: 750px;
 			overflow: hidden;
 		}
 
-			#whatwedo .whatwedo_content ul.active {
-				max-height: 750px;
-			}
 
 		#whatwedo .whatwedo_content li {
 			display: block;
@@ -409,12 +394,15 @@
 		}
 
 		#howwedoit .howwedoit_content dt .term {
-			padding-left: 10px;
+			margin-left: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
 			font-weight: 900;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 			#howwedoit .howwedoit_content .active dt .term {
-				color: #00c8dc;
+				background-color: #00c8dc;
+				color: #FFFFFF;
 			}
 
 		#howwedoit .howwedoit_content dt .phrase {
@@ -485,6 +473,11 @@
 	font-size: 16px;
 	line-height: 18px;
 }
+
+	#letsconnect a {
+		color: #73E6FF;
+	}
+
 	#letsconnect .letsconnect_intro {
 		max-width: 735px;
 		margin: 0 auto 20px auto;
