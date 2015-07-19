@@ -68,7 +68,7 @@ body {
     background-color: #fff;
     color: #333;
     font-style: normal;
-    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+    font-family: "Replica-Regular-S", "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
     font-size: 18px;
     line-height: 1.45;
     font-weight: 400;
@@ -126,6 +126,29 @@ a:visited,a:link,a:active {
 
 a:hover {
 	text-decoration: underline;
+}
+
+
+@font-face {
+    font-family: "Replica-Regular-S";
+    src:url("../fonts/lineto-replica-regular.eot");
+    src:url("../fonts/lineto-replica-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lineto-replica-regular.woff") format("woff"),
+        url("../fonts/lineto-replica-regular.ttf") format("truetype"),
+        url("../fonts/lineto-replica-regular.svg#lineto-replica-regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Replica-Heavy-S";
+    src:url("../fonts/lineto-replica-heavy.eot");
+    src:url("../fonts/lineto-replica-heavy.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lineto-replica-heavy.woff") format("woff"),
+        url("../fonts/lineto-replica-heavy.ttf") format("truetype"),
+        url("../fonts/lineto-replica-heavy.svg#lineto-replica-heavy") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* =============================================================================
