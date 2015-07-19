@@ -613,7 +613,7 @@
 	padding-top: 55px;
 	width: 100%;
 	background: #323232;
-	color: #FFF;
+	color: #666666;
 	z-index: 1;
 	font-size: 10px;
 	line-height: 12px;
@@ -638,6 +638,8 @@
 			background-size: 83px 32px;
 			background-repeat: no-repeat;
 			-ms-behavior: url(polyfill/backgroundsize.min.htc);
+			opacity: .2;
+			filter: alpha(opacity=20);
 		}
 
 		#footer .wrapper .contact {

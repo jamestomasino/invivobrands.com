@@ -41,6 +41,10 @@
 [x] Expand orange over the conversational text
 [x] New blue options coming
 
+### Footer ###
+
+[x] Darken copy, especially on logo
+
 ### Font ###
 
 [ ] Still may be purchasing font
