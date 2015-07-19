@@ -57,7 +57,7 @@
 
 
 				// Special hack for webkit rendering issue
-				window.addEventListener("resize", Debounce(resizeHandler, 66, false), false);
+				window.addEventListener("resize", Debounce(resizeHandler, 66, true, true), false);
 				resizeHandler();
 				fixActiveItem();
 			}

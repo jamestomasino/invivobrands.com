@@ -4,6 +4,7 @@
 	function classWrapper() {
 
 		var DOM = NS.use('lib.DOM');
+		var Debounce = NS.use('lib.Debounce');
 		var DOM_EL = null;
 		var isSmallScreen = false;
 		var items = [];
@@ -39,9 +40,6 @@
 				headers[i].addEventListener("touchend", activeToggle, false);
 			}
 
-			// Special hack for webkit rendering issue
-			var resizeTimeout;
-
 			function fixActiveItem() {
 				var el = DOM.find('.active', DOM_EL)[0];
 				DOM.removeClass(el, 'active');
@@ -51,7 +49,7 @@
 				}, 20);
 			}
 
-			function actualResizeHandler() {
+			function resizeHandler() {
 				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 				if (isSmallScreen && w > 735) {
 					isSmallScreen = false;
@@ -61,17 +59,8 @@
 				}
 			}
 
-			function resizeThrottler() {
-				if ( !resizeTimeout ) {
-					resizeTimeout = setTimeout(function() {
-						resizeTimeout = null;
-						actualResizeHandler();
-					}, 66);
-				}
-			}
-			// Special hack for webkit rendering issue
-			window.addEventListener("resize", resizeThrottler, false);
-			actualResizeHandler();
+			window.addEventListener("resize", Debounce(resizeHandler, 66, true, true), false);
+			resizeHandler();
 			fixActiveItem();
 		}
 
@@ -80,6 +69,6 @@
 
 	}
 
-	NS.load ( ['lib.DOM' ], classWrapper, this );
+	NS.load ( ['lib.DOM', 'lib.Debounce' ], classWrapper, this );
 
 })(window.NS);
