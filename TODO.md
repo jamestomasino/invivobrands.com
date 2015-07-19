@@ -52,4 +52,4 @@
 
 ### Font ###
 
-[ ] Still may be purchasing font
+[x] Custom fonts
