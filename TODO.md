@@ -2,7 +2,8 @@
 
 ### Copy ###
 
-[x] Flow in new copy changes from Emily
+[x] Flow in new copy changes, v17
+[ ] Flow in new copy changes, v18
 
 ### Overall Color ###
 
@@ -31,10 +32,6 @@
 [x] Remove bottom blue bar
 [x] Hover labels to blue
 
-### Testimonals ###
-
-[ ] Create section slider & color filtering
-
 ### How We Do It & Let's Connect ###
 
 [x] Interactivity not working at all on safari or firefox aurora mac
@@ -45,6 +42,7 @@
 [x] Expand orange over the conversational text
 [x] New blue options coming
 [x] Add hover state
+[x] No option selected by default
 
 ### Footer ###
 

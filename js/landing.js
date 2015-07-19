@@ -36,7 +36,6 @@ function landing() {
 		'#gettoknowus',
 		'#whatwedo',
 		'#howwedoit',
-		'#testimonials',
 		'#letsconnect']);
 }
 
