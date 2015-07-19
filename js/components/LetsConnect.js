@@ -6,7 +6,6 @@
 		var DOM = NS.use('lib.DOM');
 		var Draw = NS.use('lib.Draw');
 		var Debounce = NS.use('lib.Debounce');
-		var DOM_EL = null;
 		var items = [];
 		var isSmallScreen = false;
 		var letsConnect;
@@ -34,6 +33,25 @@
 				} else {
 					DOM.removeClass(par, 'active');
 				}
+			}
+		}
+
+		function fixActiveItem() {
+			var el = DOM.find('.active', letsConnect)[0];
+			DOM.removeClass(el, 'active');
+			DOM.offsetHeight;
+			setTimeout(function () {
+				DOM.addClass(el, 'active');
+			}, 20);
+		}
+
+		function resizeHandler() {
+			var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+			if (isSmallScreen && w > 735) {
+				isSmallScreen = false;
+				fixActiveItem();
+			} else if (w < 735) {
+				isSmallScreen = true;
 			}
 		}
 
@@ -67,24 +85,6 @@
 			resizeHandler();
 			fixActiveItem();
 
-			function fixActiveItem() {
-				var el = DOM.find('.active', DOM_EL)[0];
-				DOM.removeClass(el, 'active');
-				DOM.offsetHeight;
-				setTimeout(function () {
-					DOM.addClass(el, 'active');
-				}, 20);
-			}
-
-			function resizeHandler() {
-				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-				if (isSmallScreen && w > 735) {
-					isSmallScreen = false;
-					fixActiveItem();
-				} else if (w < 735) {
-					isSmallScreen = true;
-				}
-			}
 
 		}
 

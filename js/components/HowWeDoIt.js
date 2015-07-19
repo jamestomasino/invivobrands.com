@@ -32,7 +32,7 @@
 		}
 
 		var HowWeDoIt = function ( dom_id ) {
-			DOM_EL = DOM.find(dom_id)[0];
+			DOM_EL = DOM.find(dom_id);
 			var headers = DOM.find('dt', DOM_EL);
 			var i = headers.length; while (i--) {
 				items.push(headers[i].parentElement);

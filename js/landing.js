@@ -18,19 +18,24 @@ function landing() {
 	var analytics = new Analytics ( "UA-64803192-1" );
 
 	// Header Component
+	// - Add arrow lines
+	// - Size '.bgtextfill' to the client height
 	var header = new Header("#header");
 
 	// How We Do It Component
-	var howwedoit = new HowWeDoIt(".howwedoit_content");
+	// - Click/tap listeners to switch steps. Resize render fix
+	var howwedoit = new HowWeDoIt("#howwedoit");
 
 	// Let's Connect Component
+	// - Add arrow lines
+	// - Click/tap listeners to switch. Resize render fix
 	var letsconnect = new LetsConnect("#letsconnect");
 
 	// Menu Component
 	var menu = new Menu("#navigation", "#menu", "#back_to_top");
 
 	// Animate Component
-	// Triggers 'animate' class on each div when it comes into view
+	// - Triggers 'animate' class on each div when it comes into view
 	var animate = new Animate([
 		'#navigation',
 		'#header',
