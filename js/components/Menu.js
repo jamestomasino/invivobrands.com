@@ -13,14 +13,16 @@
 		var menuButton = null;
 		var menuList = null;
 
+		var backtotop = null;
+
 		// For scroll handling
 		var supportPageOffset = window.pageXOffset !== undefined;
 		var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
 		var lastScrollTop = 0;
 		var delta = 5;
+		var topThreshold = 150;
 
-
-		var Menu = function ( navbar_id, menu_id) {
+		var Menu = function ( navbar_id, menu_id, backtotop_id ) {
 
 			function toggleMenu(evt) {
 				evt = evt || window.event;
@@ -40,7 +42,10 @@
 			}
 
 			function hasScrolled() {
+				// scroll top
 				var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+
+				//
 				if (Math.abs(lastScrollTop - y) <= delta) return;
 
 				if (y > lastScrollTop) {
@@ -64,6 +69,9 @@
 			menu = DOM.find(menu_id);
 			menuList = DOM.find("ol", menu)[0];
 			var menuItems = DOM.find("a", menuList);
+
+			// Back To Top
+			backtotop = DOM.find(backtotop_id);
 
 			// Close menu on nav item click
 			var i = menuItems.length; while (i--) {

@@ -27,7 +27,7 @@ function landing() {
 	var letsconnect = new LetsConnect("#letsconnect");
 
 	// Menu Component
-	var menu = new Menu("#navigation", "#menu");
+	var menu = new Menu("#navigation", "#menu", "#back_to_top");
 
 	// Animate Component
 	// Triggers 'animate' class on each div when it comes into view
