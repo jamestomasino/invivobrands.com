@@ -408,7 +408,7 @@
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
-		#howwedoit .howwedoit_content dt .term:hover {
+		#howwedoit .howwedoit_content dt:hover .term {
 			color: #00c8dc;
 		}
 
