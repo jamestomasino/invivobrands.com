@@ -24,7 +24,7 @@ function landing() {
 	var howwedoit = new HowWeDoIt(".howwedoit_content");
 
 	// Let's Connect Component
-	var letsconnect = new LetsConnect(".letsconnect_question");
+	var letsconnect = new LetsConnect("#letsconnect");
 
 	// Menu Component
 	var menu = new Menu("#navigation", "#menu");

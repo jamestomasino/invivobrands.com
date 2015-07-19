@@ -9,6 +9,9 @@
 		var DOM_EL = null;
 		var items = [];
 		var isSmallScreen = false;
+		var letsConnect;
+		var letsConnectQuestion;
+		var letsConnectOutro;
 
 		function activeToggle(evt) {
 			evt = evt || window.event;
@@ -26,6 +29,7 @@
 				if (header === evt.currentTarget) {
 					if (!DOM.hasClass(par, 'active')) {
 						DOM.addClass(par, 'active');
+						DOM.addClass(letsConnectOutro, 'active');
 					}
 				} else {
 					DOM.removeClass(par, 'active');
@@ -34,33 +38,34 @@
 		}
 
 		var LetsConnect = function ( dom_id ) {
-			DOM_EL = DOM.find(dom_id)[0];
-			if (DOM_EL) {
-				var headers = DOM.find('dt', DOM_EL);
-				var i = headers.length; while (i--) {
-					items.push(headers[i].parentElement);
-					headers[i].addEventListener("click", activeToggle, false);
-					headers[i].addEventListener("touchend", activeToggle, false);
+			letsConnect = DOM.find(dom_id);
+			letsConnectQuestion = DOM.find('.letsconnect_question', letsConnect)[0];
+			letsConnectOutro = DOM.find('.letsconnect_outro', letsConnect)[0];
 
-					var headerArrow = DOM.find(".arrow_container", headers[i])[0];
-					if (headerArrow) {
-						var line1 = Draw.line(0,30,25,54);
-						var line2 = Draw.line(50,30,25,54);
-						var line3 = Draw.line(25,0,25,54);
-						headerArrow.appendChild(line1);
-						headerArrow.appendChild(line2);
-						headerArrow.appendChild(line3);
-					} else {
-						console.log ('Warning: .arrow_container not found.');
-					}
+			var headers = DOM.find('dt', letsConnectQuestion);
+			var i = headers.length; while (i--) {
+				items.push(headers[i].parentElement);
+				headers[i].addEventListener("click", activeToggle, false);
+				headers[i].addEventListener("touchend", activeToggle, false);
+
+				var headerArrow = DOM.find(".arrow_container", headers[i])[0];
+				if (headerArrow) {
+					var line1 = Draw.line(0,30,25,54);
+					var line2 = Draw.line(50,30,25,54);
+					var line3 = Draw.line(25,0,25,54);
+					headerArrow.appendChild(line1);
+					headerArrow.appendChild(line2);
+					headerArrow.appendChild(line3);
+				} else {
+					console.log ('Warning: .arrow_container not found.');
 				}
-
-
-				// Special hack for webkit rendering issue
-				window.addEventListener("resize", Debounce(resizeHandler, 66, true, true), false);
-				resizeHandler();
-				fixActiveItem();
 			}
+
+
+			// Special hack for webkit rendering issue
+			window.addEventListener("resize", Debounce(resizeHandler, 66, true, true), false);
+			resizeHandler();
+			fixActiveItem();
 
 			function fixActiveItem() {
 				var el = DOM.find('.active', DOM_EL)[0];

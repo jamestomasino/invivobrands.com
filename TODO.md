@@ -16,6 +16,8 @@
 [ ] Intro copy & Arrow and button cascade into place
 [ ] Text should animate
 [ ] Text should expand to fill the area of the screen at load time.
+[ ] Callout text should not appear till you've scrolled past header
+[ ] New design
 
 ### What We Do ###
 
@@ -26,6 +28,8 @@
 ### How We Do It ###
 
 [x] New indication of active tab
+[x] Remove bottom blue bar
+[x] Hover labels to blue
 
 ### Testimonals ###
 
@@ -40,6 +44,7 @@
 
 [x] Expand orange over the conversational text
 [x] New blue options coming
+[x] Add hover state
 
 ### Footer ###
 

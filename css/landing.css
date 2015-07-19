@@ -407,6 +407,11 @@
 			font-weight: 900;
 			font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
+
+		#howwedoit .howwedoit_content dt .term:hover {
+			color: #00c8dc;
+		}
+
 			#howwedoit .howwedoit_content .active dt .term {
 				background-color: #00c8dc;
 				color: #FFFFFF;
@@ -437,8 +442,7 @@
 			right: 0;
 			z-index: 1;
 			border-top: 1px solid #00c8dc;
-			border-bottom: 1px solid #00c8dc;
-			height: 115px;
+			height: auto;
 			box-sizing: border-box;
 		}
 
@@ -516,6 +520,10 @@
 		box-sizing: border-box;
 	}
 
+	#letsconnect .letsconnect_question dt:hover .phrase {
+		color: #FFFFFF;
+	}
+
 	#letsconnect .letsconnect_question dt .term {
 		display: block;
 		height: 40px;
@@ -530,6 +538,7 @@
 		font-weight: 900;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	}
+
 
 	#letsconnect .letsconnect_question .active dt {
 		background-color: #ff4900;
@@ -613,6 +622,11 @@
 
 	#letsconnect .letsconnect_outro {
 		display: block;
+		height: 2px;
+		background-color: #FFFFFF;
+	}
+
+	#letsconnect .letsconnect_outro.active {
 		background-color: #ff4900;
 		height: 292px;
 	}
