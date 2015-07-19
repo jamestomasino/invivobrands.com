@@ -11,7 +11,6 @@
 	right: 0;
 	z-index: 50;
 	border-right: 2px solid #333333;
-	border-left: 2px solid #333333;
 	-webkit-transition: top 0.2s ease-in-out;
 	transition: top 0.2s ease-in-out;
 }
@@ -115,8 +114,8 @@
 
 	#header .wrapper {
 		max-width: 735px;
-		margin: -300px auto 0 auto;
-		height: 300px;
+		margin: -310px auto 0 auto;
+		height: 310px;
 		z-index: 1;
 	}
 
@@ -127,9 +126,6 @@
 		padding: 50px 0 10px 10px;
 		background: #464646;
 		color: #FFF;
-		border-right: 2px solid #333333;
-		border-left: 2px solid #333333;
-		border-bottom: 2px solid #333333;
 	}
 
 		#header .intro p {
@@ -175,9 +171,6 @@
 			width: 90px;
 			padding: 5px;
 			box-sizing: border-box;
-			border-right: 2px solid #333333;
-			border-left: 2px solid #333333;
-			border-bottom: 2px solid #333333;
 		}
 
 	#header .bgtextfill {
@@ -335,7 +328,6 @@
 			font-size: 15px;
 			line-height: 15px;
 			display: block;
-			cursor: pointer;
 			width: 163px;
 			height: 55px;
 			color: #ffffff;
@@ -419,6 +411,7 @@
 
 			#howwedoit .howwedoit_content .active dt .phrase {
 				display: block;
+				padding-top: 3px;
 			}
 
 		/* TODO: Arrow in How We Do It content

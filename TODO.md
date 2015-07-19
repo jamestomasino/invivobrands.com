@@ -10,7 +10,7 @@
 
 ### Top ###
 
-[ ] Remove borders
+[x] Remove borders
 [x] Top bar should auto-hide
 [x] Arrow missing in Firefox & Safari
 [ ] Intro copy & Arrow and button cascade into place
