@@ -21,6 +21,7 @@
 		var lastScrollTop = 0;
 		var delta = 5;
 		var topThreshold = 150;
+		var isAboveThreshold = true;
 
 		var Menu = function ( navbar_id, menu_id, backtotop_id ) {
 
@@ -45,17 +46,26 @@
 				// scroll top
 				var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 
-				//
-				if (Math.abs(lastScrollTop - y) <= delta) return;
+				// If movement broke threshold, show/hide navbar
+				if (Math.abs(lastScrollTop - y) > delta) {
 
-				if (y > lastScrollTop) {
-					if (!DOM.hasClass(menuList, "active")) {
-						DOM.addClass(navbar, 'nav-up');
+					if (y > lastScrollTop) {
+						if (!DOM.hasClass(menuList, "active")) {
+							DOM.addClass(navbar, 'nav-up');
+							lastScrollTop = y;
+						}
+					} else if ( y < lastScrollTop ) {
+						DOM.removeClass(navbar, 'nav-up');
 						lastScrollTop = y;
 					}
-				} else if ( y < lastScrollTop ) {
-					DOM.removeClass(navbar, 'nav-up');
-					lastScrollTop = y;
+
+				}
+				if (isAboveThreshold && y > topThreshold) {
+					DOM.addClass(backtotop, "active");
+					isAboveThreshold = false;
+				} else if (!isAboveThreshold && y < topThreshold) {
+					DOM.removeClass(backtotop, "active");
+					isAboveThreshold = true;
 				}
 			}
 

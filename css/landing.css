@@ -122,10 +122,21 @@
 
 #back_to_top {
 	position: fixed;
-	right: 0;
+	right: -100px;
 	bottom: 0;
 	z-index: 90;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transition-property: right, opacity;
+	-webkit-transition: right 0.5s ease-in-out, opacity 0.5s ease-in;
+	transition: right 0.5s ease-in-out, opacity 0.5s ease-in;
 }
+
+	#back_to_top.active {
+		right: 0;
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
 
 #back_to_top a {
 	display: block;
@@ -215,7 +226,7 @@
 		height: 310px;
 		width: 100%;
 		overflow: hidden;
-		color: #ff4900;
+		color: #ff1e00;
 		font-size: 100px;
 		line-height: 110px;
 		white-space: nowrap;
@@ -263,12 +274,12 @@
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
 		padding-top: 18px;
-		color: #ff4900;
+		color: #ff1e00;
 	}
 
 	#gettoknowus .gettoknowus_intro .copy {
 		padding: 18px 0;
-		border-bottom: 1px dashed #ff4900;
+		border-bottom: 1px dashed #ff1e00;
 	}
 
 	#gettoknowus .gettoknowus_outro {
@@ -312,7 +323,7 @@
 
 			#gettoknowus .gettoknowus_outro .button a {
 				color: #FFF;
-				background: #ff4900;
+				background: #ff1e00;
 				font-size: 16px;
 				line-height: 18px;
 				padding: 5px 7px;
@@ -347,7 +358,7 @@
 		font-size: 40px;
 		line-height: 40px;
 		text-transform: uppercase;
-		color: #ff4900;
+		color: #ff1e00;
 		margin: 18px 18px 18px 0;
 		font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
@@ -368,7 +379,7 @@
 			width: 163px;
 			height: 55px;
 			color: #ffffff;
-			background-color: #ff4900;
+			background-color: #ff1e00;
 			box-sizing: border-box;
 			padding: 5px 7px;
 			margin-bottom: 10px;
@@ -565,8 +576,8 @@
 
 
 	#letsconnect .letsconnect_question .active dt {
-		background-color: #ff4900;
-		border: 5px solid #ff4900;
+		background-color: #ff1e00;
+		border: 5px solid #ff1e00;
 		padding-top: 0;
 	}
 
@@ -651,7 +662,7 @@
 	}
 
 	#letsconnect .letsconnect_outro.active {
-		background-color: #ff4900;
+		background-color: #ff1e00;
 		height: 292px;
 	}
 
