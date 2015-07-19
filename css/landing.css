@@ -806,3 +806,7 @@
 			right: 10px;
 			top: 0;
 		}
+
+.no-js #header .bgtextfill {
+	height: 310px;
+}

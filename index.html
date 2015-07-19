@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -14,6 +14,7 @@
     <script>
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
     document.cookie='resolution='+w+'; path=/';
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
     </script>
 
     <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8" />
