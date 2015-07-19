@@ -8,24 +8,21 @@ function landing() {
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
 	var Header              = NS.use('components.Header');
-	var WhatWeDo            = NS.use('components.WhatWeDo');
 	var HowWeDoIt           = NS.use('components.HowWeDoIt');
 	var LetsConnect         = NS.use('components.LetsConnect');
 	var Menu                = NS.use('components.Menu');
 
+
 	// Set up Google Analytics
-	var analytics           = new Analytics ( "UA-64803192-1" );
+	var analytics = new Analytics ( "UA-64803192-1" );
 
 	// Header Component
 	var header = new Header("#header");
 
-	// WhatWeDo Component
-	var whatwedo = new WhatWeDo(".whatwedo_content");
-
-	// WhatWeDo Component
+	// How We Do It Component
 	var howwedoit = new HowWeDoIt(".howwedoit_content");
 
-	// WhatWeDo Component
+	// Let's Connect Component
 	var letsconnect = new LetsConnect(".letsconnect_question");
 
 	// Menu Component
@@ -39,7 +36,6 @@ var libs = [
 	'lib.Draw',
 	'lib.Analytics',
 	'components.Header',
-	'components.WhatWeDo',
 	'components.Menu',
 	'components.HowWeDoIt',
 	'components.LetsConnect' ];
