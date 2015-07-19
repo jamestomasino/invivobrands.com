@@ -44,8 +44,10 @@
 				if (Math.abs(lastScrollTop - y) <= delta) return;
 
 				if (y > lastScrollTop) {
-					DOM.addClass(navbar, 'nav-up');
-					lastScrollTop = y;
+					if (!DOM.hasClass(menuList, "active")) {
+						DOM.addClass(navbar, 'nav-up');
+						lastScrollTop = y;
+					}
 				} else if ( y < lastScrollTop ) {
 					DOM.removeClass(navbar, 'nav-up');
 					lastScrollTop = y;
