@@ -15,6 +15,7 @@ function landing() {
 
 
 	// Set up Google Analytics
+	// - Hijack exit links for tracking
 	var analytics = new Analytics ( "UA-64803192-1" );
 
 	// Header Component
