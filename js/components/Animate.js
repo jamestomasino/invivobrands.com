@@ -9,6 +9,7 @@
 		var supportPageOffset = window.pageXOffset !== undefined;
 		var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
 		var objs = [];
+		var debounceScroll;
 
 		var Animate = function ( els ) {
 
@@ -22,7 +23,10 @@
 					var offset   = elemRect.top - bodyRect.top;
 					if(y > (offset - (h*.75))) {
 						DOM.addClass(objs[i], 'animate');
-						objs.splice[i,1];
+						objs.splice(i,1);
+						if (objs.length === 0) {
+							window.removeEventListener("scroll", debounceScroll, false);
+						}
 					}
 				}
 			}
@@ -32,7 +36,8 @@
 				objs.push ((obj.length) ? obj[0] : obj);
 			}
 
-			window.addEventListener("scroll", Debounce(hasScrolled, 250, false), false);
+			debounceScroll = Debounce(hasScrolled, 250, false);
+			window.addEventListener("scroll", debounceScroll, false);
 			hasScrolled();
 		}
 

@@ -5,6 +5,7 @@
 
 		var DOM = NS.use('lib.DOM');
 		var Draw = NS.use('lib.Draw');
+		var Debounce = NS.use('lib.Debounce');
 		var DOM_EL = null;
 		var items = [];
 		var isSmallScreen = false;
@@ -56,11 +57,8 @@
 
 
 				// Special hack for webkit rendering issue
-				var resizeTimeout;
-
-				// Special hack for webkit rendering issue
-				window.addEventListener("resize", resizeThrottler, false);
-				actualResizeHandler();
+				window.addEventListener("resize", Debounce(resizeHandler, 66, false), false);
+				resizeHandler();
 				fixActiveItem();
 			}
 
@@ -73,7 +71,7 @@
 				}, 20);
 			}
 
-			function actualResizeHandler() {
+			function resizeHandler() {
 				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 				if (isSmallScreen && w > 735) {
 					isSmallScreen = false;
@@ -83,14 +81,6 @@
 				}
 			}
 
-			function resizeThrottler() {
-				if ( !resizeTimeout ) {
-					resizeTimeout = setTimeout(function() {
-						resizeTimeout = null;
-						actualResizeHandler();
-					}, 66);
-				}
-			}
 		}
 
 		var namespace = new NS ( 'components' );
@@ -98,6 +88,6 @@
 
 	}
 
-	NS.load ( ['lib.DOM', 'lib.Draw' ], classWrapper, this );
+	NS.load ( ['lib.DOM', 'lib.Draw', 'lib.Debounce' ], classWrapper, this );
 
 })(window.NS);
