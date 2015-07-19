@@ -3,7 +3,7 @@
 ### Copy ###
 
 [x] Flow in new copy changes, v17
-[ ] Flow in new copy changes, v18
+[x] Flow in new copy changes, v18
 
 ### Overall Color ###
 
