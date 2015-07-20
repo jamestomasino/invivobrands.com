@@ -656,6 +656,12 @@
 		vertical-align: top;
 		padding: 5px 5px 0 0;
 		box-sizing: border-box;
+		border: 0 solid #323232;
+		-webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+		   -moz-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+		    -ms-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+		     -o-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+		        transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 	}
 
 	#letsconnect .letsconnect_question dt:hover .phrase {
@@ -762,6 +768,11 @@
 		display: block;
 		height: 2px;
 		background-color: #FFFFFF;
+		-webkit-transition: background-color 0.3s ease-in, height 0.3s ease-in;
+		   -moz-transition: background-color 0.3s ease-in, height 0.3s ease-in;
+		    -ms-transition: background-color 0.3s ease-in, height 0.3s ease-in;
+		     -o-transition: background-color 0.3s ease-in, height 0.3s ease-in;
+		        transition: background-color 0.3s ease-in, height 0.3s ease-in;
 	}
 
 	#letsconnect .letsconnect_outro.active {
