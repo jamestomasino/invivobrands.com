@@ -24,16 +24,20 @@
 			if(el && el.href) {
 				var link = el.getAttribute('href');
 				if(link.substr(0,1) === '#') {
-					var el = DOM.find(link);
-					if (el) {
-						var bodyRect = document.documentElement.getBoundingClientRect();
-						var elRect = el.getBoundingClientRect();
-						ScrollTo(elRect.top - bodyRect.top);
-						if (event.preventDefault)
-							event.preventDefault()
-						else
-							event.returnValue = false;
-						return false;
+					if (link.length === 1) {
+						ScrollTo(0);
+					} else {
+						var el = DOM.find(link);
+						if (el) {
+							var bodyRect = document.documentElement.getBoundingClientRect();
+							var elRect = el.getBoundingClientRect();
+							ScrollTo(elRect.top - bodyRect.top);
+							if (event.preventDefault)
+								event.preventDefault()
+							else
+								event.returnValue = false;
+							return false;
+						}
 					}
 				}
 			}
