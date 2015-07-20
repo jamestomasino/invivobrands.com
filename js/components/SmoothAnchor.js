@@ -29,9 +29,8 @@
 					} else {
 						var el = DOM.find(link);
 						if (el) {
-							var bodyRect = document.documentElement.getBoundingClientRect();
 							var elRect = el.getBoundingClientRect();
-							ScrollTo(elRect.top - bodyRect.top);
+							ScrollTo(elRect.top.toString());
 							if (event.preventDefault)
 								event.preventDefault()
 							else

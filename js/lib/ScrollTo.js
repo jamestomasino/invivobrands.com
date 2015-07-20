@@ -27,6 +27,10 @@
 				return document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop;
 			}
 
+			if (typeof(to) === 'string') {
+				to = parseInt(to,10) + position();
+			}
+
 			var start = position();
 			var change = to - start;
 			var currentTime = 0;
