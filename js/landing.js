@@ -7,6 +7,7 @@ function landing() {
 	var Analytics           = NS.use('lib.Analytics');
 	var DOM                 = NS.use('lib.DOM');
 	var Draw                = NS.use('lib.Draw');
+	var SmoothAnchor        = NS.use('components.SmoothAnchor');
 	var Animate             = NS.use('components.Animate');
 	var Header              = NS.use('components.Header');
 	var HowWeDoIt           = NS.use('components.HowWeDoIt');
@@ -44,6 +45,9 @@ function landing() {
 		'#whatwedo',
 		'#howwedoit',
 		'#letsconnect']);
+
+	// Override anchor links to force a slide transition
+	var smoothAnchor = new SmoothAnchor();
 }
 
 // Define standard libraries for use, calculate polyfills and load page
@@ -51,6 +55,7 @@ var libs = [
 	'lib.DOM',
 	'lib.Draw',
 	'lib.Analytics',
+	'components.SmoothAnchor',
 	'components.Animate',
 	'components.Header',
 	'components.Menu',
