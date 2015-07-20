@@ -311,6 +311,11 @@
 		z-index: 0;
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
+		-webkit-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
+		   -moz-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
+		    -ms-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
+		     -o-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
+		        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
 	}
 
 		#header .bgtextfill1 {
