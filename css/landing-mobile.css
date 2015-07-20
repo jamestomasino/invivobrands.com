@@ -59,7 +59,9 @@
 		min-height: 50px;
 		height: auto;
 		margin-top: 20px;
+		border: 0 solid #323232;
 	}
+
 		#letsconnect .letsconnect_question .active dt {
 			background-color: #333333;
 			border: 0;
