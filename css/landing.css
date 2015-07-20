@@ -656,7 +656,8 @@
 		vertical-align: top;
 		padding: 5px 5px 0 0;
 		box-sizing: border-box;
-		border: 0 solid #323232;
+		border: 5px solid #323232;
+		margin-left: -5px;
 		-webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 		   -moz-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 		    -ms-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
@@ -687,7 +688,6 @@
 	#letsconnect .letsconnect_question .active dt {
 		background-color: #ff1e00;
 		border: 5px solid #ff1e00;
-		padding-top: 0;
 	}
 
 		#letsconnect .letsconnect_question .active dt .phrase {
