@@ -233,6 +233,10 @@
 			padding-right: 10px;
 		}
 
+		#header .intro .callout {
+			color: #00c8dc;
+		}
+
 		#header .intro .arrow_container {
 			float: right;
 			top: -60px;
