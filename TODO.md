@@ -44,6 +44,7 @@
 [x] New blue options coming
 [x] Add hover state
 [x] No option selected by default
+[ ] Intro text is hidden by default
 
 ### Footer ###
 
