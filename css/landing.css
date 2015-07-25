@@ -480,6 +480,7 @@
 			font-size: 40px;
 			line-height: 40px;
 			text-transform: uppercase;
+			padding-bottom: 5px;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 			font-weight: 900;
 			-webkit-transition: color 0.15s ease-out;
@@ -508,6 +509,7 @@
 			position: absolute;
 			margin: 0 0 10px 0;
 			max-width: 365px;
+			width: 220px;
 			left: 400px;
 		}
 
@@ -520,21 +522,21 @@
 			}
 
 			#whatwedo .whatwedo_content .row2 ul {
-				top: -100px;
+				top: -103px;
 			}
 
 			#whatwedo .whatwedo_content .row3 ul {
-				top: -157px;
+				top: -166px;
 			}
 
 			#whatwedo .whatwedo_content .row4 ul {
-				top: -253px;
+				top: -269px;
 			}
 
 		#whatwedo .whatwedo_content li {
 			display: block;
 			font-size: 15px;
-			width: 163px;
+			width: 200px;
 			box-sizing: border-box;
 			padding: 5px 5px 3px 5px;
 		}
