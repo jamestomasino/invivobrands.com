@@ -334,7 +334,7 @@
 		#header .bgtextfill3 {
 			text-indent: -425px;
 		}
-		
+
 		#header .bgtextfill4 {
 			text-indent: -925px;
 		}
@@ -451,65 +451,85 @@
 	}
 
 	#whatwedo .whatwedo_intro {
-		max-width: 370px;
-		float: left;
 		padding: 0 10px;
 	}
 
 		#whatwedo .whatwedo_intro h1 {
 			text-transform: uppercase;
-			padding-bottom: 18px;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
-	#whatwedo .whatwedo_intro .pullquote {
-		font-size: 30px;
-		line-height: 40px;
-		text-transform: uppercase;
-		color: #ff1e00;
-		margin: 18px 18px 18px 0;
-		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-		font-weight: 900;
-	}
+		#whatwedo .whatwedo_intro p {
+			padding-top: 18px;
+		}
 
 	#whatwedo .whatwedo_content {
-		height: 386px;
 		max-width: 365px;
-		float: left;
-		padding: 0 10px;
+		padding: 20px 10px;
 	}
 
+		#whatwedo .whatwedo_content .row {
+			margin: 18px 18px 18px 0;
+			cursor: pointer;
+		}
+
 		#whatwedo .whatwedo_content h3 {
-			text-transform: uppercase;
-			font-size: 15px;
-			line-height: 15px;
 			display: block;
-			width: 163px;
-			height: 55px;
-			color: #ffffff;
-			background-color: #ff1e00;
 			box-sizing: border-box;
-			padding: 5px 7px;
-			margin-bottom: 10px;
+			color: #ff1e00;
+			font-size: 40px;
+			line-height: 40px;
+			text-transform: uppercase;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 			font-weight: 900;
+			-webkit-transition: color 0.15s ease-out;
+			   -moz-transition: color 0.15s ease-out;
+			    -ms-transition: color 0.15s ease-out;
+			     -o-transition: color 0.15s ease-out;
+			        transition: color 0.15s ease-out;
 		}
 
-		#whatwedo .whatwedo_content .digital_innovation {
-			float: left;
-			margin-right: 10px;
+		#whatwedo .whatwedo_content .active h3 {
+			color: #ffffff;
+			background-color: #ff1e00;
+			margin: -5px 5px 5px -5px;
+			padding: 5px;
 		}
 
-		#whatwedo .whatwedo_content .brand_communication {
-			float: left;
+		#whatwedo .whatwedo_content .row.active:hover h3 {
+			color: #ffffff;
+		}
+		#whatwedo .whatwedo_content .row:hover h3 {
+			color: #00c8dc;
 		}
 
 		#whatwedo .whatwedo_content ul {
+			display: none;
+			position: absolute;
 			margin: 0 0 10px 0;
-			max-height: 750px;
-			overflow: hidden;
+			max-width: 365px;
+			left: 400px;
 		}
 
+			#whatwedo .whatwedo_content .active ul {
+				display: block;
+			}
+
+			#whatwedo .whatwedo_content .row1 ul {
+				top: 0px;
+			}
+
+			#whatwedo .whatwedo_content .row2 ul {
+				top: -100px;
+			}
+
+			#whatwedo .whatwedo_content .row3 ul {
+				top: -157px;
+			}
+
+			#whatwedo .whatwedo_content .row4 ul {
+				top: -253px;
+			}
 
 		#whatwedo .whatwedo_content li {
 			display: block;

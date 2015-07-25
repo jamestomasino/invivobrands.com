@@ -141,3 +141,65 @@
 		display: none;
 	}
 }
+
+@media screen and (max-width: 600px) {
+
+#whatwedo {
+}
+
+	#whatwedo .whatwedo_content h3 {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+
+	#whatwedo .whatwedo_content {
+	}
+
+		#whatwedo .whatwedo_content ul {
+			display: block;
+			position: relative;
+			margin: 0 0 10px 0;
+			left: 0;
+			max-height: 0;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			-webkit-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			   -moz-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+				-ms-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+				 -o-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+					transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
+			overflow: hidden;
+		}
+
+			#whatwedo .whatwedo_content .active ul {
+				max-height: 260px;
+				opacity: 1;
+				filter: alpha(opacity=100);
+				display: block;
+			}
+
+			#whatwedo .whatwedo_content .row1 ul {
+				top: 0px;
+			}
+
+			#whatwedo .whatwedo_content .row2 ul {
+				top: 0px;
+			}
+
+			#whatwedo .whatwedo_content .row3 ul {
+				top: 0px;
+			}
+
+			#whatwedo .whatwedo_content .row4 ul {
+				top: 0px;
+			}
+
+		#whatwedo .whatwedo_content li {
+			display: block;
+			font-size: 15px;
+			width: 163px;
+			box-sizing: border-box;
+			padding: 5px 5px 3px 5px;
+		}
+}

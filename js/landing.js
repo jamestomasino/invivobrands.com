@@ -10,6 +10,7 @@ function landing() {
 	var SmoothAnchor        = NS.use('components.SmoothAnchor');
 	var Animate             = NS.use('components.Animate');
 	var Header              = NS.use('components.Header');
+	var WhatWeDo            = NS.use('components.WhatWeDo');
 	var HowWeDoIt           = NS.use('components.HowWeDoIt');
 	var LetsConnect         = NS.use('components.LetsConnect');
 	var Menu                = NS.use('components.Menu');
@@ -23,6 +24,10 @@ function landing() {
 	// - Add arrow lines
 	// - Size '.bgtextfill' to the client height
 	var header = new Header("#header");
+
+	// What We Do Component
+	// - Click/tap listeners to switch offerings.
+	var whatwedo = new WhatWeDo("#whatwedo");
 
 	// How We Do It Component
 	// - Click/tap listeners to switch steps. Resize render fix
@@ -59,6 +64,7 @@ var libs = [
 	'components.Animate',
 	'components.Header',
 	'components.Menu',
+	'components.WhatWeDo',
 	'components.HowWeDoIt',
 	'components.LetsConnect' ];
 
