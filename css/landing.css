@@ -323,36 +323,221 @@
 		        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
 	}
 
+		@-webkit-keyframes movetext1 {
+			/* change by -2464 */
+			0% {text-indent: -500px;}
+			100% {text-indent: -2964px;}
+		}
+		@-moz-keyframes movetext1 {
+			0% {text-indent: -500px;}
+			100% {text-indent: -2964px;}
+		}
+		@-o-keyframes movetext1 {
+			0% {text-indent: -500px;}
+			100% {text-indent: -2964px;}
+		}
+		@keyframes movetext1 {
+			0% {text-indent: -500px;}
+			100% {text-indent: -2964px;}
+		}
+
+
+		@-webkit-keyframes movetext2 {
+			/* change by -2464 */
+			0% {text-indent: -2964px;}
+			100% {text-indent: -500px;}
+		}
+		@-moz-keyframes movetext2 {
+			0% {text-indent: -2964px;}
+			100% {text-indent: -500px;}
+		}
+		@-o-keyframes movetext2 {
+			0% {text-indent: -2964px;}
+			100% {text-indent: -500px;}
+		}
+		@keyframes movetext2 {
+			0% {text-indent: -2964px;}
+			100% {text-indent: -500px;}
+		}
+
+		@-webkit-keyframes movetext3 {
+			/* change by -2464 */
+			0% {text-indent: -425px;}
+			100% {text-indent: -2889px;}
+		}
+		@-moz-keyframes movetext3 {
+			0% {text-indent: -425px;}
+			100% {text-indent: -2889px;}
+		}
+		@-o-keyframes movetext3 {
+			0% {text-indent: -425px;}
+			100% {text-indent: -2889px;}
+		}
+		@keyframes movetext3 {
+			0% {text-indent: -425px;}
+			100% {text-indent: -2889px;}
+		}
+
+		@-webkit-keyframes movetext4 {
+			/* change by -2464 */
+			0% {text-indent: -3389px;}
+			100% {text-indent: -925px;}
+		}
+		@-moz-keyframes movetext4 {
+			0% {text-indent: -3389px;}
+			100% {text-indent: -925px;}
+		}
+		@-o-keyframes movetext4 {
+			0% {text-indent: -3389px;}
+			100% {text-indent: -925px;}
+		}
+		@keyframes movetext4 {
+			0% {text-indent: -3389px;}
+			100% {text-indent: -925px;}
+		}
+
+		@-webkit-keyframes movetext5 {
+			/* change by -2464 */
+			0% {text-indent: -1215px;}
+			100% {text-indent: -3679px;}
+		}
+		@-moz-keyframes movetext5 {
+			0% {text-indent: -1215px;}
+			100% {text-indent: -3679px;}
+		}
+		@-o-keyframes movetext5 {
+			0% {text-indent: -1215px;}
+			100% {text-indent: -3679px;}
+		}
+		@keyframes movetext5 {
+			0% {text-indent: -1215px;}
+			100% {text-indent: -3679px;}
+		}
+
+		@-webkit-keyframes movetext6 {
+			/* change by -2464 */
+			0% {text-indent: -4479px;}
+			100% {text-indent: -2015px;}
+		}
+		@-moz-keyframes movetext6 {
+			0% {text-indent: -4479px;}
+			100% {text-indent: -2015px;}
+		}
+		@-o-keyframes movetext6 {
+			0% {text-indent: -4479px;}
+			100% {text-indent: -2015px;}
+		}
+		@keyframes movetext6 {
+			0% {text-indent: -4479px;}
+			100% {text-indent: -2015px;}
+		}
+
+		@-webkit-keyframes movetext7 {
+			/* change by -2464 */
+			0% {text-indent: -505px;}
+			100% {text-indent: -2969px;}
+		}
+		@-moz-keyframes movetext7 {
+			0% {text-indent: -505px;}
+			100% {text-indent: -2969px;}
+		}
+		@-o-keyframes movetext7 {
+			0% {text-indent: -505px;}
+			100% {text-indent: -2969px;}
+		}
+		@keyframes movetext7 {
+			0% {text-indent: -505px;}
+			100% {text-indent: -2969px;}
+		}
+
+		@-webkit-keyframes movetext8 {
+			/* change by -2464 */
+			0% {text-indent: -2709px;}
+			100% {text-indent: -245px;}
+		}
+		@-moz-keyframes movetext8 {
+			0% {text-indent: -2709px;}
+			100% {text-indent: -245px;}
+		}
+		@-o-keyframes movetext8 {
+			0% {text-indent: -2709px;}
+			100% {text-indent: -245px;}
+		}
+		@keyframes movetext8 {
+			0% {text-indent: -2709px;}
+			100% {text-indent: -245px;}
+		}
+
 		#header .bgtextfill1 {
 			text-indent: -500px;
+			-webkit-animation: movetext1 120s linear infinite;
+			   -moz-animation: movetext1 120s linear infinite;
+			    -ms-animation: movetext1 120s linear infinite;
+			     -o-animation: movetext1 120s linear infinite;
+			        animation: movetext1 120s linear infinite;
 		}
 
 		#header .bgtextfill2 {
 			text-indent: -1490px;
+			-webkit-animation: movetext2 72s linear infinite;
+			   -moz-animation: movetext2 72s linear infinite;
+			    -ms-animation: movetext2 72s linear infinite;
+			     -o-animation: movetext2 72s linear infinite;
+			        animation: movetext2 72s linear infinite;
 		}
 
 		#header .bgtextfill3 {
 			text-indent: -425px;
+			-webkit-animation: movetext3 95s linear infinite;
+			   -moz-animation: movetext3 95s linear infinite;
+			    -ms-animation: movetext3 95s linear infinite;
+			     -o-animation: movetext3 95s linear infinite;
+			        animation: movetext3 95s linear infinite;
 		}
 
 		#header .bgtextfill4 {
 			text-indent: -925px;
+			-webkit-animation: movetext4 195s linear infinite;
+			   -moz-animation: movetext4 195s linear infinite;
+			    -ms-animation: movetext4 195s linear infinite;
+			     -o-animation: movetext4 195s linear infinite;
+			        animation: movetext4 195s linear infinite;
 		}
 
 		#header .bgtextfill5 {
 			text-indent: -1215px;
+			-webkit-animation: movetext5 145s linear infinite;
+			   -moz-animation: movetext5 145s linear infinite;
+			    -ms-animation: movetext5 145s linear infinite;
+			     -o-animation: movetext5 145s linear infinite;
+			        animation: movetext5 145s linear infinite;
 		}
 
 		#header .bgtextfill6 {
 			text-indent: -2015px;
+			-webkit-animation: movetext6 115s linear infinite;
+			   -moz-animation: movetext6 115s linear infinite;
+			    -ms-animation: movetext6 115s linear infinite;
+			     -o-animation: movetext6 115s linear infinite;
+			        animation: movetext6 115s linear infinite;
 		}
 
 		#header .bgtextfill7 {
 			text-indent: -505px;
+			-webkit-animation: movetext7 175s linear infinite;
+			   -moz-animation: movetext7 175s linear infinite;
+			    -ms-animation: movetext7 175s linear infinite;
+			     -o-animation: movetext7 175s linear infinite;
+			        animation: movetext7 175s linear infinite;
 		}
 
 		#header .bgtextfill8 {
 			text-indent: -245px;
+			-webkit-animation: movetext8 95s linear infinite;
+			   -moz-animation: movetext8 95s linear infinite;
+			    -ms-animation: movetext8 95s linear infinite;
+			     -o-animation: movetext8 95s linear infinite;
+			        animation: movetext8 95s linear infinite;
 		}
 
 
