@@ -42,6 +42,15 @@
 
 	}
 
-	NS.load ( ['lib.DOM'], classWrapper, this );
+	var libs = [
+		'lib.DOM' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS.load ( libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

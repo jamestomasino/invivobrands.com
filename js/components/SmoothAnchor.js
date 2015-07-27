@@ -27,7 +27,7 @@
 					if (link.length === 1) {
 						ScrollTo(0);
 					} else {
-						var el = DOM.find(link);
+						el = DOM.find(link);
 						if (el) {
 							var elRect = el.getBoundingClientRect();
 							ScrollTo(elRect.top.toString());
@@ -46,6 +46,16 @@
 		namespace.SmoothAnchor = SmoothAnchor;
 	}
 
-	NS.load ( ['lib.ScrollTo', 'lib.DOM'], classWrapper, this );
+	var libs = [
+		'lib.DOM',
+		'lib.ScrollTo' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS.load ( libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

@@ -21,7 +21,7 @@
 				var i = objs.length; while (i--) {
 					var elemRect = objs[i].getBoundingClientRect();
 					var offset   = elemRect.top - bodyRect.top;
-					if(y > (offset - (h*.75))) {
+					if(y > (offset - (h*0.75))) {
 						DOM.addClass(objs[i], 'animate');
 						objs.splice(i,1);
 						if (objs.length === 0) {
@@ -46,6 +46,17 @@
 
 	}
 
-	NS.load ( ['lib.DOM', 'lib.Debounce', 'lib.Delegate'], classWrapper, this );
+	var libs = [
+		'lib.DOM',
+		'lib.Debounce',
+		'lib.Delegate' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS.load ( libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);
