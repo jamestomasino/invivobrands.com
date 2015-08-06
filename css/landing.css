@@ -220,7 +220,7 @@
 		}
 
 		#header .intro .callout {
-			color: #464646;
+			color: #00c8dc;
 		}
 
 		#header .intro .arrow_container {
@@ -231,11 +231,6 @@
 			margin: 10px 20px;
 			width: 50px;
 			height: 60px;
-			-webkit-transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.2s ease-in 0.3s;
-			   -moz-transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.2s ease-in 0.3s;
-			    -ms-transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.2s ease-in 0.3s;
-			     -o-transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.2s ease-in 0.3s;
-			        transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.2s ease-in 0.3s;
 		}
 
 		#header.animate .intro .arrow_container {
@@ -280,9 +275,9 @@
 		        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
 	}
 
-	#header.animate .bgtextfill {
-		height: 370px;
-	}
+		#header.animate .bgtextfill {
+			height: 370px;
+		}
 
 	#header .bgtextfill .bgtextfill1 {
 		top: 0;

@@ -135,14 +135,32 @@
 	}
 }
 
-
-@media screen and (max-width: 480px) {
-	#navigation .company_tagline {
-		display: none;
-	}
-}
-
 @media screen and (max-width: 620px) {
+
+	#header .bgtextfill {
+		font-size: 60px;
+		line-height: 70px;
+	}
+
+		#header.animate .bgtextfill {
+			height: 270px;
+		}
+
+	#header .bgtextfill .bgtextfill1 {
+		top: 40px;
+	}
+
+	#header .bgtextfill .bgtextfill2 {
+		top: 100px;
+	}
+
+	#header .bgtextfill .bgtextfill3 {
+		top: 160px;
+	}
+
+	#header .bgtextfill .bgtextfill4 {
+		top: 220px;
+	}
 
 	#whatwedo .whatwedo_content h3 {
 		font-size: 30px;
@@ -205,3 +223,52 @@
 		padding: 15px 0 20px 10px;
 	}
 }
+
+@media screen and (max-width: 480px) {
+
+	#header .intro {
+		padding-bottom: 50px;
+	}
+
+	#header .intro .arrow_container {
+		display: block;
+		float: none;
+		position: relative;
+		top: auto;
+		margin: 20px auto 0 auto;
+		text-align: center;
+	}
+
+		#header.animate .intro .arrow_container {
+			top: 50px;
+		}
+
+	#header .bgtextfill {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+		#header.animate .bgtextfill {
+			height: 160px;
+		}
+
+	#header .bgtextfill .bgtextfill1 {
+		top: 40px;
+	}
+
+	#header .bgtextfill .bgtextfill2 {
+		top: 70px;
+	}
+
+	#header .bgtextfill .bgtextfill3 {
+		top: 100px;
+	}
+
+	#header .bgtextfill .bgtextfill4 {
+		top: 130px;
+	}
+	#navigation .company_tagline {
+		display: none;
+	}
+}
+
