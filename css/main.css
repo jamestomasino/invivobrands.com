@@ -65,7 +65,7 @@ html {
     font-size: 112.5%;
 }
 body {
-    background-color: #fff;
+    background-color: #fafafa;
     color: #333;
     font-style: normal;
     font-family: "Replica-Regular-S", "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
@@ -187,6 +187,10 @@ a:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.companyname {
+	text-transform: uppercase;
 }
 
 /* =============================================================================

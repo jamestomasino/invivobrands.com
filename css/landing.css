@@ -2,52 +2,36 @@
 	width: 100%;
 	max-width: 735px;
 	margin: 0 auto;
-	background: #464646;
+	background: #ffffff;
 	height: 50px;
 	overflow: hidden;
 	position: fixed;
-	top: 0;
+	top: -50px;
 	left: 0;
 	right: 0;
 	z-index: 50;
-	border-right: 2px solid #333333;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	-webkit-transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
-	   -moz-transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
-	    -ms-transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
-	     -o-transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
-	        transition: top 0.2s ease-in-out, opacity 0.2s ease-in;
+	-webkit-transition: top 0.2s ease-in-out 0.5s, opacity 0.2s ease-in;
+	   -moz-transition: top 0.2s ease-in-out 0.5s, opacity 0.2s ease-in;
+	    -ms-transition: top 0.2s ease-in-out 0.5s, opacity 0.2s ease-in;
+	     -o-transition: top 0.2s ease-in-out 0.5s, opacity 0.2s ease-in;
+            transition: top 0.2s ease-in-out 0.5s, opacity 0.2s ease-in;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
 }
 
 	#navigation.animate {
 		opacity: 1;
 		filter: alpha(opacity=100);
+		top: 0;
 	}
-
-	#navigation .company_tagline {
-		display: block;
-		position: absolute;
-		top: 22px;
-		left: 102px;
-		color: #888;
-		opacity: 0;
-		filter: alpha(opacity=0);
-		-webkit-transition: opacity 0.2s ease-in;
-		   -moz-transition: opacity 0.2s ease-in;
-		    -ms-transition: opacity 0.2s ease-in;
-		     -o-transition: opacity 0.2s ease-in;
-		        transition: opacity 0.2s ease-in;
-	}
-
-		#navigation .company_tagline.active {
-			opacity: 1;
-			filter: alpha(opacity=100);
-		}
 
 	#navigation a {
 		display: block;
 		width: 83px;
+		margin-top: 17px;
 	}
 
 	#navigation h1 {
@@ -55,12 +39,12 @@
 		border: 0;
 		font: 0/0 a;
 		margin: 10px 0 0 10px;
-		width: 83px;
-		height: 32px;
+		width: 154px;
+		height: 15px;
 		text-shadow: none;
 		color: transparent;
 		background: url(../images/logo.png);
-		background-size: 83px 32px;
+		background-size: 154px 15px;
 		background-repeat: no-repeat;
 		-ms-behavior: url(/css/polyfill/backgroundsize.min.htc);
 	}
@@ -97,13 +81,10 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		background: #464646;
-		color: #ffffff;
+		background: #ffffff;
+		color: #464646;
 		box-sizing: border-box;
 		padding: 10px 5px;
-		border-right: 2px solid #333333;
-		border-left: 2px solid #333333;
-		border-bottom: 2px solid #333333;
 		width: 174px;
 		max-height: 0;
 		opacity: 0;
@@ -114,6 +95,9 @@
 		     -o-transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
 		        transition: max-height 0.25s ease-out, opacity 0.25s ease-out;
 		overflow: hidden;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+		   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+		        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
 	}
 
 		#menu ol.active {
@@ -129,7 +113,7 @@
 		}
 
 		#menu ol a {
-			color: #ffffff;
+			color: #464646;
 			-webkit-transition: color 0.15s ease-out;
 			   -moz-transition: color 0.15s ease-out;
 			    -ms-transition: color 0.15s ease-out;
@@ -181,6 +165,7 @@
 	}
 
 #header {
+	display: block;
 	position: relative;
 	margin-top: 0;
 	width: 100%;
@@ -189,7 +174,7 @@
 }
 
 	#header .wrapper {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		max-width: 735px;
 		margin: 0 auto;
@@ -197,33 +182,33 @@
 		left: 0;
 		right: 0;
 		border: 0;
-		height: 310px;
 		z-index: 1;
 	}
 
 	#header .intro {
 		position: relative;
-		top: -150px;
+		top: 150px;
 		box-sizing: border-box;
 		width: 100%;
 		max-width: 562px;
-		padding: 50px 0 10px 10px;
+		padding: 10px 0 0 10px;
 		background: #464646;
 		color: #FFF;
 		z-index: 1;
 		opacity: 0;
 		filter: alpha(opacity=0);
-		-webkit-transition: top 0.2s ease-in, opacity 0.2s ease-in;
-		   -moz-transition: top 0.2s ease-in, opacity 0.2s ease-in;
-		    -ms-transition: top 0.2s ease-in, opacity 0.2s ease-in;
-		     -o-transition: top 0.2s ease-in, opacity 0.2s ease-in;
-		        transition: top 0.2s ease-in, opacity 0.2s ease-in;
+		-webkit-transition: top 0.2s ease-in 1.0s, opacity 0.2s ease-in;
+		   -moz-transition: top 0.2s ease-in 1.0s, opacity 0.2s ease-in;
+		    -ms-transition: top 0.2s ease-in 1.0s, opacity 0.2s ease-in;
+		     -o-transition: top 0.2s ease-in 1.0s, opacity 0.2s ease-in;
+		        transition: top 0.2s ease-in 1.0s, opacity 0.2s ease-in;
 	}
 
 	#header.animate .intro {
 		top: 0;
 		opacity: 1;
 		filter: alpha(opacity=100);
+		background: #f6f6f6;
 	}
 
 		#header .intro p {
@@ -235,7 +220,7 @@
 		}
 
 		#header .intro .callout {
-			color: #00c8dc;
+			color: #464646;
 		}
 
 		#header .intro .arrow_container {
@@ -272,39 +257,10 @@
 				backface-visibility: hidden;
 			}
 
-	#header .button {
-		width: 100%;
-		max-width: 562px;
-		z-index: 0;
-		top: -50px;
-		opacity: 0;
-		filter: alpha(opacity=0);
-		-webkit-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
-		   -moz-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
-		    -ms-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
-		     -o-transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
-		        transition: top 0.2s ease-in 0.25s, opacity 0.2s ease-in 0.25s;
-	}
-
-		#header.animate .button {
-			opacity: 1;
-			filter: alpha(opacity=1);
-			top: -2px;
-		}
-
-		#header .button a {
-			float: right;
-			color: #FFF;
-			background: #00c8dc;
-			font-size: 16px;
-			line-height: 18px;
-			width: 90px;
-			padding: 5px;
-			box-sizing: border-box;
-		}
 
 	#header .bgtextfill {
 		display: block;
+		position: relative;
 		height: 865px;
 		width: 100%;
 		overflow: hidden;
@@ -313,7 +269,8 @@
 		line-height: 110px;
 		white-space: nowrap;
 		text-transform: uppercase;
-		z-index: 0;
+		padding-left: 10px;
+		z-index: -1;
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
 		-webkit-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
@@ -323,225 +280,89 @@
 		        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) .8s;
 	}
 
-		@-webkit-keyframes movetext1 {
-			/* change by -2464 */
-			0% {text-indent: -500px;}
-			100% {text-indent: -2964px;}
-		}
-		@-moz-keyframes movetext1 {
-			0% {text-indent: -500px;}
-			100% {text-indent: -2964px;}
-		}
-		@-o-keyframes movetext1 {
-			0% {text-indent: -500px;}
-			100% {text-indent: -2964px;}
-		}
-		@keyframes movetext1 {
-			0% {text-indent: -500px;}
-			100% {text-indent: -2964px;}
+	#header.animate .bgtextfill {
+		height: 370px;
+	}
+
+	#header .bgtextfill .bgtextfill1 {
+		top: 0;
+		position: fixed;
+		z-index: -1;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: color 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.1s;
+		   -moz-transition: color 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.1s;
+		    -ms-transition: color 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.1s;
+		     -o-transition: color 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.1s;
+		        transition: color 0.3s ease-in 0.2s, opacity 0.2s ease-in 0.1s;
+	}
+
+		#header.animate .bgtextfill .bgtextfill1 {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			color: #464646;
 		}
 
+	#header .bgtextfill .bgtextfill2 {
+		top: 100px;
+		position: fixed;
+		z-index: -1;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: color 0.3s ease-in 0.3s, opacity 0.2s ease-in 0.2s;
+		   -moz-transition: color 0.3s ease-in 0.3s, opacity 0.2s ease-in 0.2s;
+		    -ms-transition: color 0.3s ease-in 0.3s, opacity 0.2s ease-in 0.2s;
+		     -o-transition: color 0.3s ease-in 0.3s, opacity 0.2s ease-in 0.2s;
+		        transition: color 0.3s ease-in 0.3s, opacity 0.2s ease-in 0.2s;
+	}
 
-		@-webkit-keyframes movetext2 {
-			/* change by -2464 */
-			0% {text-indent: -2964px;}
-			100% {text-indent: -500px;}
-		}
-		@-moz-keyframes movetext2 {
-			0% {text-indent: -2964px;}
-			100% {text-indent: -500px;}
-		}
-		@-o-keyframes movetext2 {
-			0% {text-indent: -2964px;}
-			100% {text-indent: -500px;}
-		}
-		@keyframes movetext2 {
-			0% {text-indent: -2964px;}
-			100% {text-indent: -500px;}
-		}
-
-		@-webkit-keyframes movetext3 {
-			/* change by -2464 */
-			0% {text-indent: -425px;}
-			100% {text-indent: -2889px;}
-		}
-		@-moz-keyframes movetext3 {
-			0% {text-indent: -425px;}
-			100% {text-indent: -2889px;}
-		}
-		@-o-keyframes movetext3 {
-			0% {text-indent: -425px;}
-			100% {text-indent: -2889px;}
-		}
-		@keyframes movetext3 {
-			0% {text-indent: -425px;}
-			100% {text-indent: -2889px;}
+		#header.animate .bgtextfill .bgtextfill2 {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			color: #464646;
 		}
 
-		@-webkit-keyframes movetext4 {
-			/* change by -2464 */
-			0% {text-indent: -3389px;}
-			100% {text-indent: -925px;}
-		}
-		@-moz-keyframes movetext4 {
-			0% {text-indent: -3389px;}
-			100% {text-indent: -925px;}
-		}
-		@-o-keyframes movetext4 {
-			0% {text-indent: -3389px;}
-			100% {text-indent: -925px;}
-		}
-		@keyframes movetext4 {
-			0% {text-indent: -3389px;}
-			100% {text-indent: -925px;}
+	#header .bgtextfill .bgtextfill3 {
+		top: 200px;
+		position: fixed;
+		z-index: -1;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: color 0.3s ease-in 0.4s, opacity 0.2s ease-in 0.3s;
+		   -moz-transition: color 0.3s ease-in 0.4s, opacity 0.2s ease-in 0.3s;
+		    -ms-transition: color 0.3s ease-in 0.4s, opacity 0.2s ease-in 0.3s;
+		     -o-transition: color 0.3s ease-in 0.4s, opacity 0.2s ease-in 0.3s;
+		        transition: color 0.3s ease-in 0.4s, opacity 0.2s ease-in 0.3s;
+	}
+
+		#header.animate .bgtextfill .bgtextfill3 {
+			opacity: 1;
+			filter: alpha(opacity=100);
+			color: #464646;
 		}
 
-		@-webkit-keyframes movetext5 {
-			/* change by -2464 */
-			0% {text-indent: -1215px;}
-			100% {text-indent: -3679px;}
-		}
-		@-moz-keyframes movetext5 {
-			0% {text-indent: -1215px;}
-			100% {text-indent: -3679px;}
-		}
-		@-o-keyframes movetext5 {
-			0% {text-indent: -1215px;}
-			100% {text-indent: -3679px;}
-		}
-		@keyframes movetext5 {
-			0% {text-indent: -1215px;}
-			100% {text-indent: -3679px;}
-		}
+	#header .bgtextfill .bgtextfill4 {
+		top: 300px;
+		position: fixed;
+		z-index: -1;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: color 0.2s ease-in 0.5s, opacity 0.2s ease-in 0.4s;
+		   -moz-transition: color 0.2s ease-in 0.5s, opacity 0.2s ease-in 0.4s;
+		    -ms-transition: color 0.2s ease-in 0.5s, opacity 0.2s ease-in 0.4s;
+		     -o-transition: color 0.2s ease-in 0.5s, opacity 0.2s ease-in 0.4s;
+		        transition: color 0.2s ease-in 0.5s, opacity 0.2s ease-in 0.4s;
+	}
 
-		@-webkit-keyframes movetext6 {
-			/* change by -2464 */
-			0% {text-indent: -4479px;}
-			100% {text-indent: -2015px;}
+		#header.animate .bgtextfill .bgtextfill4 {
+			opacity: 1;
+			filter: alpha(opacity=100);
 		}
-		@-moz-keyframes movetext6 {
-			0% {text-indent: -4479px;}
-			100% {text-indent: -2015px;}
-		}
-		@-o-keyframes movetext6 {
-			0% {text-indent: -4479px;}
-			100% {text-indent: -2015px;}
-		}
-		@keyframes movetext6 {
-			0% {text-indent: -4479px;}
-			100% {text-indent: -2015px;}
-		}
-
-		@-webkit-keyframes movetext7 {
-			/* change by -2464 */
-			0% {text-indent: -505px;}
-			100% {text-indent: -2969px;}
-		}
-		@-moz-keyframes movetext7 {
-			0% {text-indent: -505px;}
-			100% {text-indent: -2969px;}
-		}
-		@-o-keyframes movetext7 {
-			0% {text-indent: -505px;}
-			100% {text-indent: -2969px;}
-		}
-		@keyframes movetext7 {
-			0% {text-indent: -505px;}
-			100% {text-indent: -2969px;}
-		}
-
-		@-webkit-keyframes movetext8 {
-			/* change by -2464 */
-			0% {text-indent: -2709px;}
-			100% {text-indent: -245px;}
-		}
-		@-moz-keyframes movetext8 {
-			0% {text-indent: -2709px;}
-			100% {text-indent: -245px;}
-		}
-		@-o-keyframes movetext8 {
-			0% {text-indent: -2709px;}
-			100% {text-indent: -245px;}
-		}
-		@keyframes movetext8 {
-			0% {text-indent: -2709px;}
-			100% {text-indent: -245px;}
-		}
-
-		#header .bgtextfill1 {
-			text-indent: -500px;
-			-webkit-animation: movetext1 120s linear infinite;
-			   -moz-animation: movetext1 120s linear infinite;
-			    -ms-animation: movetext1 120s linear infinite;
-			     -o-animation: movetext1 120s linear infinite;
-			        animation: movetext1 120s linear infinite;
-		}
-
-		#header .bgtextfill2 {
-			text-indent: -1490px;
-			-webkit-animation: movetext2 72s linear infinite;
-			   -moz-animation: movetext2 72s linear infinite;
-			    -ms-animation: movetext2 72s linear infinite;
-			     -o-animation: movetext2 72s linear infinite;
-			        animation: movetext2 72s linear infinite;
-		}
-
-		#header .bgtextfill3 {
-			text-indent: -425px;
-			-webkit-animation: movetext3 95s linear infinite;
-			   -moz-animation: movetext3 95s linear infinite;
-			    -ms-animation: movetext3 95s linear infinite;
-			     -o-animation: movetext3 95s linear infinite;
-			        animation: movetext3 95s linear infinite;
-		}
-
-		#header .bgtextfill4 {
-			text-indent: -925px;
-			-webkit-animation: movetext4 195s linear infinite;
-			   -moz-animation: movetext4 195s linear infinite;
-			    -ms-animation: movetext4 195s linear infinite;
-			     -o-animation: movetext4 195s linear infinite;
-			        animation: movetext4 195s linear infinite;
-		}
-
-		#header .bgtextfill5 {
-			text-indent: -1215px;
-			-webkit-animation: movetext5 145s linear infinite;
-			   -moz-animation: movetext5 145s linear infinite;
-			    -ms-animation: movetext5 145s linear infinite;
-			     -o-animation: movetext5 145s linear infinite;
-			        animation: movetext5 145s linear infinite;
-		}
-
-		#header .bgtextfill6 {
-			text-indent: -2015px;
-			-webkit-animation: movetext6 115s linear infinite;
-			   -moz-animation: movetext6 115s linear infinite;
-			    -ms-animation: movetext6 115s linear infinite;
-			     -o-animation: movetext6 115s linear infinite;
-			        animation: movetext6 115s linear infinite;
-		}
-
-		#header .bgtextfill7 {
-			text-indent: -505px;
-			-webkit-animation: movetext7 175s linear infinite;
-			   -moz-animation: movetext7 175s linear infinite;
-			    -ms-animation: movetext7 175s linear infinite;
-			     -o-animation: movetext7 175s linear infinite;
-			        animation: movetext7 175s linear infinite;
-		}
-
-		#header .bgtextfill8 {
-			text-indent: -245px;
-			-webkit-animation: movetext8 95s linear infinite;
-			   -moz-animation: movetext8 95s linear infinite;
-			    -ms-animation: movetext8 95s linear infinite;
-			     -o-animation: movetext8 95s linear infinite;
-			        animation: movetext8 95s linear infinite;
-		}
-
 
 #gettoknowus {
+	display: relative;
+	z-index: 10;
+	background-color: #f6f6f6;
 	padding-top: 55px;
 }
 
@@ -556,11 +377,11 @@
 		color: #464646;
 		font-size: 15px;
 		line-height: 18px;
+		
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote {
 		text-transform: uppercase;
-		max-width: 420px;
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
 	}
@@ -632,11 +453,13 @@
 			}
 
 #whatwedo {
-	padding-top: 55px;
+	display: relative;
+	z-index: 10;
 	background: #323232;
 	color: #FFF;
 	font-size: 16px;
 	line-height: 18px;
+	padding-top: 55px;
 }
 	#whatwedo .wrapper {
 		max-width: 735px;
@@ -731,6 +554,9 @@
 		}
 
 #howwedoit {
+	display: relative;
+	z-index: 10;
+	background: #f6f6f6;
 	padding-top: 55px;
 	font-size: 15px;
 	line-height: 18px;
@@ -833,11 +659,13 @@
 	}
 
 #letsconnect {
-	padding-top: 55px;
+	display: relative;
+	z-index: 10;
 	background: #323232;
 	color: #FFF;
 	font-size: 16px;
 	line-height: 18px;
+	padding-top: 55px;
 }
 
 	#letsconnect a {
@@ -953,7 +781,7 @@
 		overflow: hidden;
 		left: 0;
 		right: 0;
-		z-index: 1;
+		z-index: 10;
 		height: 292px;
 		box-sizing: border-box;
 	}
@@ -993,11 +821,12 @@
 	}
 
 #footer {
+	position: relative;
 	padding-top: 55px;
 	width: 100%;
 	background: #464646;
 	color: #AAAAAA;
-	z-index: 1;
+	z-index: 10;
 	font-size: 10px;
 	line-height: 12px;
 }
@@ -1013,12 +842,12 @@
 		#footer .wrapper h1 {
 			border: 0;
 			font: 0/0 a;
-			width: 83px;
-			height: 32px;
+			width: 154;
+			height: 15px;
 			text-shadow: none;
 			color: transparent;
-			background: url(../images/logo.png);
-			background-size: 83px 32px;
+			background: url(../images/logo-white.png);
+			background-size: 154px 15px;
 			background-repeat: no-repeat;
 			-ms-behavior: url(/css/polyfill/backgroundsize.min.htc);
 			opacity: .4;
