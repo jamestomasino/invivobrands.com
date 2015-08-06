@@ -193,6 +193,14 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.notransdelay {
+	-webkit-transition-delay: unset !important;
+	   -moz-transition-delay: unset !important;
+	    -ms-transition-delay: unset !important;
+	     -o-transition-delay: unset !important;
+	        transition-delay: unset !important;
+}
+
 /* =============================================================================
    4.0 Browser Bug Fixes
    ========================================================================== */

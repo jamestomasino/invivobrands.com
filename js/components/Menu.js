@@ -6,9 +6,8 @@
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');
 		var Delegate = NS.use('lib.Delegate');
-
+		var noTransDelay = false;
 		var navbar = null;
-		var tagline = null;
 
 		var menu = null;
 		var menuButton = null;
@@ -20,7 +19,7 @@
 		var supportPageOffset = window.pageXOffset !== undefined;
 		var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
 		var lastScrollTop = 0;
-		var delta = 5;
+		var delta = 1;
 		var topThreshold = 150;
 		var isAboveThreshold = true;
 
@@ -50,6 +49,12 @@
 				// If movement broke threshold, show/hide navbar
 				if (Math.abs(lastScrollTop - y) > delta) {
 
+					// Save repetetive dom lookups by using a bool
+					if (!noTransDelay) {
+						noTransDelay = true;
+						DOM.addClass(navbar, 'notransdelay');
+					}
+
 					if (y > lastScrollTop) {
 						if (!DOM.hasClass(menuList, "active")) {
 							DOM.addClass(navbar, 'nav-up');
@@ -64,18 +69,15 @@
 
 				if (isAboveThreshold && y > topThreshold) {
 					DOM.addClass(backtotop, "active");
-					DOM.addClass(tagline, "active");
 					isAboveThreshold = false;
 				} else if (!isAboveThreshold && y < topThreshold) {
 					DOM.removeClass(backtotop, "active");
-					DOM.removeClass(tagline, "active");
 					isAboveThreshold = true;
 				}
 			}
 
 			// Identify navbar and add listeners
 			navbar = DOM.find(navbar_id);
-			tagline = DOM.find(".company_tagline", navbar)[0];
 			menuButton = DOM.find(".menu", navbar)[0];
 			menuButton.addEventListener("click", toggleMenu, false);
 			menuButton.addEventListener("touchend", toggleMenu, false);
@@ -94,7 +96,7 @@
 			}
 
 			// Handle scroll
-			window.addEventListener("scroll", Debounce(hasScrolled, 250, false), false);
+			window.addEventListener("scroll", Debounce(hasScrolled, 66, true, true), true);
 		}
 
 		var namespace = new NS ( 'components' );

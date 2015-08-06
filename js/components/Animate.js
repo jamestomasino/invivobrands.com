@@ -36,7 +36,7 @@
 				objs.push ((obj.length) ? obj[0] : obj);
 			}
 
-			debounceScroll = Debounce(hasScrolled, 250, false);
+			debounceScroll = Debounce(hasScrolled, 66, true, true);
 			window.addEventListener("scroll", debounceScroll, false);
 			hasScrolled();
 		}
