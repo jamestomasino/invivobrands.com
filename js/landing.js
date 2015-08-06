@@ -70,9 +70,5 @@ var libs = [
 
 var polyfills = [];
 
-if (!document.addEventListener) {
-	polyfills.push("polyfill.addEventListener");
-}
-
 NS.load (libs.concat(polyfills), landing, this);
 

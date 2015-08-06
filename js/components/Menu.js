@@ -102,6 +102,17 @@
 
 	}
 
-	NS.load ( ['lib.DOM', 'lib.Debounce', 'lib.Delegate'], classWrapper, this );
+	var libs = [
+		'lib.DOM',
+		'lib.Delegate',
+		'lib.Debounce' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS.load ( libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

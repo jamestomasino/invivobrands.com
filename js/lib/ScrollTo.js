@@ -6,21 +6,10 @@
 
 	function classWrapper() {
 
-		var requestAnimFrame = (function(){
-			return  window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function( callback ){ window.setTimeout(callback, 1000 / 60); };
-		})();
-
 		function ScrollTo(to, callback, duration, easing) {
 
 			function move(amount) {
 				document.documentElement.scrollTop = document.body.parentNode.scrollTop = document.body.scrollTop = amount;
-				// if (supportPageOffset) {
-				// 	window.pageYOffset = amount;
-				// } else if (isCSS1Compat) {
-				// 	document.documentElement.scrollTop = amount;
-				// } else {
-				// 	document.body.scrollTop = amount;
-				// }
 			}
 
 			function position() {
@@ -44,7 +33,7 @@
 				var val = easing.call(this, currentTime, start, change, duration);
 				move(val);
 				if (currentTime < duration) {
-					requestAnimFrame(animateScroll);
+					requestAnimationFrame(animateScroll);
 				} else {
 					if (callback && typeof(callback) === 'function') {
 						callback();
@@ -59,6 +48,12 @@
 		namespace.ScrollTo = ScrollTo;
 	}
 
-	NS.load ( ['lib.Easing'], classWrapper, this );
+	var polyfills = [];
+
+	if (!window.requestAnimationFrame) {
+		polyfills.push("polyfill.requestAnimationFrame");
+	}
+
+	NS.load ( ['lib.Easing'].concat(polyfills), classWrapper, this );
 
 })(window.NS);
