@@ -565,14 +565,22 @@
 		font-weight: 900;
 	}
 
+	#gettoknowus .gettoknowus_intro .pullquote p {
+		padding-bottom: 18px;
+	}
+
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
-		padding-top: 18px;
+		padding-top: 10px;
 		color: #ff1e00;
 	}
 
 	#gettoknowus .gettoknowus_intro .copy {
-		padding: 18px 0;
+		padding: 10px 0;
 		border-bottom: 1px dashed #ff1e00;
+	}
+
+	#gettoknowus .gettoknowus_intro .copy p {
+		padding-bottom: 18px;
 	}
 
 	#gettoknowus .gettoknowus_outro {
@@ -649,7 +657,7 @@
 		}
 
 	#whatwedo .whatwedo_content {
-		max-width: 365px;
+		max-width: 425px;
 		padding: 20px 10px;
 	}
 
@@ -707,15 +715,11 @@
 			}
 
 			#whatwedo .whatwedo_content .row2 ul {
-				top: -103px;
+				top: -140px;
 			}
 
 			#whatwedo .whatwedo_content .row3 ul {
-				top: -166px;
-			}
-
-			#whatwedo .whatwedo_content .row4 ul {
-				top: -269px;
+				top: -203px;
 			}
 
 		#whatwedo .whatwedo_content li {
@@ -863,8 +867,8 @@
 		position: relative;
 		display: inline-block;
 		cursor: pointer;
-		width: 170px;
-		height: 376px;
+		width: 240px;
+		height: 252px;
 		vertical-align: top;
 		padding: 5px 5px 0 0;
 		box-sizing: border-box;
@@ -922,7 +926,7 @@
 		#letsconnect .letsconnect_question .active dt .arrow_container {
 			position: absolute;
 			bottom: 70px;
-			left: 55px;
+			left: 90px;
 		}
 
 			#letsconnect .letsconnect_question .active dt .arrow_container .line {
@@ -959,8 +963,9 @@
 		}
 
 		#letsconnect .letsconnect_question dd h2 {
-			font-size: 30px;
-			line-height: 40px;
+			font-size: 34px;
+			line-height: 34px;
+			width: 740px;
 			text-transform: uppercase;
 			margin-bottom: 20px;
 			font-weight: 900;
@@ -969,23 +974,6 @@
 
 		#letsconnect .letsconnect_questions dd p a {
 			color: #00c8dc;
-		}
-
-		#letsconnect .letsconnect_question .existing_client dd h2 {
-			width: 740px;
-		}
-		#letsconnect .letsconnect_question .future_client dd h2 {
-			width: 550px;
-		}
-		#letsconnect .letsconnect_question .existing_team dd h2 {
-			width: 740px;
-			font-size: 34px;
-			line-height: 34px;
-		}
-		#letsconnect .letsconnect_question .future_team dd h2 {
-			width: 740px;
-			font-size: 33px;
-			line-height: 33px;
 		}
 
 	#letsconnect .letsconnect_outro {
