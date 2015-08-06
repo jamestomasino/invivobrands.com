@@ -144,9 +144,6 @@
 
 @media screen and (max-width: 620px) {
 
-#whatwedo {
-}
-
 	#whatwedo .whatwedo_content h3 {
 		font-size: 30px;
 		line-height: 30px;
@@ -202,4 +199,9 @@
 			box-sizing: border-box;
 			padding: 5px 5px 3px 5px;
 		}
+
+	#footer .wrapper .legal {
+		position: relative;
+		padding: 15px 0 20px 10px;
+	}
 }
