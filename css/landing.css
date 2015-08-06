@@ -212,10 +212,9 @@
 		}
 
 		#header .intro p {
-			float: left;
-			top: 0;
 			max-width: 305px;
 			padding-right: 10px;
+			padding-bottom: 15px;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
@@ -224,8 +223,9 @@
 		}
 
 		#header .intro .arrow_container {
-			float: right;
-			top: -60px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
 			opacity: 0;
 			filter: alpha(opacity=0);
 			margin: 10px 20px;
