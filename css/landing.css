@@ -395,9 +395,6 @@
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote {
-		text-transform: uppercase;
-		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-		font-weight: 900;
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote p {
