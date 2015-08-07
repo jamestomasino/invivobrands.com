@@ -270,11 +270,11 @@
 	}
 
 		#header.animate .bgtextfill {
-			-webkit-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
-			   -moz-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
-			    -ms-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
-			     -o-transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
-			        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
+			-webkit-transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
+			   -moz-transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
+			    -ms-transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
+			     -o-transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
+			        transition: height 1.5s cubic-bezier(0.23, 1, 0.32, 1) 3.0s;
 			height: 485px;
 		}
 
