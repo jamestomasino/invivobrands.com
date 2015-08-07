@@ -221,6 +221,7 @@
 
 		#header .intro .callout {
 			color: #00c8dc;
+			text-transform: uppercase;
 		}
 
 		#header .intro .arrow_container {
