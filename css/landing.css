@@ -395,6 +395,7 @@
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote {
+		text-transform: uppercase;
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote p {
