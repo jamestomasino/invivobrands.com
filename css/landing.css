@@ -21,11 +21,11 @@
 		opacity: 1;
 		filter: alpha(opacity=100);
 		top: 0;
-		-webkit-transition: top 0.3s ease-in-out 2.4s, opacity 0.2s ease-in 2.3s;
-		   -moz-transition: top 0.3s ease-in-out 2.4s, opacity 0.2s ease-in 2.3s;
-		    -ms-transition: top 0.3s ease-in-out 2.4s, opacity 0.2s ease-in 2.3s;
-		     -o-transition: top 0.3s ease-in-out 2.4s, opacity 0.2s ease-in 2.3s;
-		        transition: top 0.3s ease-in-out 2.4s, opacity 0.2s ease-in 2.3s;
+		-webkit-transition: top 0.3s ease-in-out 3.9s, opacity 0.2s ease-in 3.8s;
+		   -moz-transition: top 0.3s ease-in-out 3.9s, opacity 0.2s ease-in 3.8s;
+		    -ms-transition: top 0.3s ease-in-out 3.9s, opacity 0.2s ease-in 3.8s;
+		     -o-transition: top 0.3s ease-in-out 3.9s, opacity 0.2s ease-in 3.8s;
+		        transition: top 0.3s ease-in-out 3.9s, opacity 0.2s ease-in 3.8s;
 	}
 
 	#navigation a {
