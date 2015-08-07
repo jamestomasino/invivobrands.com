@@ -235,7 +235,7 @@
 		}
 
 		#header.animate .intro .arrow_container {
-			top: 0;
+			top: 5px;
 			opacity: 1;
 			filter: alpha(opacity=100);
 		}
