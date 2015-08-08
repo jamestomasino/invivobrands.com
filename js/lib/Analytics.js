@@ -106,13 +106,10 @@
 	}
 
 	var libs = [];
-
 	var polyfills = [];
-
 	if (!document.addEventListener) {
 		polyfills.push("polyfill.addEventListener");
 	}
-
 	NS.load ('lib.Analytics', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

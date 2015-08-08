@@ -83,16 +83,11 @@
 		return Bind;
 	}
 
-	var libs = [
-		'lib.Delegate',
-		'lib.Events' ]
-
+	var libs = [ 'lib.Delegate', 'lib.Events' ]
 	var polyfills = [];
-
 	if (!document.addEventListener) {
 		polyfills.push("polyfill.addEventListener");
 	}
-
 	NS.load ( 'lib.Bind', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

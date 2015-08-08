@@ -1,5 +1,5 @@
 (function (NS) {
-	"use strict"
+	"use strict";
 
 	function classWrapper() {
 
@@ -42,6 +42,8 @@
 
 	}
 
-	NS.load ( 'lib.Ajax', ['lib.Delegate'], classWrapper, this );
+	var libs = ['lib.Delegate'];
+	var polyfills = [];
+	NS.load ( 'lib.Ajax', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);
