@@ -820,18 +820,13 @@
 	}
 
 		#footer .wrapper h1 {
-			border: 0;
-			font: 0/0 a;
+			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			font-weight: 900;
+			font-size: 20px;
+			text-transform: uppercase;
 			width: 154;
 			height: 15px;
-			text-shadow: none;
-			color: transparent;
-			background: url(../images/logo-white.png);
-			background-size: 154px 15px;
-			background-repeat: no-repeat;
-			-ms-behavior: url(/css/polyfill/backgroundsize.min.htc);
-			opacity: .4;
-			filter: alpha(opacity=40);
+			color: #AAAAAA;
 		}
 
 		#footer .wrapper .contact {
