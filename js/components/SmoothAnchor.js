@@ -42,8 +42,7 @@
 			}
 		};
 
-		var namespace = new NS ( 'components' );
-		namespace.SmoothAnchor = SmoothAnchor;
+		return SmoothAnchor;
 	}
 
 	var libs = [

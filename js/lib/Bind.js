@@ -80,8 +80,7 @@
 			Events.unsubscribe( this.addMessage, this.attachProxy );
 		};
 
-		var namespace = new NS ('lib');
-		namespace.Bind = Bind;
+		return Bind;
 	}
 
 	var libs = [

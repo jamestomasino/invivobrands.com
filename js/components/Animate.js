@@ -74,8 +74,7 @@
 			hasScrolled();
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.Animate = Animate;
+		return Animate;
 
 	}
 

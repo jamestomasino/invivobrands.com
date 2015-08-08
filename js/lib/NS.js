@@ -15,7 +15,7 @@
 		}
 	})();
 
-	function NS (NSString) {
+	function NS (NSString, obj) {
 		var parts = NSString.split('.');
 		var parent = NS.global;
 		var currentPart = '';
@@ -193,7 +193,6 @@
 		var currentObj = NS.loaded.pop();
 		currentObj.isProcessed = true;
 		NS.processed.push(currentObj);
-		console.log(currentObj);
 		var f = new Function (currentObj.source);
 		f.call(NS.global);
 		NS.process();
@@ -201,7 +200,12 @@
 
 	NS.processCallbacks = function () {
 		var callObj = NS.callbacks.pop();
-		NS.global.eval( callObj.callback.call( callObj.scope ) );
+		new NS (callObj.id);
+		str = callObj.id.split(".");
+		obj = NS.global;
+		while (str.length > 1)
+			obj = obj[str.shift()];
+		obj[str.shift()] = callObj.callback.call( callObj.scope || window );
 		NS.process();
 	}
 

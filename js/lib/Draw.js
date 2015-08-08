@@ -41,8 +41,7 @@
 			return line;
 		};
 
-		var namespace = new NS ( 'lib' );
-		namespace.Draw = Draw;
+		return Draw;
 
 	}
 

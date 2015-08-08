@@ -99,9 +99,7 @@
 			window.addEventListener("scroll", Debounce(hasScrolled, 66, true, true), true);
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.Menu = Menu;
-
+		return Menu;
 	}
 
 	var libs = [

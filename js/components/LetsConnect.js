@@ -88,9 +88,7 @@
 
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.LetsConnect = LetsConnect;
-
+		return LetsConnect;
 	}
 
 	var libs = [
@@ -104,6 +102,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( 'components.HowWeDoIt', libs.concat(polyfills), classWrapper, this );
+	NS.load ( 'components.LetsConnect', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

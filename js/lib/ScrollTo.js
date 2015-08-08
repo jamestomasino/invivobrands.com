@@ -44,8 +44,7 @@
 			animateScroll();
 		}
 
-		var namespace = new NS ( 'lib' );
-		namespace.ScrollTo = ScrollTo;
+		return ScrollTo;
 	}
 
 	var polyfills = [];

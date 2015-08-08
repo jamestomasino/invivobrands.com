@@ -26,9 +26,7 @@
 			//bgtextfill.style.height = Math.min(Math.max(h,minHeight),maxHeight) + "px";
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.Header = Header;
-
+		return Header;
 	}
 
 	NS.load ( 'components.Header', ['lib.DOM','lib.Draw'], classWrapper, this );

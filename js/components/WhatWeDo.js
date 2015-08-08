@@ -37,8 +37,7 @@
 			}
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.WhatWeDo = WhatWeDo;
+		return WhatWeDo;
 
 	}
 

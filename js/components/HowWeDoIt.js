@@ -64,9 +64,7 @@
 			fixActiveItem();
 		}
 
-		var namespace = new NS ( 'components' );
-		namespace.HowWeDoIt = HowWeDoIt;
-
+		return HowWeDoIt;
 	}
 
 	var libs = [

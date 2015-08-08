@@ -102,9 +102,7 @@
 			window.ga('send', trackObj, {'nonInteraction': 1});
 		};
 
-		var namespace = new NS ( 'lib' );
-		namespace.Analytics = Analytics;
-
+		return Analytics;
 	}
 
 	var libs = [];
