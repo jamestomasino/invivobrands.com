@@ -200,7 +200,7 @@
 
 	NS.processCallbacks = function () {
 		var callObj = NS.callbacks.pop();
-		console.log (callObj.id);
+		console.log ('[NS] Processing:', callObj.id);
 		new NS (callObj.id);
 		str = callObj.id.split(".");
 		obj = NS.global;
