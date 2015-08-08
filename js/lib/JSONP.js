@@ -1,5 +1,5 @@
 (function (NS) {
-	"use strict"
+	"use strict";
 
 	function classWrapper() {
 
