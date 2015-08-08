@@ -2,8 +2,6 @@
 	"use strict";
 
 	function classWrapper() {
-		console.log ('Processing!!!');
-
 		var Draw = {};
 
 		Draw.noTransform = true;
