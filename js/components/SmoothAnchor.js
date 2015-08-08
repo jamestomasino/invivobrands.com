@@ -56,6 +56,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( libs.concat(polyfills), classWrapper, this );
+	NS.load ( 'components.SmoothAnchor', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

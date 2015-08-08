@@ -115,6 +115,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( libs.concat(polyfills), classWrapper, this );
+	NS.load ('lib.Analytics', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

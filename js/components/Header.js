@@ -31,6 +31,6 @@
 
 	}
 
-	NS.load ( ['lib.DOM','lib.Draw'], classWrapper, this );
+	NS.load ( 'components.Header', ['lib.DOM','lib.Draw'], classWrapper, this );
 
 })(window.NS);

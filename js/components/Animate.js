@@ -21,8 +21,6 @@
 		};
 		var transitionEnd = transitions[transition] || false;
 
-		console.log (transitionEnd);
-
 		function onTransEnd(e) {
 			DOM.addClass(e.target, 'finished');
 		}
@@ -93,6 +91,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( libs.concat(polyfills), classWrapper, this );
+	NS.load ( 'components.Animate', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

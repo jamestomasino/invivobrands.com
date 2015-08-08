@@ -43,6 +43,6 @@
 
 	}
 
-	NS.load ( ['lib.Delegate'], classWrapper, this );
+	NS.load ( 'lib.Ajax', ['lib.Delegate'], classWrapper, this );
 
 })(window.NS);

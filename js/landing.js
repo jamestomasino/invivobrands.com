@@ -5,8 +5,6 @@ function landing() {
 
 	// Local vars for Lib access
 	var Analytics           = NS.use('lib.Analytics');
-	var DOM                 = NS.use('lib.DOM');
-	var Draw                = NS.use('lib.Draw');
 	var SmoothAnchor        = NS.use('components.SmoothAnchor');
 	var Animate             = NS.use('components.Animate');
 	var Header              = NS.use('components.Header');
@@ -57,18 +55,16 @@ function landing() {
 
 // Define standard libraries for use, calculate polyfills and load page
 var libs = [
-	'lib.DOM',
-	'lib.Draw',
-	'lib.Analytics',
 	'components.SmoothAnchor',
 	'components.Animate',
 	'components.Header',
 	'components.Menu',
 	'components.WhatWeDo',
 	'components.HowWeDoIt',
-	'components.LetsConnect' ];
+	'components.LetsConnect',
+	'lib.Analytics' ];
 
 var polyfills = [];
 
-NS.load (libs.concat(polyfills), landing, this);
+NS.load ('landing', libs.concat(polyfills), landing, this);
 

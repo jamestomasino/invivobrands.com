@@ -54,6 +54,6 @@
 		polyfills.push("polyfill.requestAnimationFrame");
 	}
 
-	NS.load ( ['lib.Easing'].concat(polyfills), classWrapper, this );
+	NS.load ( 'lib.ScrollTo', ['lib.Easing'].concat(polyfills), classWrapper, this );
 
 })(window.NS);

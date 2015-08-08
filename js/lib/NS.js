@@ -38,8 +38,7 @@
 	NS.loading = []; // add to loading when removed from queue, during load
 	NS.loaded = []; // add to loaded when loading complete, never remove
 	NS.processed = []; // add to processed after executing
-	NS.callbacks = []; // Add callbacks in order, but only at when all processed
-
+	NS.callbacks = []; // Add callbacks in order, but only when all processed
 	NS.isProcessing = false;
 
 	NS.use = function ( NSString ) {
@@ -62,12 +61,18 @@
 		}
 	}
 
-	NS.load = function ( NSStrings, callback, scope ) {
+	NS.load = function ( id, NSStrings, callback, scope ) {
 		if (typeof callback === 'function') {
-			NS.callbacks.push ( {'callback':callback, 'scope':scope} );
+			NS.callbacks.push ( {'id':id, 'callback':callback, 'scope':scope, 'NSStrings':NSStrings} );
 		}
 
+		NS.loadTotal++;
+
 		for (var i = 0; i < NSStrings.length; ++i) {
+
+			// Push required libs to the top of stack if requested
+			NS.pushToEnd (NSStrings[i], NS.callbacks);
+
 			if ( !NS.exists( NSStrings[i] ) ) {
 				var NSObj = {};
 				NSObj.id = NSStrings[i];
@@ -188,6 +193,7 @@
 		var currentObj = NS.loaded.pop();
 		currentObj.isProcessed = true;
 		NS.processed.push(currentObj);
+		console.log(currentObj);
 		var f = new Function (currentObj.source);
 		f.call(NS.global);
 		NS.process();

@@ -94,6 +94,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( libs.concat(polyfills), classWrapper, this );
+	NS.load ( 'lib.Bind', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);
