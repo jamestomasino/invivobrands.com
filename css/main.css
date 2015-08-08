@@ -193,7 +193,7 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.notransdelay {
+.notransdelay, .finished {
 	-webkit-transition-delay: unset !important;
 	   -moz-transition-delay: unset !important;
 	    -ms-transition-delay: unset !important;
