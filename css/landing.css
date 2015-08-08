@@ -29,8 +29,7 @@
 #menu {
 	position: fixed;
 	width: 100%;
-	max-width: 735px;
-	margin: 0 auto;
+	margin: 10px 10px 0 0;
 	display: block;
 	top: 50px;
 	left: 0;
