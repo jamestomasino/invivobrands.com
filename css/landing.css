@@ -175,15 +175,18 @@
 		#header .intro p {
 			display: block;
 			padding-left: 90px;
-			padding-bottom: 5px;
+			padding-bottom: 20px;
 			text-align: right;
 			font-size: 25px;
+			line-height: 22px;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
 		#header .intro .callout {
-			color: #00c8dc;
+/*			color: #00c8dc;
 			text-transform: uppercase;
+			*/
+			color: #464646;
 		}
 
 		#header .intro .arrow_container {
@@ -352,8 +355,8 @@
 		margin: 0 auto;
 		padding: 0 10px;
 		color: #464646;
-		font-size: 15px;
-		line-height: 18px;
+		font-size: 18px;
+		line-height: 20px;
 		
 	}
 
@@ -362,25 +365,18 @@
 		font-weight: 900;
 	}
 
-	#gettoknowus .gettoknowus_intro .pullquote p {
-		padding-bottom: 18px;
-	}
-
-	#gettoknowus .gettoknowus_intro .pullquote .highlight {
+	#gettoknowus .gettoknowus_intro .pullquote {
 		text-transform: uppercase;
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
-		padding-top: 10px;
-		color: #ff1e00;
-	}
-
-	#gettoknowus .gettoknowus_intro .copy {
-		padding: 10px 0;
+		font-size: 20px;
+		padding-top: 20px;
+		padding-bottom: 24px;
 		border-bottom: 1px dashed #ff1e00;
 	}
 
-	#gettoknowus .gettoknowus_intro .copy p {
-		padding-bottom: 18px;
+	#gettoknowus .gettoknowus_intro .pullquote .highlight {
+		color: #ff1e00;
 	}
 
 	#gettoknowus .gettoknowus_outro {
@@ -415,6 +411,10 @@
 			color: #464646;
 			font-size: 15px;
 			line-height: 18px;
+		}
+
+		#gettoknowus .gettoknowus_outro .copy p {
+			padding-bottom: 10px;
 		}
 
 		#gettoknowus .gettoknowus_outro .button {
@@ -517,11 +517,15 @@
 			}
 
 			#whatwedo .whatwedo_content .row2 ul {
-				top: -100px;
+				top: -63px;
 			}
 
 			#whatwedo .whatwedo_content .row3 ul {
-				top: -165px;
+				top: -126px;
+			}
+
+			#whatwedo .whatwedo_content .row4 ul {
+				top: -189px;
 			}
 
 		#whatwedo .whatwedo_content li {
@@ -836,6 +840,14 @@
 			position: absolute;
 			right: 10px;
 			top: 0;
+		}
+
+		#footer .wrapper .legal .privacypolicy {
+			padding-top: 5px;
+		}
+
+		#footer .wrapper .legal .termsofuse {
+			padding-top: 5px;
 		}
 
 .no-js #header .bgtextfill {
