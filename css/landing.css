@@ -446,7 +446,8 @@
 	}
 
 	#whatwedo .whatwedo_intro {
-		padding: 0 10px;
+		padding: 0 10px 20px 10px;
+		border-bottom: 1px dashed #ff1e00;
 	}
 
 		#whatwedo .whatwedo_intro h1 {
@@ -458,8 +459,35 @@
 			padding-top: 18px;
 		}
 
+		#whatwedo .whatwedo_intro .whatwedo_expertise,
+		#whatwedo .whatwedo_intro .whatwedo_capabilities {
+			display: inline-block;
+			width: 100%;
+			max-width: 48%;
+			vertical-align: top;
+			margin-top: 18px;
+		}
+
+			#whatwedo .whatwedo_intro .whatwedo_expertise h2,
+			#whatwedo .whatwedo_intro .whatwedo_capabilities h2 {
+				font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			}
+
+			#whatwedo .whatwedo_intro .whatwedo_expertise h2,
+			#whatwedo .whatwedo_intro .whatwedo_capabilities h2 {
+				font-size: 14px;
+			}
+
+			#whatwedo .whatwedo_intro .whatwedo_expertise li,
+			#whatwedo .whatwedo_intro .whatwedo_capabilities li {
+				font-size: 13px;
+				list-style: square;
+				margin-left: 16px;
+				padding-right: 30px;
+			}
+
 	#whatwedo .whatwedo_content {
-		max-width: 425px;
+		max-width: 325px;
 		padding: 20px 10px;
 	}
 
@@ -503,9 +531,9 @@
 			display: none;
 			position: absolute;
 			margin: 0 0 10px 0;
-			max-width: 365px;
-			width: 220px;
-			left: 400px;
+			max-width: 255px;
+			width: 100%;
+			left: 344px;
 		}
 
 			#whatwedo .whatwedo_content .active ul {
@@ -531,7 +559,6 @@
 		#whatwedo .whatwedo_content li {
 			display: block;
 			font-size: 15px;
-			width: 200px;
 			box-sizing: border-box;
 			padding: 5px 5px 3px 5px;
 		}
