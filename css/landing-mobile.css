@@ -9,10 +9,11 @@
 			#howwedoit .howwedoit_content dt .term {
 				display: inline;
 				padding-left: 0;
+				font-size: 20px;
 			}
 				#howwedoit .howwedoit_content .active dt .term {
 					color: #333333;
-					background-color: #FFFFFF;
+					background-color: inherit;
 				}
 
 			#howwedoit .howwedoit_content dt .phrase {
