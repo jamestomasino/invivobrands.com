@@ -1,7 +1,11 @@
 (function (NS) {
 	"use strict"
 
-	function classWrapper() {
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.Template', libs.concat(polyfills), function(){
+
 		if (!Array.isArray) {
 			Array.isArray = function(arg) {
 				return Object.prototype.toString.call(arg) === '[object Array]';
@@ -72,10 +76,6 @@
 		}
 
 		return t;
-	}
-
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.Template', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

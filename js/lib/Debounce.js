@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper () {
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.Debounce', libs.concat(polyfills), function(){
 
 		var Debounce = function(func, wait, immediate, extra) {
 			var timeout, result;
@@ -20,10 +23,6 @@
 		};
 
 		return Debounce;
-	}
-
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.Debounce', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

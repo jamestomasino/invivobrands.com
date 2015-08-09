@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper () {
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.DOM', libs.concat(polyfills), function(){
 		var DOM = {};
 
 		DOM.create = function( str ) {
@@ -92,10 +95,6 @@
 		}
 
 		return DOM;
-	}
-
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.DOM', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

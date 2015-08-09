@@ -1,10 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
-		// Usage:
-		// Storage.get('someid');
-		// Storage.set('someid', someval);
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.Storage', libs.concat(polyfills), function(){
 
 		var Storage;
 		if ( NS.global.localStorage && JSON ) {
@@ -25,9 +25,6 @@
 		}
 
 		return Storage;
-	}
+	});
 
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.Storage', libs.concat(polyfills), classWrapper, this );
 })(window.NS);

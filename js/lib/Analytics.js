@@ -1,7 +1,13 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [];
+	var polyfills = [];
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS ('lib.Analytics', libs.concat(polyfills), function(){
 
 		/*************************************************************************/
 		/***************************** Analytics *********************************/
@@ -103,13 +109,6 @@
 		};
 
 		return Analytics;
-	}
-
-	var libs = [];
-	var polyfills = [];
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-	NS ('lib.Analytics', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

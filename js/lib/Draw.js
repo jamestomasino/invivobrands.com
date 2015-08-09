@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [ 'lib.Prefix' ];
+	var polyfills = [];
+
+	NS ( 'lib.Draw', libs.concat(polyfills), function(){
 		var Draw = {};
 
 		Draw.noTransform = true;
@@ -41,10 +44,6 @@
 
 		return Draw;
 
-	}
-
-	var libs = [ 'lib.Prefix' ];
-	var polyfills = [];
-	NS ( 'lib.Draw', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

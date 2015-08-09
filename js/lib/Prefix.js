@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.Prefix', libs.concat(polyfills), function(){
 		var Prefix = function () {};
 
 		Prefix.hasStyle = function ( prefixlist ) {
@@ -28,9 +31,6 @@
 		}
 
 		return Prefix;
-	}
+	});
 
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.Prefix', libs.concat(polyfills), classWrapper, this );
 })(window.NS);

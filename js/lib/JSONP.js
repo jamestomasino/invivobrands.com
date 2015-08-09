@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [];
+	var polyfills = [];
+
+	NS ( 'lib.JSONP', libs.concat(polyfills), function(){
 
 		return function (url, callbackFunction, errorFunction)
 		{
@@ -23,10 +26,6 @@
 			script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
 			document.body.appendChild(script);
 		}
-	}
-
-	var libs = [];
-	var polyfills = [];
-	NS ( 'lib.JSONP', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

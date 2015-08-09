@@ -1,7 +1,10 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = ['lib.Delegate'];
+	var polyfills = [];
+
+	NS ('lib.Ajax', libs.concat(polyfills), function(){
 
 		var Delegate = NS.use('lib.Delegate');
 
@@ -39,11 +42,6 @@
 		}
 
 		return Ajax;
-
-	}
-
-	var libs = ['lib.Delegate'];
-	var polyfills = [];
-	NS ( 'lib.Ajax', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);
