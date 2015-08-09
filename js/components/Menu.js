@@ -113,6 +113,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( 'components.Menu', libs.concat(polyfills), classWrapper, this );
+	NS ( 'components.Menu', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

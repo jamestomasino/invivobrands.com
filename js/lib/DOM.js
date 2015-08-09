@@ -96,6 +96,6 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.DOM', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.DOM', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

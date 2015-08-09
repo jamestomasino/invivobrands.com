@@ -32,5 +32,5 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.Prefix', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Prefix', libs.concat(polyfills), classWrapper, this );
 })(window.NS);

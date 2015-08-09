@@ -24,6 +24,6 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.Debounce', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Debounce', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

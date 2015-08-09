@@ -29,6 +29,6 @@
 		return Header;
 	}
 
-	NS.load ( 'components.Header', ['lib.DOM','lib.Draw'], classWrapper, this );
+	NS ( 'components.Header', ['lib.DOM','lib.Draw'], classWrapper, this );
 
 })(window.NS);

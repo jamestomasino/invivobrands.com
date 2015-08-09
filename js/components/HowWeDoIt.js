@@ -77,6 +77,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( 'components.HowWeDoIt', libs.concat(polyfills), classWrapper, this );
+	NS ( 'components.HowWeDoIt', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

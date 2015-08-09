@@ -15,22 +15,9 @@
 		}
 	})();
 
-	function NS (NSString, obj) {
-		var parts = NSString.split('.');
-		var parent = NS.global;
-		var currentPart = '';
-
-		for(var i = 0, length = parts.length; i < length; i++) {
-			currentPart = parts[i];
-			parent[currentPart] = parent[currentPart] || {};
-			parent = parent[currentPart];
-		}
-
-		return parent;
-	}
-
 	NS.global = window;
 	NS.baseURL = '';
+	NS.debug = false;
 
 	// Loading Process Sequence
 	NS.objs = []; // add all new objects here
@@ -41,27 +28,8 @@
 	NS.callbacks = []; // Add callbacks in order, but only when all processed
 	NS.isProcessing = false;
 
-	NS.use = function ( NSString ) {
-		if (NS.isProcessed(NSString)) {
+	function NS ( id, NSStrings, callback, scope ) {
 
-			var parts = NSString.split('.'),
-			parent = NS.global,
-			currentPart = '';
-
-			for ( var i = 0, length = parts.length; i < length; i++ ) {
-				currentPart = parts[i];
-				if ( typeof parent[currentPart] === 'undefined') {
-					throw ('ERROR::[ Namespace improperly loaded: ' + NSString + ' ]' );
-				}
-				parent = parent[currentPart];
-			}
-			return parent;
-		} else {
-			throw ('ERROR::[ Namespace does not exist: ' + NSString + ' ]' );
-		}
-	}
-
-	NS.load = function ( id, NSStrings, callback, scope ) {
 		if (typeof callback === 'function') {
 			NS.callbacks.push ( {'id':id, 'callback':callback, 'scope':scope, 'NSStrings':NSStrings} );
 		}
@@ -95,7 +63,42 @@
 		}
 
 		if ( !NS.isProcessing ) NS.process();
+	}
+
+	NS.makePath = function (NSString, obj) {
+		var parts = NSString.split('.');
+		var parent = NS.global;
+		var currentPart = '';
+
+		for(var i = 0, length = parts.length; i < length; i++) {
+			currentPart = parts[i];
+			parent[currentPart] = parent[currentPart] || {};
+			parent = parent[currentPart];
+		}
+
+		return parent;
 	};
+
+	NS.use = function ( NSString ) {
+		if (NS.isProcessed(NSString)) {
+
+			var parts = NSString.split('.'),
+			parent = NS.global,
+			currentPart = '';
+
+			for ( var i = 0, length = parts.length; i < length; i++ ) {
+				currentPart = parts[i];
+				if ( typeof parent[currentPart] === 'undefined') {
+					throw ('ERROR::[ Namespace improperly loaded: ' + NSString + ' ]' );
+				}
+				parent = parent[currentPart];
+			}
+			return parent;
+		} else {
+			throw ('ERROR::[ Namespace does not exist: ' + NSString + ' ]' );
+		}
+	};
+
 
 	NS.exists = function ( NSString ) {
 		var i = NS.objs.length; while (i--) {
@@ -200,13 +203,16 @@
 
 	NS.processCallbacks = function () {
 		var callObj = NS.callbacks.pop();
-		console.log ('[NS] Processing:', callObj.id);
-		new NS (callObj.id);
-		str = callObj.id.split(".");
-		obj = NS.global;
-		while (str.length > 1)
-			obj = obj[str.shift()];
-		obj[str.shift()] = callObj.callback.call( callObj.scope || window );
+		if (NS.debug) console.log ('[NS] Processing:', callObj.id);
+		var returnObj = callObj.callback.call( callObj.scope || window );
+		if (returnObj) {
+			NS.makePath (callObj.id);
+			str = callObj.id.split(".");
+			obj = NS.global;
+			while (str.length > 1)
+				obj = obj[str.shift()];
+			obj[str.shift()] = returnObj;
+		}
 		NS.process();
 	}
 

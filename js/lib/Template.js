@@ -76,6 +76,6 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.Template', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Template', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

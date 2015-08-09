@@ -29,5 +29,5 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.Storage', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Storage', libs.concat(polyfills), classWrapper, this );
 })(window.NS);

@@ -50,6 +50,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( 'components.WhatWeDo', libs.concat(polyfills), classWrapper, this );
+	NS ( 'components.WhatWeDo', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

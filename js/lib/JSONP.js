@@ -27,6 +27,6 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.JSONP', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.JSONP', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

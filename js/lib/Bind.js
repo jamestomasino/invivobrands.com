@@ -88,6 +88,6 @@
 	if (!document.addEventListener) {
 		polyfills.push("polyfill.addEventListener");
 	}
-	NS.load ( 'lib.Bind', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Bind', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

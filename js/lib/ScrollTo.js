@@ -52,6 +52,6 @@
 	if (!window.requestAnimationFrame) {
 		polyfills.push("polyfill.requestAnimationFrame");
 	}
-	NS.load ( 'lib.ScrollTo', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.ScrollTo', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

@@ -90,6 +90,6 @@
 		polyfills.push("polyfill.addEventListener");
 	}
 
-	NS.load ( 'components.Animate', libs.concat(polyfills), classWrapper, this );
+	NS ( 'components.Animate', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

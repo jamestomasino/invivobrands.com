@@ -11,6 +11,6 @@
 
 	var libs = [];
 	var polyfills = [];
-	NS.load ( 'lib.Delegate', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Delegate', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

@@ -45,6 +45,6 @@
 
 	var libs = [ 'lib.Prefix' ];
 	var polyfills = [];
-	NS.load ( 'lib.Draw', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Draw', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

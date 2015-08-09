@@ -44,6 +44,6 @@
 
 	var libs = ['lib.Delegate'];
 	var polyfills = [];
-	NS.load ( 'lib.Ajax', libs.concat(polyfills), classWrapper, this );
+	NS ( 'lib.Ajax', libs.concat(polyfills), classWrapper, this );
 
 })(window.NS);

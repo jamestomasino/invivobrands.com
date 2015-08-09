@@ -1,70 +1,75 @@
-/*global NS*/
-NS.baseURL = 'js/';
+(function(){
+	"use strict";
 
-function landing() {
+	/*global NS*/
+	NS.baseURL = 'js/';
+	NS.debug = true;
 
-	// Local vars for Lib access
-	var Analytics           = NS.use('lib.Analytics');
-	var SmoothAnchor        = NS.use('components.SmoothAnchor');
-	var Animate             = NS.use('components.Animate');
-	var Header              = NS.use('components.Header');
-	var WhatWeDo            = NS.use('components.WhatWeDo');
-	var HowWeDoIt           = NS.use('components.HowWeDoIt');
-	var LetsConnect         = NS.use('components.LetsConnect');
-	var Menu                = NS.use('components.Menu');
+	function landing() {
+
+		// Local vars for Lib access
+		var Analytics           = NS.use('lib.Analytics');
+		var SmoothAnchor        = NS.use('components.SmoothAnchor');
+		var Animate             = NS.use('components.Animate');
+		var Header              = NS.use('components.Header');
+		var WhatWeDo            = NS.use('components.WhatWeDo');
+		var HowWeDoIt           = NS.use('components.HowWeDoIt');
+		var LetsConnect         = NS.use('components.LetsConnect');
+		var Menu                = NS.use('components.Menu');
 
 
-	// Set up Google Analytics
-	// - Hijack exit links for tracking
-	var analytics = new Analytics ( "UA-64803192-1" );
+		// Set up Google Analytics
+		// - Hijack exit links for tracking
+		var analytics = new Analytics ( "UA-64803192-1" );
 
-	// Header Component
-	// - Add arrow lines
-	// - Size '.bgtextfill' to the client height
-	var header = new Header("#header");
+		// Header Component
+		// - Add arrow lines
+		// - Size '.bgtextfill' to the client height
+		var header = new Header("#header");
 
-	// What We Do Component
-	// - Click/tap listeners to switch offerings.
-	var whatwedo = new WhatWeDo("#whatwedo");
+		// What We Do Component
+		// - Click/tap listeners to switch offerings.
+		var whatwedo = new WhatWeDo("#whatwedo");
 
-	// How We Do It Component
-	// - Click/tap listeners to switch steps. Resize render fix
-	var howwedoit = new HowWeDoIt("#howwedoit");
+		// How We Do It Component
+		// - Click/tap listeners to switch steps. Resize render fix
+		var howwedoit = new HowWeDoIt("#howwedoit");
 
-	// Let's Connect Component
-	// - Add arrow lines
-	// - Click/tap listeners to switch. Resize render fix
-	var letsconnect = new LetsConnect("#letsconnect");
+		// Let's Connect Component
+		// - Add arrow lines
+		// - Click/tap listeners to switch. Resize render fix
+		var letsconnect = new LetsConnect("#letsconnect");
 
-	// Menu Component
-	var menu = new Menu("#navigation", "#menu", "#back_to_top");
+		// Menu Component
+		var menu = new Menu("#navigation", "#menu", "#back_to_top");
 
-	// Animate Component
-	// - Triggers 'animate' class on each div when it comes into view
-	var animate = new Animate([
-		'#navigation',
-		'#header',
-		'#gettoknowus',
-		'#whatwedo',
-		'#howwedoit',
-		'#letsconnect']);
+		// Animate Component
+		// - Triggers 'animate' class on each div when it comes into view
+		var animate = new Animate([
+			'#navigation',
+			'#header',
+			'#gettoknowus',
+			'#whatwedo',
+			'#howwedoit',
+			'#letsconnect']);
 
-	// Override anchor links to force a slide transition
-	var smoothAnchor = new SmoothAnchor();
-}
+		// Override anchor links to force a slide transition
+		var smoothAnchor = new SmoothAnchor();
+	}
 
-// Define standard libraries for use, calculate polyfills and load page
-var libs = [
-	'components.SmoothAnchor',
-	'components.Animate',
-	'components.Header',
-	'components.Menu',
-	'components.WhatWeDo',
-	'components.HowWeDoIt',
-	'components.LetsConnect',
-	'lib.Analytics' ];
+	// Define standard libraries for use, calculate polyfills and load page
+	var libs = [
+		'components.SmoothAnchor',
+		'components.Animate',
+		'components.Header',
+		'components.Menu',
+		'components.WhatWeDo',
+		'components.HowWeDoIt',
+		'components.LetsConnect',
+		'lib.Analytics' ];
 
-var polyfills = [];
+	var polyfills = [];
 
-NS.load ('landing', libs.concat(polyfills), landing, this);
+	NS ('landing', libs.concat(polyfills), landing, this);
 
+})();
