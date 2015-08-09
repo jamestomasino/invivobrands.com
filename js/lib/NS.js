@@ -34,8 +34,6 @@
 			NS.callbacks.push ( {'id':id, 'callback':callback, 'scope':scope, 'NSStrings':NSStrings} );
 		}
 
-		NS.loadTotal++;
-
 		for (var i = 0; i < NSStrings.length; ++i) {
 
 			// Push required libs to the top of stack if requested
