@@ -5,7 +5,20 @@
 	NS.baseURL = 'js/';
 	NS.debug = true;
 
-	function landing() {
+	// Define standard libraries for use, calculate polyfills and load page
+	var libs = [
+		'components.SmoothAnchor',
+		'components.Animate',
+		'components.Header',
+		'components.Menu',
+		'components.WhatWeDo',
+		'components.HowWeDoIt',
+		'components.LetsConnect',
+		'lib.Analytics' ];
+
+	var polyfills = [];
+
+	NS ('landing', libs.concat(polyfills), function(){
 
 		// Local vars for Lib access
 		var Analytics           = NS.use('lib.Analytics');
@@ -55,21 +68,5 @@
 
 		// Override anchor links to force a slide transition
 		var smoothAnchor = new SmoothAnchor();
-	}
-
-	// Define standard libraries for use, calculate polyfills and load page
-	var libs = [
-		'components.SmoothAnchor',
-		'components.Animate',
-		'components.Header',
-		'components.Menu',
-		'components.WhatWeDo',
-		'components.HowWeDoIt',
-		'components.LetsConnect',
-		'lib.Analytics' ];
-
-	var polyfills = [];
-
-	NS ('landing', libs.concat(polyfills), landing, this);
-
+	});
 })();

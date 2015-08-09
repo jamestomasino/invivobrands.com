@@ -1,7 +1,17 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [
+		'lib.DOM',
+		'lib.ScrollTo' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS ( 'components.SmoothAnchor', libs.concat(polyfills), function(){
 
 		var DOM      = NS.use('lib.DOM');
 		var ScrollTo = NS.use('lib.ScrollTo');
@@ -43,18 +53,6 @@
 		};
 
 		return SmoothAnchor;
-	}
-
-	var libs = [
-		'lib.DOM',
-		'lib.ScrollTo' ];
-
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.SmoothAnchor', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

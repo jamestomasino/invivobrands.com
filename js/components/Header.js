@@ -1,8 +1,7 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
-
+	NS ( 'components.Header', ['lib.DOM','lib.Draw'], function(){
 		var DOM = NS.use('lib.DOM');
 		var Draw = NS.use('lib.Draw');
 		var DOM_EL = null;
@@ -19,16 +18,9 @@
 			headerArrow.appendChild(line1);
 			headerArrow.appendChild(line2);
 			headerArrow.appendChild(line3);
-
-			var bgtextfill = DOM.find('.bgtextfill', DOM_EL)[0];
-			var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-			h = h - 110;
-			//bgtextfill.style.height = Math.min(Math.max(h,minHeight),maxHeight) + "px";
 		}
 
 		return Header;
-	}
-
-	NS ( 'components.Header', ['lib.DOM','lib.Draw'], classWrapper, this );
+	});
 
 })(window.NS);

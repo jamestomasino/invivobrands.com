@@ -1,7 +1,18 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [
+		'lib.DOM',
+		'lib.Delegate',
+		'lib.Debounce' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS ( 'components.Menu', libs.concat(polyfills), function(){
 
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');
@@ -43,29 +54,7 @@
 			}
 
 			function hasScrolled() {
-				// scroll top
 				var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-
-				// If movement broke threshold, show/hide navbar
-				if (Math.abs(lastScrollTop - y) > delta) {
-
-					// Save repetetive dom lookups by using a bool
-					if (!noTransDelay) {
-						noTransDelay = true;
-						DOM.addClass(navbar, 'notransdelay');
-					}
-
-					if (y > lastScrollTop) {
-						if (!DOM.hasClass(menuList, "active")) {
-							DOM.addClass(navbar, 'nav-up');
-							lastScrollTop = y;
-						}
-					} else if ( y < lastScrollTop ) {
-						DOM.removeClass(navbar, 'nav-up');
-						lastScrollTop = y;
-					}
-
-				}
 
 				if (isAboveThreshold && y > topThreshold) {
 					DOM.addClass(backtotop, "active");
@@ -100,19 +89,6 @@
 		}
 
 		return Menu;
-	}
-
-	var libs = [
-		'lib.DOM',
-		'lib.Delegate',
-		'lib.Debounce' ];
-
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.Menu', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

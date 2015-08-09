@@ -1,7 +1,16 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [
+		'lib.DOM' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS ('components.WhatWeDo', libs.concat(polyfills), function(){
 
 		var DOM = NS.use('lib.DOM');
 		var DOM_EL = null;
@@ -39,17 +48,6 @@
 
 		return WhatWeDo;
 
-	}
-
-	var libs = [
-		'lib.DOM' ];
-
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.WhatWeDo', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);

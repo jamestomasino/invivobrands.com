@@ -1,7 +1,17 @@
 (function (NS) {
 	"use strict";
 
-	function classWrapper() {
+	var libs = [
+		'lib.DOM',
+		'lib.Debounce' ];
+
+	var polyfills = [];
+
+	if (!document.addEventListener) {
+		polyfills.push("polyfill.addEventListener");
+	}
+
+	NS ( 'components.HowWeDoIt', libs.concat(polyfills), function(){
 
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');
@@ -65,18 +75,6 @@
 		}
 
 		return HowWeDoIt;
-	}
-
-	var libs = [
-		'lib.DOM',
-		'lib.Debounce' ];
-
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.HowWeDoIt', libs.concat(polyfills), classWrapper, this );
+	});
 
 })(window.NS);
