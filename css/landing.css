@@ -165,11 +165,11 @@
 			opacity: 1;
 			filter: alpha(opacity=100);
 			background: #f6f6f6;
-			-webkit-transition: top 0.4s ease-in 2.8s, opacity 0.2s ease-in 2.6s;
-			   -moz-transition: top 0.4s ease-in 2.8s, opacity 0.2s ease-in 2.6s;
-				-ms-transition: top 0.4s ease-in 2.8s, opacity 0.2s ease-in 2.6s;
-				 -o-transition: top 0.4s ease-in 2.8s, opacity 0.2s ease-in 2.6s;
-					transition: top 0.4s ease-in 2.8s, opacity 0.2s ease-in 2.6s;
+			-webkit-transition: top 0.9s ease-in 3.8s, opacity 0.2s ease-in 3.6s;
+			   -moz-transition: top 0.9s ease-in 3.8s, opacity 0.2s ease-in 3.6s;
+				-ms-transition: top 0.9s ease-in 3.8s, opacity 0.2s ease-in 3.6s;
+				 -o-transition: top 0.9s ease-in 3.8s, opacity 0.2s ease-in 3.6s;
+					transition: top 0.9s ease-in 3.8s, opacity 0.2s ease-in 3.6s;
 		}
 
 		#header .intro p {
