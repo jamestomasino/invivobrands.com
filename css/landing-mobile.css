@@ -38,6 +38,14 @@
 					padding: 12px 20px 0 65px;
 				}
 
+			#howwedoit .howwedoit_content dd .pullquote {
+				font-size: 50px;
+				top: 25px;
+				left: 0;
+				font-weight: 900;
+				font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+			}
+
 	#howwedoit .howwedoit_outro {
 		margin-top: 0;
 	}
