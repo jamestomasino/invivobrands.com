@@ -2,9 +2,6 @@
 	"use strict";
 
 	var libs = ['lib.Easing'];
-	if (!window.requestAnimationFrame) {
-		libs.push("polyfill.requestAnimationFrame");
-	}
 
 	NS ( 'lib.ScrollTo', libs, function(){
 

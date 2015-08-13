@@ -6,13 +6,7 @@
 		'lib.Draw',
 		'lib.Debounce' ];
 
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.LetsConnect', libs.concat(polyfills), function(){
+	NS ( 'components.LetsConnect', libs, function(){
 
 		var DOM = NS.use('lib.DOM');
 		var Draw = NS.use('lib.Draw');

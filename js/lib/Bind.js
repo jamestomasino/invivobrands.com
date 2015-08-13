@@ -2,10 +2,6 @@
 	"use strict";
 
 	var libs = [ 'lib.Delegate', 'lib.Events' ]
-	if (!document.addEventListener) {
-		libs.push("polyfill.addEventListener");
-	}
-
 	NS ( 'lib.Bind', libs, function(){
 
 		var Delegate = NS.use('lib.Delegate');

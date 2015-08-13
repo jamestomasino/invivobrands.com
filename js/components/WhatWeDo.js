@@ -4,13 +4,7 @@
 	var libs = [
 		'lib.DOM' ];
 
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ('components.WhatWeDo', libs.concat(polyfills), function(){
+	NS ('components.WhatWeDo', libs, function(){
 
 		var DOM = NS.use('lib.DOM');
 		var DOM_EL = null;

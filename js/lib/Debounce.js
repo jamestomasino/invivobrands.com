@@ -2,9 +2,7 @@
 	"use strict";
 
 	var libs = [];
-	var polyfills = [];
-
-	NS ( 'lib.Debounce', libs.concat(polyfills), function(){
+	NS ( 'lib.Debounce', libs, function(){
 
 		var Debounce = function(func, wait, immediate, extra) {
 			var timeout, result;

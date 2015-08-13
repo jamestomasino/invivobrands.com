@@ -7,13 +7,7 @@
 		'lib.Delegate',
 		'lib.Prefix' ];
 
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ('components.Animate', libs.concat(polyfills), function(){
+	NS ('components.Animate', libs, function(){
 
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');

@@ -5,13 +5,7 @@
 		'lib.DOM',
 		'lib.Debounce' ];
 
-	var polyfills = [];
-
-	if (!document.addEventListener) {
-		polyfills.push("polyfill.addEventListener");
-	}
-
-	NS ( 'components.HowWeDoIt', libs.concat(polyfills), function(){
+	NS ( 'components.HowWeDoIt', libs, function(){
 
 		var DOM = NS.use('lib.DOM');
 		var Debounce = NS.use('lib.Debounce');

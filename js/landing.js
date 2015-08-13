@@ -16,9 +16,7 @@
 		'components.LetsConnect',
 		'lib.Analytics' ];
 
-	var polyfills = [];
-
-	NS ('landing', libs.concat(polyfills), function(){
+	NS ('landing', libs, function(){
 
 		// Local vars for Lib access
 		var Analytics           = NS.use('lib.Analytics');
