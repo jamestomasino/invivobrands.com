@@ -1,5 +1,9 @@
 @media screen and (max-width: 735px) {
 
+		#howwedoit .howwedoit_content {
+			padding-bottom: 0;
+		}
+
 			#howwedoit .howwedoit_content dt {
 				display: block;
 				width: 100%;
@@ -33,6 +37,10 @@
 				border-bottom: 0;
 
 			}
+
+				#howwedoit .howwedoit_content .active dd {
+					height: auto;
+				}
 
 				#howwedoit .howwedoit_content dd p {
 					margin-bottom: 15px;
@@ -138,9 +146,21 @@
 			font-size: 24px;
 			line-height: 24px;
 		}
+		#letsconnect .letsconnect_question .active dd p {
+			font-size: 18px;
+			line-height: 24px;
+		}
 
 	#letsconnect .letsconnect_outro {
 		display: none;
+	}
+
+	#footer .wrapper .contact {
+		display: block;
+	}
+
+	#footer .wrapper .legal{
+		display: block;
 	}
 }
 
@@ -231,10 +251,6 @@
 			padding: 5px 5px 3px 5px;
 		}
 
-	#footer .wrapper .legal {
-		position: relative;
-		padding: 15px 0 20px 10px;
-	}
 }
 
 @media screen and (max-width: 480px) {
