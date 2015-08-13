@@ -151,7 +151,7 @@
 		top: 150px;
 		box-sizing: border-box;
 		width: 100%;
-		max-width: 562px;
+		max-width: 422px;
 		padding: 10px 10px 0 0;
 		background: #464646;
 		color: #FFF;
@@ -174,24 +174,19 @@
 
 		#header .intro p {
 			display: block;
-			padding-left: 90px;
-			padding-bottom: 20px;
-			text-align: right;
+			padding: 0 90px 20px 10px;
+			text-align: left;
 			font-size: 25px;
 			line-height: 22px;
-			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		}
 
 		#header .intro .callout {
-/*			color: #00c8dc;
-			text-transform: uppercase;
-			*/
 			color: #464646;
 		}
 
 		#header .intro .arrow_container {
 			position: absolute;
-			left: 0;
+			right: 0;
 			top: 10px;
 			opacity: 0;
 			filter: alpha(opacity=0);
@@ -210,7 +205,7 @@
 				position: absolute;
 				border-width: 1px 0px 0px 0px;
 				border-style: dashed;
-				border-color: #464646;
+				border-color: #00c8dc;
 				transform: translateZ(1px);
 				-webkit-backface-visibility: hidden;
 				-moz-backface-visibility: hidden;
@@ -354,11 +349,14 @@
 		max-width: 735px;
 		margin: 0 auto;
 		padding: 0 10px;
-		color: #464646;
-		font-size: 18px;
-		line-height: 20px;
-		
+		color: #323232;
+		font-size: 20px;
+		line-height: 24px;
+		border-bottom: 1px dashed #ff1e00;
 	}
+		#gettoknowus .gettoknowus_intro p {
+			padding-bottom: 15px;
+		}
 
 	#gettoknowus .gettoknowus_intro .pullquote {
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
@@ -372,65 +370,111 @@
 		font-size: 20px;
 		padding-top: 20px;
 		padding-bottom: 24px;
-		border-bottom: 1px dashed #ff1e00;
 	}
 
 	#gettoknowus .gettoknowus_intro .pullquote .highlight {
 		color: #ff1e00;
 	}
 
-	#gettoknowus .gettoknowus_outro {
+	#gettoknowus .gettoknowus_body {
+		display: block;
+		position: relative;
 		max-width: 735px;
 		margin: 0 auto;
 		padding: 0 10px 40px 10px;
 	}
 
-		#gettoknowus .gettoknowus_outro .pullquote {
-			float: left;
+		#gettoknowus .gettoknowus_body .pullquote {
+			display: inline-block;
 			font-size: 30px;
 			line-height: 40px;
-			max-width: 352px;
+			max-width: 300px;
 			text-transform: uppercase;
-			margin: 18px 18px 18px 0;
+			margin: 18px 58px 18px 0;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 			font-weight: 900;
+			vertical-align: top;
 		}
 
-			#gettoknowus .gettoknowus_outro .pullquote .question {
-				color: #464646;
+			#gettoknowus .gettoknowus_body .pullquote {
+				color: #323232;
 			}
 
-			#gettoknowus .gettoknowus_outro .pullquote .response {
-				color: #00c8dc;
+			#gettoknowus .gettoknowus_body .pullquote .highlight{
+				color: #ff1e00;
 			}
 
-		#gettoknowus .gettoknowus_outro .copy {
-			float: left;
-			margin-top: 18px;
-			max-width: 325px;
+		#gettoknowus .gettoknowus_body .copy {
+			display: inline-block;
+			margin-top: 22px;
+			max-width: 345px;
 			color: #464646;
 			font-size: 15px;
-			line-height: 18px;
+			line-height: 20px;
+			vertical-align: top;
 		}
 
-		#gettoknowus .gettoknowus_outro .copy p {
+		#gettoknowus .gettoknowus_body .copy p {
 			padding-bottom: 10px;
 		}
 
-		#gettoknowus .gettoknowus_outro .button {
-			margin-top: 18px;
-			margin-bottom: 25px;
+
+	#gettoknowus .gettoknowus_outro {
+		display: block;
+		position: relative;
+		width: 100%;
+		background-image: url(../images/gettoknowus_outro.jpg);
+		background-position: 25% 25%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		/*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/gettoknowus_outro.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/gettoknowus_outro.jpg', sizingMethod='scale')";
+		*/
+		max-height: 700px;
+	}
+
+		#gettoknowus .gettoknowus_outro .wrapper {
+			display: block;
+			position: relative;
+			max-width: 735px;
+			margin: 0 auto;
+			padding: 0 10px 40px 10px;
 		}
 
-			#gettoknowus .gettoknowus_outro .button a {
-				color: #FFF;
-				background: #ff1e00;
-				font-size: 16px;
-				line-height: 18px;
-				padding: 5px 7px;
-				box-sizing: border-box;
+		#gettoknowus .gettoknowus_outro .wrapper .spaceblock {
+			display: inline-block;
+			max-width: 300px;
+			margin: 18px 58px 18px 0;
+			vertical-align: top;
+			
+		}
+		
+		#gettoknowus .gettoknowus_outro .wrapper .cta {
+			display: inline-block;
+			color: #ffffff;
+			padding-top: 200px;
+			margin-left: 350px;
+			max-width: 345px;
+			vertical-align: top;
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+			#gettoknowus .gettoknowus_outro .wrapper .cta .button {
+				margin-top: 18px;
+				margin-bottom: 25px;
 			}
 
+				#gettoknowus .gettoknowus_outro .wrapper .cta .button a {
+					color: #ffffff;
+					background: #ff1e00;
+					font-size: 16px;
+					line-height: 18px;
+					padding: 5px 7px;
+					box-sizing: border-box;
+				}
 #whatwedo {
 	display: relative;
 	z-index: 10;
