@@ -363,6 +363,10 @@
 			padding-bottom: 15px;
 		}
 
+		#gettoknowus .gettoknowus_intro p .emphasis {
+			font-style: italic;
+		}
+
 	#gettoknowus .gettoknowus_intro .pullquote {
 		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight: 900;
