@@ -147,6 +147,7 @@
 	}
 
 	#header .intro {
+		display: block;
 		position: relative;
 		top: 150px;
 		box-sizing: border-box;
@@ -159,6 +160,10 @@
 		opacity: 0;
 		filter: alpha(opacity=0);
 	}
+
+		#header .intro:hover {
+			text-decoration: none;
+		}
 
 		#header.animate .intro {
 			top: 0;
@@ -442,14 +447,6 @@
 			padding: 0 10px 40px 10px;
 		}
 
-		#gettoknowus .gettoknowus_outro .wrapper .spaceblock {
-			display: inline-block;
-			max-width: 300px;
-			margin: 18px 58px 18px 0;
-			vertical-align: top;
-			
-		}
-		
 		#gettoknowus .gettoknowus_outro .wrapper .cta {
 			display: inline-block;
 			color: #ffffff;

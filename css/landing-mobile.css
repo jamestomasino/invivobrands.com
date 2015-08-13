@@ -1,5 +1,9 @@
 @media screen and (max-width: 735px) {
 
+	#gettoknowus .gettoknowus_outro .wrapper .cta {
+		margin-left: 10px;
+	}
+
 		#howwedoit .howwedoit_content {
 			padding-bottom: 0;
 		}
@@ -254,6 +258,15 @@
 }
 
 @media screen and (max-width: 480px) {
+
+	#gettoknowus .gettoknowus_outro {
+		background-position: 50% 25%;
+		max-height: 260px;
+	}
+
+	#gettoknowus .gettoknowus_outro .wrapper .cta {
+		padding-top: 50px;
+	}
 
 	#header .intro .arrow_container {
 		display: block;
