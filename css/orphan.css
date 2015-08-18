@@ -5,9 +5,28 @@
 	width: 100%;
 	background: #323232;
 	z-index: 1;
+	font-weight: 900;
+	font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	text-transform: uppercase;
+	font-size: 36px;
 }
+	#header a:hover {
+		text-decoration: none;
+	}
 
-	#header .wrapper {
+	#header .companyname {
+		display: block;
+		position: relative
+		font-weight: 900;
+		font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+		text-transform: uppercase;
+		font-size: 42px;
+		color: #ff1e00;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	#header .wrapper, #content .wrapper {
 		position: relative;
 		width: 100%;
 		max-width: 735px;
@@ -67,7 +86,7 @@
 	padding-top: 55px;
 	width: 100%;
 	background: #464646;
-	color: #AAAAAA;
+	color: #787878;
 	z-index: 10;
 	font-size: 12px;
 	line-height: 14px;
@@ -82,33 +101,61 @@
 	}
 
 		#footer .wrapper h1 {
+			display: inline-block;
+			vertical-align: top;
 			font-family: 'Replica-Heavy-S', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 			font-weight: 900;
 			font-size: 20px;
 			text-transform: uppercase;
 			width: 154;
 			height: 15px;
-			color: #AAAAAA;
+			color: #ff1e00;
+			margin-right: 40px;
+			margin-bottom: 25px;
 		}
 
 		#footer .wrapper .contact {
-			margin-top: 12px;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 40px;
+			margin-bottom: 20px;
+		}
+
+		#footer .wrapper .contact .email {
+			line-height: 20px;
+			color: #73E6FF;
+		}
+
+
+		#footer .wrapper .contact a {
+			color: #ffffff;
 		}
 
 		#footer .wrapper .legal {
-			position: absolute;
-			right: 10px;
-			top: 0;
+			display: inline-block;
+			vertical-align: top;
 		}
 
-		#footer .wrapper .legal .privacypolicy {
-			padding-top: 5px;
+		#footer .wrapper .legal .orphans {
+			margin-top: 15px;
 		}
 
-		#footer .wrapper .legal .termsofuse {
-			padding-top: 5px;
+		#footer .wrapper .legal .orphans a {
+			color: #787878;
 		}
 
 .no-js #header .bgtextfill {
 	height: 310px;
+}
+
+@media screen and (max-width: 735px) {
+
+	#footer .wrapper .contact {
+		display: block;
+	}
+
+	#footer .wrapper .legal{
+		display: block;
+	}
+
 }
