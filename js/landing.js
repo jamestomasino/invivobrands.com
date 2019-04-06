@@ -19,7 +19,9 @@
 	NS ('landing', libs, function(){
 
 		// Local vars for Lib access
-		var Analytics           = NS.use('lib.Analytics');
+    try {
+      var Analytics           = NS.use('lib.Analytics');
+    } catch (e) {}
 		var SmoothAnchor        = NS.use('components.SmoothAnchor');
 		var Animate             = NS.use('components.Animate');
 		var Header              = NS.use('components.Header');
@@ -31,7 +33,9 @@
 
 		// Set up Google Analytics
 		// - Hijack exit links for tracking
-		var analytics = new Analytics ( "UA-64803192-1" );
+    if (Analytics) {
+      var analytics = new Analytics ( "UA-64803192-1" );
+    }
 
 		// Header Component
 		// - Add arrow lines
